@@ -22,7 +22,7 @@
 		<crewLimit>8</crewLimit>
         <customReactor maxLevel="30"/>
     </mod-append:customShip>
-
+</mod:findName>
 
 <mod:findLike type="crew" limit="1">
 	<mod-append:race name="jubjub">
@@ -41,7 +41,7 @@
 			</req>
 			<jumpCooldown>full</jumpCooldown>
 			<powerSounds>
-				<powerSound>ddjubjub_growl</powerSound>
+				<powerSound>mindControlStart</powerSound>
 			</powerSounds>
 			<buttonText>ENRAGE</buttonText>
 			<tooltip>[COOLDOWN: 30s  DURATION: 30s  CASTS UNDER 95 HP]
@@ -63,7 +63,7 @@
 				<damageMultiplier>1.8</damageMultiplier>
 				<damageTakenMultiplier>0.5</damageTakenMultiplier>
 				<healAmount>2</healAmount>
-				<animSheet>jubjub_power</animSheet>
 			</temporaryEffect>
 		</powerEffect>	
 	</mod-append:race>
+</mod:findName>
