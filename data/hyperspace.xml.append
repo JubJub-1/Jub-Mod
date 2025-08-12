@@ -1,0 +1,24 @@
+<mod:findLike type="ships">
+    <mod-append:ship name="PLAYER_SHIP_SOVIET_LUNAR" b="false" c="false" />
+    <mod:findLike type="shipOrder">
+        <mod-append:ship>PLAYER_SHIP_SOVIET_LUNAR</mod-append:ship>
+    </mod:findLike>
+    <mod-append:customShip name="PLAYER_SHIP_SOVIET_LUNAR">
+        <hiddenAug>SHIP_MULTIVERSE</hiddenAug>
+        <hiddenAug>FOR_MULTIVERSE</hiddenAug>
+        <systemLimit>8</systemLimit>
+		<crewLimit>8</crewLimit>
+        <customReactor maxLevel="25"/>
+    </mod-append:customShip>
+
+    <mod-append:ship name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP" b="false" c="false" />
+    <mod:findLike type="shipOrder">
+        <mod-append:ship>PLAYER_SHIP_DINOSAUR_SPACE_SHIP</mod-append:ship>
+    </mod:findLike>
+    <mod-append:customShip name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP">
+        <hiddenAug>SHIP_MULTIVERSE</hiddenAug>
+        <hiddenAug>FOR_MULTIVERSE</hiddenAug>
+        <systemLimit>8</systemLimit>
+		<crewLimit>8</crewLimit>
+        <customReactor maxLevel="30"/>
+    </mod-append:customShip>
