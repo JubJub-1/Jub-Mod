@@ -146,3 +146,33 @@
 	<aug name="EX_BACKUP_DNA" />
 </shipBlueprint>
 
+
+
+<crewBlueprint name="jubjub">
+	<desc>An amphibious race of once ocean-dwellers who've risen to the stars.</desc>
+	<title>JubJub</title>
+	<short>Jub</short>
+	<cost>75</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Max HP raised to 140 and suffocation damage reduced by 60%. Takes 40% more fire damage and has its speed slowed by 40%.</power>
+		<power>Threshold Ability: When their health falls to 95 they go berserk, losing movement speed and the ability to man or repair but gaining greatly increased combat prowess and HP regen.</power>
+	</powerList>
+	<colorList>
+		<layer>
+			<color r="95" g="102" b="116" a="0.1" />
+			<color r="26" g="26" b="26" a="0.3" />
+			<color r="177" g="194" b="201" a="0.1" />
+			<color r="41" g="67" b="129" a="0.2" />
+			<color r="66" g="73" b="77" a="0.3" />
+			<color r="54" g="55" b="77" a="0.2" />
+			<color r="20" g="43" b="73" a="0.3" />
+			<color r="0" g="38" b="90" a="0.2" />
+			<color r="159" g="35" b="0" a="0.2" />
+			<color r="105" g="13" b="13" a="0.3" />
+			<color r="14" g="52" b="15" a="0.3" />
+			<color r="67" g="50" b="129" a="0.3" />
+		</layer>
+	</colorList>
+</crewBlueprint>
