@@ -14,7 +14,7 @@
     <mod-append:ship name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP" b="false" c="false" />
     <mod:findLike type="shipOrder">
         <mod-append:ship>PLAYER_SHIP_DINOSAUR_SPACE_SHIP</mod-append:ship>
-    
+    </mod:findLike>
     <mod-append:customShip name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP">
         <hiddenAug>SHIP_MULTIVERSE</hiddenAug>
         <hiddenAug>FOR_MULTIVERSE</hiddenAug>
@@ -23,9 +23,10 @@
         <customReactor maxLevel="30"/>
 		<crew>
 			<jubjub room="0" name="JubJub"/>  <!--piloting-->
+			<human room="2"/> <!--shields-->
 		</crew>
     </mod-append:customShip>
-</mod:findLike>
+</mod:findName>
 
 
 
@@ -36,6 +37,7 @@
 		<essential>1</essential>
 		<maxHealth>100</maxHealth>
 		<animBase>human</animBase>
+		<detectsLifeforms>true</detectsLifeforms>
 		<isTelepathic>true</isTelepathic>
 		<resistsMindControl>true</resistsMindControl>
 		<deathSounds>

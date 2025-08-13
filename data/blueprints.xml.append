@@ -141,8 +141,9 @@
 	<droneList drones="3" count="2" />
 	<health amount="30" />
 	<maxPower amount="7" />
+	<!--crew is in hyperspace.xml-->
 	<crewCount amount="1" class="jubjub" />
-	<crewCount amount="1" class="human" />
+	
 	<aug name="EX_BACKUP_DNA" />
 </shipBlueprint>
 
