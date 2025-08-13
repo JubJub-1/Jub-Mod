@@ -36,7 +36,7 @@
 				<number>3</number>
 			</slot>
 		</pilot>
-		<sensors power="1" room="3" start="true" img="room_sensors">
+		<sensors power="2" room="3" start="true" img="room_sensors">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
