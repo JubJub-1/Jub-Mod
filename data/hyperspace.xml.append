@@ -26,44 +26,27 @@
 
 <mod:findLike type="crew" limit="1">
 	<mod-append:race name="jubjub">
-		<maxHealth>140</maxHealth>
-		<fireDamageMultiplier>1.4</fireDamageMultiplier>
-		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
-		<suffocationModifier>0.4</suffocationModifier>
+		<maxHealth>100</maxHealth>
 		<animBase>human</animBase>
 		<deathSounds>
 			<deathSound>mantisDeath</deathSound>
 		</deathSounds>
+		<isTelepathic>true</isTelepathic>
 		<powerEffect>
 			<cooldown>30</cooldown>
 			<req>
-				<maxHealth>95</maxHealth>
+				<maxHealth>25</maxHealth>
 			</req>
 			<jumpCooldown>full</jumpCooldown>
 			<powerSounds>
-				<powerSound>mindControlStart</powerSound>
+				<powerSound>healBomb</powerSound>
 			</powerSounds>
 			<buttonText>ENRAGE</buttonText>
-			<tooltip>[COOLDOWN: 30s  DURATION: 30s  CASTS UNDER 95 HP]
-				Go berserk, slowing down and losing the power to man and repair but gaining the following benefits:
-				-1.8x damage
-				-0.5x damage resistance
-				-2hp/s regen</tooltip>
-			<cooldownColor r="229" g="70" b="70" />
+			<tooltip>[COOLDOWN: 30s  DURATION: Instant  CASTS UNDER 25 HP]
+				Drink Soup made by the Soup Dragon to return to full HP
+			<cooldownColor r="253" g="255" b="93" />
 			<activateWhenReady>false</activateWhenReady>
-			<temporaryEffect>
-				<duration>30</duration>
-				<cooldownColor r="124" g="70" b="70" />
-				<finishSounds>
-					<finishSound>mindControlEnd</finishSound>
-				</finishSounds>
-				<canMan>false</canMan>
-				<canRepair>false</canRepair>
-				<moveSpeedMultiplier>0.3</moveSpeedMultiplier>
-				<damageMultiplier>1.8</damageMultiplier>
-				<damageTakenMultiplier>0.5</damageTakenMultiplier>
-				<healAmount>2</healAmount>
-			</temporaryEffect>
+			<selfHealth>1000</selfHealth>
 		</powerEffect>	
 	</mod-append:race>
 </mod:findName>
