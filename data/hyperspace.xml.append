@@ -14,36 +14,47 @@
     <mod-append:ship name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP" b="false" c="false" />
     <mod:findLike type="shipOrder">
         <mod-append:ship>PLAYER_SHIP_DINOSAUR_SPACE_SHIP</mod-append:ship>
-    </mod:findLike>
+    
     <mod-append:customShip name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP">
         <hiddenAug>SHIP_MULTIVERSE</hiddenAug>
         <hiddenAug>FOR_MULTIVERSE</hiddenAug>
         <systemLimit>8</systemLimit>
 		<crewLimit>8</crewLimit>
         <customReactor maxLevel="30"/>
+		<crew>
+			<jubjub room="0" name="JubJub"/>  <!--piloting-->
+		</crew>
     </mod-append:customShip>
-</mod:findName>
+</mod:findLike>
+
+
+
+
 
 <mod:findLike type="crew" limit="1">
 	<mod-append:race name="jubjub">
+		<essential>1</essential>
 		<maxHealth>100</maxHealth>
 		<animBase>human</animBase>
+		<isTelepathic>true</isTelepathic>
+		<resistsMindControl>true</resistsMindControl>
 		<deathSounds>
 			<deathSound>mantisDeath</deathSound>
 		</deathSounds>
-		<isTelepathic>true</isTelepathic>
+		<repairSounds animSoundFrame="5">
+		  <repairSound>rockThud1</repairSound>
+		  <repairSound>rockThud2</repairSound>
+		  <repairSound>rockThud3</repairSound>
+		</repairSounds>
 		<powerEffect>
 			<cooldown>30</cooldown>
-			<req>
-				<maxHealth>25</maxHealth>
-			</req>
 			<jumpCooldown>full</jumpCooldown>
 			<powerSounds>
 				<powerSound>healBomb</powerSound>
 			</powerSounds>
-			<buttonText>ENRAGE</buttonText>
-			<tooltip>[COOLDOWN: 30s  DURATION: Instant  CASTS UNDER 25 HP]
-				Drink Soup made by the Soup Dragon to return to full HP
+			<buttonText>SOUP</buttonText>
+			<tooltip>[COOLDOWN: 30s]
+				Drink Soup made by the Soup Dragon to return to full HP. </tooltip>
 			<cooldownColor r="253" g="255" b="93" />
 			<activateWhenReady>false</activateWhenReady>
 			<selfHealth>1000</selfHealth>

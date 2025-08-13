@@ -141,7 +141,7 @@
 	<droneList drones="3" count="2" />
 	<health amount="30" />
 	<maxPower amount="7" />
-	<crewCount amount="1" class="human" />
+	<crewCount amount="1" class="jubjub" />
 	<crewCount amount="1" class="human" />
 	<aug name="EX_BACKUP_DNA" />
 </shipBlueprint>
@@ -149,15 +149,13 @@
 
 
 <crewBlueprint name="jubjub">
-	<desc>An amphibious race of once ocean-dwellers who've risen to the stars.</desc>
-	<title>JubJub</title>
-	<short>Jub</short>
-	<cost>75</cost>
-	<bp>2</bp>
-	<rarity>1</rarity>
+	<desc>The Dinosaur Ambassador to the Moon (and subsequently the USSR).</desc>
+	<title>Dinorsaur</title>
+	<short>Dino</short>
+	<cost>750</cost>
+	<rarity>0</rarity>
 	<powerList>
-		<power>Max HP raised to 140 and suffocation damage reduced by 60%. Takes 40% more fire damage and has its speed slowed by 40%.</power>
-		<power>Threshold Ability: When their health falls to 95 they go berserk, losing movement speed and the ability to man or repair but gaining greatly increased combat prowess and HP regen.</power>
+		<power>Soup: Regains all of his HP upon drinking a speical Soup made by the Soup Dragon.</power>
 	</powerList>
 	<colorList>
 		<layer>
