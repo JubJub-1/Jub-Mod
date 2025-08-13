@@ -142,8 +142,6 @@
 	<health amount="30" />
 	<maxPower amount="7" />
 	<!--crew is in hyperspace.xml-->
-	<crewCount amount="1" class="jubjub" />
-	
 	<aug name="EX_BACKUP_DNA" />
 </shipBlueprint>
 
