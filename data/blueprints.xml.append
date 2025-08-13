@@ -166,7 +166,7 @@
 	<maxPower amount="7" />
 	<!--crew is in hyperspace.xml-->
 	<aug name="EX_BACKUP_DNA" />
-	<aug name="COMBAT_EXPLOSIVE" />
+	<aug name="DUNG_MAGNET" />
 </shipBlueprint>
 
 
@@ -227,7 +227,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 
-<augBlueprint name="COMBAT_EXPLOSIVE">
+<augBlueprint name="DUNG_MAGNET">
 	<title>Dung Magnet</title>
 	<desc>Single use combat augment that can be deployed before combat to deal 5 damage to an enemy system of your choice as well as against their hull.</desc>
 	<cost>40</cost>
