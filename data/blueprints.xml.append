@@ -191,6 +191,7 @@
 	<cost>750</cost>
 	<rarity>0</rarity>
 	<powerList>
+		<power>Clone-Ready: His DNA has been extensively analysed and he can be cloned at 2x speed. </power>
 		<power>Soup: Regains all of his HP upon drinking a speical Soup made by the Soup Dragon.</power>
 	</powerList>
 	<colorList>

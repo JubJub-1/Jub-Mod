@@ -66,6 +66,7 @@
 		<detectsLifeforms>true</detectsLifeforms>
 		<isTelepathic>true</isTelepathic>
 		<resistsMindControl>true</resistsMindControl>
+		<cloneSpeedMultiplier>2.0</cloneSpeedMultiplier>
 		<deathSounds>
 			<deathSound>mantisDeath</deathSound>
 		</deathSounds>
