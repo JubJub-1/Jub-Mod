@@ -1,12 +1,13 @@
 <metadata>
   <title><![CDATA[ FTL Jub]]></title>
   <author><![CDATA[ Hephalumpo, JubJub ]]></author>
-  <version><![CDATA[ 0.1.21 ]]></version>
+  <version><![CDATA[ 0.1.25 ]]></version>
   <description><![CDATA[
 This addon adds some missions and ships relating to JubJub
 
 - Version 0.1.00 Added the Jubship and the Soviet Lunar Ship
-- Verion 0.1.18 onwards is working on adding JubJub as a character/race
+- Version 0.1.18 Added JubJub as a character
+- Version 0.1.25 Added Dung Payload Augment
 ]]>
   </description>
 </metadata>
