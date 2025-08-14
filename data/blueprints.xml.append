@@ -144,7 +144,7 @@
 				<number>1</number>
 			</slot>
 		</sensors>
-		<shields power="2" room="2" start="true" img="room_shields">
+		<shields max="8" power="2" room="2" start="true" img="room_shields">
 			<slot>
 				<direction>left</direction>
 				<number>0</number>
@@ -219,7 +219,7 @@
 				<number>1</number>
 			</slot>
 		</sensors>
-		<shields power="2" room="2" start="true" img="room_shields">
+		<shields max="8" power="2" room="2" start="true" img="room_shields">
 			<slot>
 				<direction>left</direction>
 				<number>0</number>
@@ -294,7 +294,7 @@
 				<number>1</number>
 			</slot>
 		</sensors>
-		<shields power="2" room="2" start="true" img="room_shields">
+		<shields max="8" power="2" room="2" start="true" img="room_shields">
 			<slot>
 				<direction>left</direction>
 				<number>0</number>
