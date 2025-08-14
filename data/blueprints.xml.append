@@ -280,7 +280,7 @@
 				<number>1</number>
 			</slot>
 		</medbay>
-		<mind power="1" room="7" start="true" img="room_mind_3" />
+		<mind power="1" room="7" start="false" img="room_mind_3" />
 		<oxygen power="1" room="10" start="true" img="room_oxygen_17" />
 		<pilot power="1" room="0" start="true" img="room_pilot">
 			<slot>
