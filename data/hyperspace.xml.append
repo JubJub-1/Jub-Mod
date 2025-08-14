@@ -24,11 +24,37 @@
 		<crewLimit>8</crewLimit>
         <customReactor maxLevel="25"/>
     </mod-append:customShip>
+</mod:findName>
 
-    <mod-append:ship name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP" b="false" c="false" />
+<!-- 
+///////////////////////////////////////////////////////////////////////////////////////////////////////					
+					Dinosaur Space Ship				
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<mod:findLike type="ships">
+
+    <mod-append:ship name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP" b="true" c="true" secret="true">
+		<unlock variant="b" silent="false">
+					<type>1</type>
+					<shipReq>PLAYER_SHIP_DINOSAUR_SPACE_SHIP</shipReq>
+					<value>5</value>
+				</unlock>
+				<unlock variant="c" silent="false">
+					<type>1</type>
+					<shipReq>PLAYER_SHIP_DINOSAUR_SPACE_SHIP_2</shipReq>
+					<value>5</value>
+				</unlock>
+				<unlock variant="c" silent="false">
+					<type>2</type>
+					<shipReq>PLAYER_SHIP_DINOSAUR_SPACE_SHIP</shipReq>
+				</unlock>
+	</mod-append:Ship>
+
     <mod:findLike type="shipOrder">
         <mod-append:ship>PLAYER_SHIP_DINOSAUR_SPACE_SHIP</mod-append:ship>
     </mod:findLike>
+
     <mod-append:customShip name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP">
         <hiddenAug>SHIP_MULTIVERSE</hiddenAug>
         <hiddenAug>FOR_MULTIVERSE</hiddenAug>
@@ -40,7 +66,35 @@
 			<human room="2"/> <!--shields-->
 		</crew>
     </mod-append:customShip>
+
+	<mod-append:customShip name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP_2">
+        <hiddenAug>SHIP_MULTIVERSE</hiddenAug>
+        <hiddenAug>FOR_MULTIVERSE</hiddenAug>
+        <systemLimit>8</systemLimit>
+		<crewLimit>8</crewLimit>
+        <customReactor maxLevel="30"/>
+		<crew>
+			<jubjub room="0" name="Captain Teggs"/>  <!--piloting-->
+			<human room="2"/> <!--shields-->
+		</crew>
+    </mod-append:customShip>
+
+
+	<mod-append:customShip name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP_3">
+        <hiddenAug>SHIP_MULTIVERSE</hiddenAug>
+        <hiddenAug>FOR_MULTIVERSE</hiddenAug>
+        <systemLimit>8</systemLimit>
+		<crewLimit>8</crewLimit>
+        <customReactor maxLevel="30"/>
+		<crew>
+			<spider_weaver room="0" name="Crab"/>  <!--piloting-->
+			<pony_tamed room="2" name="Albert"/> <!--shields-->
+		</crew>
+    </mod-append:customShip>
+
+
 </mod:findName>
+
 
 
 <!-- 

@@ -91,14 +91,17 @@
 </shipBlueprint>
 
 
-<!--
- Dinosaur Space Ship
+<!-- 
+///////////////////////////////////////////////////////////////////////////////////////////////////////					
+					Dinosaur Space Ship				
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 
-<shipBlueprint name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP" layout="Dinosaur Space Ship" img="Dinosaur Space Ship">
+<shipBlueprint name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP" layout="Dinosaur_Space_Ship_a" img="Dinosaur_Space_Ship_a">
 	<class>Dinosaur Space Ship</class>
 	<name>Diplomatic Roar</name>
-	<desc>This ship was used to transport Ambassador JubJub to the Moon, it is equipt with entirely peacekeeping measures..</desc>
+	unlock id="ship_PLAYER_SHIP_DINOSAUR_SPACE_SHIP_unlock"/>
+	<desc>This ship was used to transport Ambassador JubJub to the Moon, it is equipt with entirely peacekeeping measures...</desc>
 	<systemList>
 		<artillery power="1" room="14" start="true" weapon="ARTILLERY_MFK_2" img="room_artillery_3" />
 		<battery power="1" room="12" start="false" img="room_battery_15" />
@@ -165,8 +168,156 @@
 	<health amount="30" />
 	<maxPower amount="7" />
 	<!--crew is in hyperspace.xml-->
-	<aug name="EX_BACKUP_DNA" />
-	<aug name="DUNG_MAGNET" />
+</shipBlueprint>
+
+
+
+<shipBlueprint name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP" layout="Dinosaur_Space_Ship_b" img="Dinosaur_Space_Ship_b">
+	<class>Dinosaur Space Ship</class>
+	<name>DSS Sauropod</name>
+	<unlock id="ship_PLAYER_SHIP_DINOSAUR_SPACE_SHIP_2_unlock"/>
+	<desc>The DSS Sauropod is Captain Teggs and his faithful crew's trusty ship. It is featured in all of the Astrosaurs books and was given to Teggs by Admiral Rosso.</desc>
+	<systemList>
+		<artillery power="1" room="14" start="true" weapon="ARTILLERY_MFK_2" img="room_artillery_3" />
+		<battery power="1" room="12" start="false" img="room_battery_15" />
+		<cloaking power="1" room="8" start="false" img="room_cloaking_13" />
+		<clonebay power="1" room="4" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="11" start="true" img="room_doors_7">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="1" room="9" start="false" img="room_drones_18" />
+		<engines power="2" room="1" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="6" start="false" img="room_hacking_4" />
+		<medbay power="1" room="4" start="false" img="room_medbay">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="7" start="true" img="room_mind_3" />
+		<oxygen power="1" room="10" start="true" img="room_oxygen_17" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="13" start="true" img="room_sensors_4">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="2" start="true" img="room_shields">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="5" start="false" />
+		<weapons power="2" room="3" start="true" img="room_weapons_10">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="10" count="4">
+		<weapon name="BOMB_1" />
+		<weapon name="LASER_HEAVY_1" />
+	</weaponList>
+	<droneList drones="3" count="2" />
+	<health amount="30" />
+	<maxPower amount="7" />
+	<!--crew is in hyperspace.xml-->
+</shipBlueprint>
+
+
+
+<shipBlueprint name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP_3" layout="Dinosaur_Space_Ship_c" img="Dinosaur_Space_Ship_c">
+	<class>Dinosaur Space Ship</class>
+	<name>Albert & Crab</name>
+	<unlock id="ship_PLAYER_SHIP_DINOSAUR_SPACE_SHIP_3_unlock"/>
+	<desc>This ship is owned and operated by lawyers Albert and Crab, their mission: divorce the galaxy.</desc>
+	<systemList>
+		<artillery power="1" room="14" start="true" weapon="ARTILLERY_MFK_2" img="room_artillery_3" />
+		<battery power="1" room="12" start="false" img="room_battery_15" />
+		<cloaking power="1" room="8" start="false" img="room_cloaking_13" />
+		<clonebay power="1" room="4" start="true">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="11" start="true" img="room_doors_7">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="1" room="9" start="false" img="room_drones_18" />
+		<engines power="2" room="1" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="6" start="false" img="room_hacking_4" />
+		<medbay power="1" room="4" start="false" img="room_medbay">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="7" start="true" img="room_mind_3" />
+		<oxygen power="1" room="10" start="true" img="room_oxygen_17" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="13" start="true" img="room_sensors_4">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="2" start="true" img="room_shields">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="5" start="false" />
+		<weapons power="2" room="3" start="true" img="room_weapons_10">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="10" count="4">
+		<weapon name="BOMB_1" />
+		<weapon name="LASER_HEAVY_1" />
+	</weaponList>
+	<droneList drones="3" count="2" />
+	<health amount="30" />
+	<maxPower amount="7" />
+	<!--crew is in hyperspace.xml-->
 </shipBlueprint>
 
 
