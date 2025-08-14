@@ -172,7 +172,7 @@
 
 
 
-<shipBlueprint name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP" layout="Dinosaur_Space_Ship_b" img="Dinosaur_Space_Ship_b">
+<shipBlueprint name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP_2" layout="Dinosaur_Space_Ship_b" img="Dinosaur_Space_Ship_b">
 	<class>Dinosaur Space Ship</class>
 	<name>DSS Sauropod</name>
 	<unlock id="ship_PLAYER_SHIP_DINOSAUR_SPACE_SHIP_2_unlock"/>
@@ -200,12 +200,12 @@
 			</slot>
 		</engines>
 		<hacking power="1" room="6" start="false" img="room_hacking_4" />
-		<medbay power="1" room="4" start="false" img="room_medbay">
+		<medbay power="1" room="4" start="true" img="room_medbay">
 			<slot>
 				<number>1</number>
 			</slot>
 		</medbay>
-		<mind power="1" room="7" start="true" img="room_mind_3" />
+		<mind power="1" room="7" start="false" img="room_mind_3" />
 		<oxygen power="1" room="10" start="true" img="room_oxygen_17" />
 		<pilot power="1" room="0" start="true" img="room_pilot">
 			<slot>
@@ -256,7 +256,7 @@
 		<artillery power="1" room="14" start="true" weapon="ARTILLERY_MFK_2" img="room_artillery_3" />
 		<battery power="1" room="12" start="false" img="room_battery_15" />
 		<cloaking power="1" room="8" start="false" img="room_cloaking_13" />
-		<clonebay power="1" room="4" start="true">
+		<clonebay power="1" room="4" start="false">
 			<slot>
 				<number>1</number>
 			</slot>
@@ -275,7 +275,7 @@
 			</slot>
 		</engines>
 		<hacking power="1" room="6" start="false" img="room_hacking_4" />
-		<medbay power="1" room="4" start="false" img="room_medbay">
+		<medbay power="1" room="4" start="true" img="room_medbay">
 			<slot>
 				<number>1</number>
 			</slot>
