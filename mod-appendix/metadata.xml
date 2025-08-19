@@ -1,13 +1,15 @@
 <metadata>
   <title><![CDATA[ FTL Jub]]></title>
   <author><![CDATA[ Hephalumpo, JubJub ]]></author>
-  <version><![CDATA[ 0.1.36 ]]></version>
+  <version><![CDATA[ 0.1.37 ]]></version>
   <description><![CDATA[
 This addon adds some missions and ships relating to JubJub
 
 - Version 0.1.00 Added the Jubship and the Soviet Lunar Ship
 - Version 0.1.18 Added JubJub as a character
 - Version 0.1.26 Added Dung Magnet Augment
+- Version 0.1.36 Added Ship Unlock Images for Jubship
+
 ]]>
   </description>
 </metadata>
