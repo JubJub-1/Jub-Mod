@@ -343,7 +343,7 @@
 
 <crewBlueprint name="jubjub">
 	<desc>The Dinosaur Ambassador to the Moon (and subsequently the USSR).</desc>
-	<title>Dinorsaur</title>
+	<title>Dinosaur</title>
 	<short>Dino</short>
 	<cost>750</cost>
 	<rarity>0</rarity>

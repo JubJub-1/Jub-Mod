@@ -137,7 +137,7 @@
 </event>
 
 
-<event name="JubJub_Moon" unique="false">
+<event name="JUBJUB_MOON" unique="false">
     <beaconType id="map_icon_jubjub_quest" global="true">
         <color r="95" g="103" b="45" a="1.0"/>
         <unvisitedTooltip>This is the Moon (JUBJUB is here!!!)</unvisitedTooltip>
@@ -152,21 +152,19 @@
                 <text>Approach the creatures and attempt to communicate.</text>
                 <event>
                     <text>While the creatures speak only in whistles, they seem to be able to understand you.</text>
-                    <event load="STORAGE_CHECK"/>
+						<event load="CLANGER_ENCOUNTER"/>
                 </event>
             </choice>
-            <choice req="jubjub">
+            <choice hidden="true" req="jubjub">
                 <text>(JubJub) Whistle to greet the creatures</text>
-                <event>
-                    <event load="STORAGE_CHECK"/>
-                </event>
+                <event load="JUBJUB_RETURNS"/>
             </choice>
-            <choice req="soviet">
+            <choice hidden="true" req="soviet">
                 <text>(Soviet) Send your Soviet crewmember to communicate.</text>
                 <event>
                     <text>Your crewmember cautiously approaches and says, "Hello strrrange crrreaturrres, ve mean you niet harrrm. Ve arrre herrre to learrrn."
-                    While the creatures speak only in whistles, they seem to be able to understand you.</text>
-                    <event load="STORAGE_CHECK"/>
+While the creatures speak only in whistles, they seem to be able to understand you.</text>
+                        <event load="CLANGER_ENCOUNTER"/>
                 </event>
             </choice>
             <choice>
@@ -201,5 +199,155 @@
     </choice>
 </event>
 
+<event name="CLANGER_ENCOUNTER">
+    <text>The creatures look at you.</text>
+    <choice hidden="true">
+        <text>Explain your mission.</text>
+        <event>
+            <text>TESTING</text>
+        </event>
+    </choice>
+    <choice hidden="true">
+        <text>Ask if they have anything to sell.</text>
+        <event>
+            <text>TESTING2</text>
+        </event>
+    </choice>
+    <choice hidden="true">
+        <text>"Take me to your leader."</text>
+        <event>
+            <text>TESTING3</text>
+        </event>
+    </choice>
+    <choice hidden="true" req="jubjub">
+        <text>(JubJub) Whistle to greet the creatures</text>
+        <event>
+            <text>TESTING4</text>
+        </event>
+    </choice>
+    <choice hidden="true" req="soviet">
+        <text>(Soviet) Explain the importance of the Abolition of Private Property.</text>
+        <event>
+            <text>TESTING5</text>
+        </event>
+    </choice>
+</event>
+
+<event name="JUBJUB_RETURNS">
+    <text>The creatures seem excited to see JubJub and rush over to greet you and your crew.
+
+The leader of these creatures, who introduces himself as Major Clanger, approaches your captain and says, "We had a feeling you would arrive. It seems the Multiverse is spreading faster than we expected. I have someone I think you would like to meet."</text>
+    <choice>
+        <text>Follow Major Clanger to his burrow.</text>
+        <event>
+            <text>Once inside the burrow Major Clanger turns to you, "I would like you to meet my good friend, JubJub."</text>
+            <choice>
+                <text>Uh don't we already know him?</text>
+                <event>
+                    <text>The new JubJub looks at you with his ears dipping and his smile faltering, "Well thanks I guess.."</text>
+                    <choice>
+                        <text>Oh I didn't mean it like that sorry!</text>
+                        <event>
+                            <text>The new JubJub perks up a little bit and asks to join your crew.</text>
+                            <choice>
+                                <text>Continue...</text>
+                                <event load="JUB_TO_JUB_INVITE"/>
+                            </choice>
+                        </event>
+                    </choice>
+                    <choice>
+                        <text>I don't know what to tell you, one Jub is enough</text>
+                        <event>
+                            <text>Your crewmember looks sad and lets you know that now he has found another Jub he can't just leave them. (JubJub leaves your crew.)</text>
+                            <removeCrew class="jubjub">
+                                <clone>false</clone>
+                                <text>You cannot clone your crew, as they are not dead.</text>
+                            </removeCrew>
+                        </event>
+                    </choice>
+                    <choice req="jubjub">
+                        <text>(JubJub) Hey friend! Don't mind the captain, they're just like that sometimes.</text>
+                        <event>
+                            <text>The new JubJub perks up a little bit and asks to join your crew.</text>
+                            <choice>
+                                <text>Continue...</text>
+                                <event load="JUB_TO_JUB_INVITE"/>
+                            </choice>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice>
+                <text>This is getting out of hand! Now there are two of them!</text>
+                <event>
+                    <text>The new JubJub looks at you, smiles, and then exlaims, "She can't do that! Shoot her or something!"
+
+He looks at you and asks if you would mind letting him join your crew.</text>
+                    <choice>
+                        <text>Continue...</text>
+                        <event load="JUB_TO_JUB_INVITE"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice>
+                <text>Greetings Comrade</text>
+                <event>
+                    <text>The new JubJub looks at you and tilts his head. "Now, that's a name I haven't heard in a long time"
+                    
+He looks at you and asks if you would mind letting him join your crew.</text>
+                    <choice>
+                        <text>Continue...</text>
+                        <event load="JUB_TO_JUB_INVITE"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="jubjub">
+                <text>(JubJub) ANOTHER JUB!!! Finally after all this time!!</text>
+                <event>
+                    <text>The new JubJub jumps up and down and then runs over to your crewmember and they begin speaking excitedly in a language that you are unable to understand.
+
+It seems your crewmember has invited this new JubJub onto your crew.</text>
+                    <choice>
+                        <text>Continue...</text>
+                        <event load="JUB_TO_JUB_INVITE"/>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice>
+        <text>This is too weird. Return to your ship.</text>
+        <event>
+            <text>You return to your ship.</text>
+            <choice>
+                <text>Do something onboard the ship.</text>
+                <event load="STORAGE_CHECK"/>
+            </choice>
+            <choice>
+                <text>Do nothing.</text>
+                <event/>
+            </choice>
+        </event>
+    </choice>
+</event>
+<event name="JUB_TO_JUB_INVITE">
+    <text>Both JubJubs look at you.</text>
+    <choice>
+        <text>Oh, we don't have space for you sorry.</text>
+        <event>
+            <text>Your crewmember looks sad and lets you know that now he has found another Jub he can't just leave them. (JubJub Leaves your Crew.)</text>
+            <removeCrew class="jubjub">
+                <clone>false</clone>
+                <text>You cannot clone your crew, as they are not dead.</text>
+			</removeCrew>
+        </event>
+    </choice>
+    <choice>
+        <text>Welcome aboard! </text>
+        <event>
+            <crewMember amount="1" class="jubjub">JubJub</crewMember>
+        </event>
+    </choice>
+</event>
 
 </FTL>
