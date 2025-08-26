@@ -135,7 +135,11 @@
         </event>
     </choice>
 </event>
-
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					JUBJUB_MOON
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
 
 <event name="JUBJUB_MOON" unique="false">
     <beaconType id="map_icon_jubjub_quest" global="true">
@@ -152,7 +156,10 @@
                 <text>Approach the creatures and attempt to communicate.</text>
                 <event>
                     <text>While the creatures speak only in whistles, they seem to be able to understand you.</text>
-						<event load="CLANGER_ENCOUNTER"/>
+					<choice>
+                        <text>Continue...</text>
+                        <event load="CLANGER_ENCOUNTER"/>
+                    </choice>
                 </event>
             </choice>
             <choice hidden="true" req="jubjub">
@@ -164,7 +171,10 @@
                 <event>
                     <text>Your crewmember cautiously approaches and says, "Hello strrrange crrreaturrres, ve mean you niet harrrm. Ve arrre herrre to learrrn."
 While the creatures speak only in whistles, they seem to be able to understand you.</text>
+                    <choice>
+                        <text>Continue...</text>
                         <event load="CLANGER_ENCOUNTER"/>
+                    </choice>
                 </event>
             </choice>
             <choice>
@@ -199,39 +209,128 @@ While the creatures speak only in whistles, they seem to be able to understand y
     </choice>
 </event>
 
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					CLANGER_ENCOUNTER
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
 <event name="CLANGER_ENCOUNTER">
+    <loadEvent>CLANGER_ENCOUNTER_REAL</loadEvent>
+</event>
+
+<event name="CLANGER_ENCOUNTER_REAL">
     <text>The creatures look at you.</text>
     <choice hidden="true">
         <text>Explain your mission.</text>
         <event>
-            <text>TESTING</text>
+            <text>The creatures listen intently. It is hard to tell, but it feels like they are empathetic. They wave at you to follow them before disappearing into their burrow.</text>
+            <choice>
+                <text>Follow them down into their burrow.</text>
+                <event>
+                    <text>You crawl down into the burrow. This is a small but cosy space filled with a plethora of strange trinkets.
+
+The largest of the creatues greets you and offers out his hand for you to shake.</text>
+                    <choice>
+                        <text>Shake his hand.</text>
+                        <event load="JUB_ENCOUNTER"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice>
+                <text>This is too risky, we don't know what could be down there. Leave.</text>
+                <event>
+                    <text>You return to your ship and launch into orbit.</text>
+                    <choice>
+                        <text>Do something onboard the ship.</text>
+                        <event load="STORAGE_CHECK"/>
+                    </choice>
+                    <choice>
+                        <text>Do nothing.</text>
+                        <event/>
+                    </choice>
+                </event>
+            </choice>
         </event>
     </choice>
     <choice hidden="true">
         <text>Ask if they have anything to sell.</text>
-        <event>
-            <text>TESTING2</text>
-        </event>
+        <event load="CLANGER_SHOP"/>
     </choice>
     <choice hidden="true">
         <text>"Take me to your leader."</text>
         <event>
-            <text>TESTING3</text>
+            <text>The creatures nod and then wave at you to follow them before disappearing into their burrow.</text>
+            <choice>
+                <text>Follow them down into their burrow.</text>
+                <event>
+                    <text>You crawl down into the burrow. This is a small but cosy space filled with a plethora of strange trinkets.
+
+The largest of the creatues greets you and offers out his hand for you to shake.</text>
+                    <choice>
+                        <text>Shake his hand.</text>
+                        <event load="JUB_ENCOUNTER"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice>
+                <text>This is too risky, we don't know what could be down there. Leave.</text>
+                <event>
+                    <text>You return to your ship and launch into orbit.</text>
+                    <choice>
+                        <text>Do something onboard the ship.</text>
+                        <event load="STORAGE_CHECK"/>
+                    </choice>
+                    <choice>
+                        <text>Do nothing.</text>
+                        <event/>
+                    </choice>
+                </event>
+            </choice>
         </event>
     </choice>
     <choice hidden="true" req="jubjub">
         <text>(JubJub) Whistle to greet the creatures</text>
-        <event>
-            <text>TESTING4</text>
-        </event>
+        <event load="JUBJUB_RETURNS"/>
     </choice>
     <choice hidden="true" req="soviet">
         <text>(Soviet) Explain the importance of the Abolition of Private Property.</text>
         <event>
-            <text>TESTING5</text>
+            <text>The creatures listen intently. It is hard to tell, but it feels like they agree with the concept. They wave at you to follow them before disappearing into their burrow. </text>
+            <choice>
+                <text>Follow them down into their burrow.</text>
+                <event>
+                    <text>You crawl down into the burrow. This is a small but cosy space filled with a plethora of strange trinkets.
+
+The largest of the creatues greets you and offers out his hand for you to shake.</text>
+                    <choice>
+                        <text>Shake his hand.</text>
+                        <event load="JUB_ENCOUNTER"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice>
+                <text>This is too risky, we don't know what could be down there. Leave.</text>
+                <event>
+                    <text>You return to your ship and launch into orbit.</text>
+                    <choice>
+                        <text>Do something onboard the ship.</text>
+                        <event load="STORAGE_CHECK"/>
+                    </choice>
+                    <choice>
+                        <text>Do nothing.</text>
+                        <event/>
+                    </choice>
+                </event>
+            </choice>
         </event>
     </choice>
 </event>
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					JUBJUB_RETURNS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
 
 <event name="JUBJUB_RETURNS">
     <text>The creatures seem excited to see JubJub and rush over to greet you and your crew.
@@ -330,6 +429,12 @@ It seems your crewmember has invited this new JubJub onto your crew.</text>
         </event>
     </choice>
 </event>
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					JUB_TO_JUB_INVITE
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
 <event name="JUB_TO_JUB_INVITE">
     <text>Both JubJubs look at you.</text>
     <choice>
@@ -348,6 +453,41 @@ It seems your crewmember has invited this new JubJub onto your crew.</text>
             <crewMember amount="1" class="jubjub">JubJub</crewMember>
         </event>
     </choice>
+</event>
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					CLANGER_SHOP
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<event name="CLANGER_SHOP">
+    <text>The creatures walk over to a series of strange creations.</text>
+    <choice>
+        <text>Ask about the Flying Machine.</text>
+        <event/>
+    </choice>
+    <choice>
+        <text>Ask about the Lunar Rover.</text>
+        <event/>
+    </choice>
+    <choice>
+        <text>Ask about the Green Soup.</text>
+        <event/>
+    </choice>
+    <choice>
+        <text>Nevermind.</text>
+        <event load="CLANGER_ENCOUNTER"/>
+    </choice>
+</event>
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					JUB_ENCOUNTER
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+<event name="JUB_ENCOUNTER">
+    <text>TEST</text>
 </event>
 
 </FTL>
