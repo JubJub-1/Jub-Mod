@@ -71,7 +71,7 @@ JUB SECTOR
 		<blueprint name="phantom_mare" rarity="0"/>
 		<blueprint name="phantom_wraith" rarity="0"/>
 		<!--lizard-->
-		<!-- <blueprint name="lizard" rarity="5"/> -->
+		<blueprint name="lizard" rarity="5"/>
 	</rarityList>
 	<startEvent>ENTER_JUB</startEvent>
 	<removeFirstBeaconNebula/>
@@ -97,8 +97,8 @@ JUB SECTOR
 	
 	<!-- <event name="HOSTILE_JUB" min="4" max="6"/> -->
 	
-	<event name="PIRACY_LIST" min="0" max="2"/>
-	<event name="FILLER_LIST" min="5" max="5"/>
+	<event name="PIRACY_LIST" min="0" max="20"/>
+	<event name="FILLER_LIST" min="5" max="20"/>
 </sectorDescription>
 
 
