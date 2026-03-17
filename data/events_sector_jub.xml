@@ -810,36 +810,39 @@ I miss them. </text>
             <choice hidden="true">
                 <text>I don't think we have time for that. You're welcome to join our crew though!</text>
                 <event>
-                    <text>(JubJub joins your crew)</text>
+                    <text>I guess if the Rebels win then Earth will fall anyway. It'll be kind of like I'm still helping  I guess.. Sure, I'll join your crew.
+                    (JubJub joins your crew)</text>
                     <crewMember amount="1" class="jubjub">JubJub</crewMember>
                 </event>
             </choice>
             <choice hidden="true">
                 <text>Sorry we can't help.</text>
-                <event>
-                    <text>The Clangers give you a gift as you return to your ship. They all stand and wave goodbye to JubJub.
+                <event/>
+             <event>   
+                <text>The Clangers give you a gift as you return to your ship. They all stand and wave goodbye to JubJub.
 (+20 Scrap, +4 Fuel, +2 Missiles, +2 Drone Parts)</text>
-                    <item_modify>
-                        <item type="scrap" min="+20" max="+20"/>
-                        <item type="fuel" min="+4" max="+4"/>
-                        <item type="missiles" min="+2" max="+2"/>
-                        <item type="drones" min="+2" max="+2"/>
-                    </item_modify>
-                    <choice>
-                        <text>Return to your ship.</text>
-                        <event>
-                            <text>You decide to return to your ship.</text>
-                            <choice>
-                                <text>Do something onboard the ship.</text>
-                                <event load="STORAGE_CHECK"/>
-                            </choice>
-                            <choice>
-                                <text>Do nothing.</text>
-                                <event/>
-                            </choice>
-                        </event>
-                    </choice>
+                <item_modify>
+                    <item type="scrap" min="+20" max="+20"/>
+                    <item type="fuel" min="+4" max="+4"/>
+                    <item type="missiles" min="+2" max="+2"/>
+                    <item type="drones" min="+2" max="+2"/>
+                </item_modify>
+                <choice>
+                    <text>Return to your ship.</text>
+                    <event>
+                        <text>You decide to return to your ship.</text>
+                        <choice>
+                            <text>Do something onboard the ship.</text>
+                            <event load="STORAGE_CHECK"/>
+                        </choice>
+                        <choice>
+                            <text>Do nothing.</text>
+                            <event/>
+                        </choice>
+                    </event>
+                </choice>
                 </event>
+            </event>
             </choice>
         </event>
     </choice>
