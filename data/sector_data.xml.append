@@ -73,13 +73,14 @@ JUB SECTOR
 		<!--lizard-->
 		<blueprint name="lizard" rarity="5"/>
 	</rarityList>
-	<!-- <startEvent>ENTER_JUB</startEvent> -->
-	<startEvent>JUB_WARP</startEvent>
+	<startEvent>ENTER_JUB</startEvent>
+	<!-- <startEvent>JUB_WARP</startEvent> -->
 	<removeFirstBeaconNebula/>
 	<exitBeacon event="FINISH_BEACON_JUB" nebulaEvent="FINISH_BEACON_NEBULA" rebelEvent="FINISH_BEACON_FLEET_ELITE"/>
 	<rebelBeacon event="FLEET_THREAT_LOW" nebulaEvent="NEBULA_LIGHT_FLEET_THREAT_LOW"/>
 	<priorityEvent name="ANOMALY_SPAWNER" min="1" max="1" priority="1" req="ANOMALY_SPAWN_CHECK" lvl="1"/>
-	
+	<removeFirstBeaconNebula/>
+
 	<!--Events-->
 	<!--(MUST ADD UP TO AT LEAST 24)-->
 	<event name="MV_TRAVELER" min="1" max="1"/>

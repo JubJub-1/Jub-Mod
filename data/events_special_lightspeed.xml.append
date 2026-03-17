@@ -19,7 +19,8 @@
 	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
 	<choice hidden="true">
 		<text>Continue...</text>
-		<event load="LOAD_ATLAS_MARKER"/>
+		<!-- <event load="LOAD_ATLAS_MARKER"/> -->
+		<event load="ATLAS_MENU"/>
 	</choice>
 </event>
 
