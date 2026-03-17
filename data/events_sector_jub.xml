@@ -706,7 +706,6 @@ I miss them. </text>
                                                 <choice>
                                                     <text>Continue...</text>
                                                     <event load="JUB_ENCOUNTER_CONTINUED"/>
-                                                    <event/>
                                                 </choice>
                                             </event>
                                         </choice>
@@ -720,7 +719,6 @@ I miss them. </text>
                                 <text>No worries! Let me just explain what was supposed to happen.</text>
                                 <choice>
                                     <text>Continue...</text>
-                                    <event/>
                                     <event load="JUB_ENCOUNTER_CONTINUED"/>
                                 </choice>
                             </event>
