@@ -668,7 +668,37 @@ The largest of the creatues greets you and offers out his hand for you to shake.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 -->
 <event name="JUB_ENCOUNTER">
-    <text>TEST</text>
+    <text>The creature pulls out a strange deivce which crackles to life. After a couple of seconds the device begins to translate the strange whistling sounds. 
+    "Hello there."
+    "I am Major Clanger, it is a pleasure to meet you. Is this the first time you have visited here? I can't keep track of which multiverse we're in. Anyway, sorry, I'm rambling. You're on an important mission."
+    "If you'd follow me I have someone I'd like you to meet."</text>
+    <choice>
+        <text>Follow him.</text>
+        <event>
+            <text>He leads you down a corridor and into a much tidier burrow filled with tech more advanced than you've ever seen before.
+                A definitely-regular-sized Dinosaur pokes his head out of the crate he was rummaging in. 
+                "Oh Hello! It's Me! JubJub! It's nice to meet you."</text>
+                <choice>
+                <text>A dinosaur? In space? How.. what.. how did you get here?</text>
+                <event>
+                    <text>Oh it's a long story. I can tell you if you'd like?</text>
+                    <choice>
+                        <text>Sure!</text>
+                        <event>
+                        <text>TEST</text>
+                        </event>
+                    </choice>
+                    <choice>
+                        <text>Oh maybe some other time, I'm kind of in a rush right now.</text>
+                        <event>
+                        <text>TEST2</text>
+                        </event>
+                    </choice>
+                </event>
+                </choice>
+        </event>
+    </choice>
 </event>
+
 
 </FTL>
