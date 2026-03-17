@@ -700,7 +700,7 @@ A definitely-regular-sized Dinosaur pokes his head out of the crate he was rumma
                 </choice>
         </event>
     </choice>
-    <choice>
+    <choice hidden="true">
         <text>Hey I am not going anywhere buckko!</text>
         <event>
             <text>"Oh, no worries. It was lovely to meet you. I have a restock of supplies for you. Good luck on your mission"
@@ -710,8 +710,8 @@ You return to your ship. </text>
         <item_modify>
             <item type="scrap" min="+20" max="+20"/>
             <item type="fuel" min="+4" max="+4"/>
-            <item type="missile" min="+2" max="+2"/>
-            <item type="drone" min="+2" max="+2"/>
+            <item type="missiles" min="+2" max="+2"/>
+            <item type="drones" min="+2" max="+2"/>
         </item_modify>
         <choice>
             <text>Do something onboard the ship.</text>
