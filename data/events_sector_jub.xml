@@ -690,13 +690,37 @@ A definitely-regular-sized Dinosaur pokes his head out of the crate he was rumma
                     <choice>
                         <text>Sure!</text>
                         <event>
-                        <text>TEST</text>
+                        <text>So I'm much older than you might realise; I was born in regular dinosaur times. We had a very advanced soviety where everyone was equal, the main concept was "Do what you can, get what you need." And it was great! There was no war or hunger or poverty. We had started sending out rockets to different planets to explore and see who we could meet. Our closest Celestial Body (I beleive you call this The Moon) was our first mission. This was relatively simple to reach but once we realised that it was already inhabited we had no right to claim the space as ours and focused our space missions elsewhere. There was, howeveer, a need for a liason between the people living here (They're called Clangers by the way) and the dinosaurs. I volunteered to be the Ambassador to The Moon. I was sent up in a shuttle and spent time getting to know the Clangers and other inhabitants here. It's really quite cosy here.</text>
+                            <choice>
+                                <text>Continue...</text>
+                                <event>
+                                    <text>There was unforunately.. an incident on Earth. As a peaceful species, we didn't have any need for particularly advanced weapons or defence systems. So when a large asteroid had Earth in its path, we were powerless to stop it. I watched from here as all of my friends and family were destroyed by the strike.
+                                    
+I miss them. </text>
+                                    <choice>
+                                        <text>Continue...</text>
+                                        <event>
+                                            <text>But I have made a life for myself here. I have friends here and I am glad to have company. One of my good friends here is called the Soup Dragon. She isn't here at the moment, she's on a long-term expedition down towards the core of The Moon. But she has this amazing soup which has extended my lifespan. This is why I have managed to live to be millions of years old. 
+
+(He scratches his belly with his foot)</text>
+                                            <choice>
+                                                <text>Continue...</text>
+                                                <event load="JUB_ENCOUNTER_2"/>
+                                            </choice>
+                                        </event>
+                                    </choice>
+                                </event>
+                            </choice>
                         </event>
                     </choice>
                     <choice>
                         <text>Oh maybe some other time, I'm kind of in a rush right now.</text>
                         <event>
-                        <text>TEST2</text>
+                            <text>No worries! Let me just explain what was supposed to happen.</text>
+                            <choice>
+                                <text>Continue...</text>
+                                <event load="JUB_ENCOUNTER_2"/>
+                            </choice>
                         </event>
                     </choice>
                 </event>
@@ -705,6 +729,33 @@ A definitely-regular-sized Dinosaur pokes his head out of the crate he was rumma
     </choice>
     <choice hidden="true">
         <text>Hey I am not going anywhere buckko!</text>
+        <event>
+            <text>"Oh, no worries. It was lovely to meet you. I have a restock of supplies for you. Good luck on your mission"
+(+20 Scrap, +4 Fuel, +2 Missiles, +2 Drone Parts)</text>
+            <item_modify>
+                <item type="scrap" min="+20" max="+20"/>
+                <item type="fuel" min="+4" max="+4"/>
+                <item type="missiles" min="+2" max="+2"/>
+                <item type="drones" min="+2" max="+2"/>
+            </item_modify>
+            <choice>
+                <text>Return to your ship.</text>
+                <event>
+                <text>You decide to return to your ship.</text>
+                <choice>
+                    <text>Do something onboard the ship.</text>
+                    <event load="STORAGE_CHECK"/>
+                </choice>
+                <choice>
+                    <text>Do nothing.</text>
+                    <event/>
+                </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice hidden="true">
+        <text>We don't have time, our mission requires our full attention.</text>
         <event>
             <text>"Oh, no worries. It was lovely to meet you. I have a restock of supplies for you. Good luck on your mission"
 (+20 Scrap, +4 Fuel, +2 Missiles, +2 Drone Parts)</text>
@@ -725,6 +776,62 @@ A definitely-regular-sized Dinosaur pokes his head out of the crate he was rumma
             <choice>
                 <text>Do nothing.</text>
                 <event/>
+            </choice>
+        </event>
+    </choice>
+</event>
+
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					JUB_ENCOUNTER_2
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+<event name="JUB_ENCOUNTER_2">
+    <text>In the original Earth timeline the USSR landed on the Moon in 1968 with their Zond-5 craft which was manned by two cosmonauts. I greeted them and they agreed to take me back to Earth with them. The leader of the Soviet Union at the time Leonid Brezhnev was keen to take me on as an Ambassador to the USSR from the Dinoasurs (and also The Moon). The Zond-5 mission was then classified and records were changed to suggest it was an unmanned mission to circle the moon in a circumlunar trajectory. No mention of landing or of my existance was ever mentioned officially. So far as records show, the USSR never landed on the moon. I worked with Brezhnev, Andropov, Chernenko, and Gorbachev. I worked to assist with the aftermath and cleanup of the Chernobyl Disaster. I also worked to help train many Soviets in various different techniques that I had developed over the years. I proved an effective ally.</text>
+    <choice>
+        <text>Continue...</text>
+        <event>
+            <text>But as we know, the multiverse is a strange place. Timelines change, things happen. And here you are. A whole two days before the Soviets would fix their engines and land on The Moon. In order to keep some of the timeline consistency, and so Earth in this multiverse does not completely fall to Capitalism, I ask that you help me to return to Earth?</text>
+            <choice>
+                <text>(Soviet) "We know the landing coordinates, we can help you! Welcome aboard Comrade!"</text>
+                <event>
+                    <text>(Quest Added)
+(JubJub joins your crew)</text>
+                    <crewMember amount="1" class="jubjub">JubJub</crewMember>
+                </event>
+            </choice>
+            <choice>
+                <text>I don't think we have time for that. You're welcome to join our crew though!</text>
+                <event>
+                    <text>(JubJub joins your crew)</text>
+                    <crewMember amount="1" class="jubjub">JubJub</crewMember>
+                </event>
+            </choice>
+            <choice>
+                <text>Sorry we can't help.</text>
+                <event>
+                    <text>The Clangers give you a gift as you return to your ship. They all stand and wave goodbye to JubJub.
+(+20 Scrap, +4 Fuel, +2 Missiles, +2 Drone Parts)</text>
+                    <item_modify>
+                        <item type="scrap" min="+20" max="+20"/>
+                        <item type="fuel" min="+4" max="+4"/>
+                        <item type="missiles" min="+2" max="+2"/>
+                        <item type="drones" min="+2" max="+2"/>
+                    </item_modify>
+                    <choice>
+                    <text>Return to your ship.</text>
+                    <event>
+                        <text>You decide to return to your ship.</text>
+                        <choice>
+                            <text>Do something onboard the ship.</text>
+                            <event load="STORAGE_CHECK"/>
+                        </choice>
+                        <choice>
+                            <text>Do nothing.</text>
+                            <event/>
+                        </choice>
+                </event>
             </choice>
         </event>
     </choice>
