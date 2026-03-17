@@ -504,7 +504,7 @@ You can't understand how this device creates lift but one of the creatures demon
                             <text> You manage to turn the machine on but have no way to control it. It tears through part of your hull, damaging a system as it does so.
 (5 Hull Damage and Breaches)
                         
-There is nothing else to do here. The locals do not seem keen on leaveing their homes. </text>
+There is nothing else to do here. The locals do not seem keen on leaving their homes. </text>
                             <damage amount="-2" system="random" effect="breach"/>
                             <damage amount="-2" system="random" effect="breach"/>
                             <damage amount="-2" system="random" effect="breach"/>
@@ -669,15 +669,17 @@ The largest of the creatues greets you and offers out his hand for you to shake.
 -->
 <event name="JUB_ENCOUNTER">
     <text>The creature pulls out a strange deivce which crackles to life. After a couple of seconds the device begins to translate the strange whistling sounds. 
-    "Hello there."
-    "I am Major Clanger, it is a pleasure to meet you. Is this the first time you have visited here? I can't keep track of which multiverse we're in. Anyway, sorry, I'm rambling. You're on an important mission."
-    "If you'd follow me I have someone I'd like you to meet."</text>
+"Hello there."
+"I am Major Clanger, it is a pleasure to meet you. Is this the first time you have visited here? I can't keep track of which multiverse we're in. Anyway, sorry, I'm rambling. You're on an important mission."
+"If you'd follow me I have someone I'd like you to meet."</text>
     <choice>
         <text>Follow him.</text>
         <event>
             <text>He leads you down a corridor and into a much tidier burrow filled with tech more advanced than you've ever seen before.
-                A definitely-regular-sized Dinosaur pokes his head out of the crate he was rummaging in. 
-                "Oh Hello! It's Me! JubJub! It's nice to meet you."</text>
+
+A definitely-regular-sized Dinosaur pokes his head out of the crate he was rummaging in. 
+
+"Oh Hello! It's Me! JubJub! It's nice to meet you."</text>
                 <choice>
                 <text>A dinosaur? In space? How.. what.. how did you get here?</text>
                 <event>
@@ -696,6 +698,29 @@ The largest of the creatues greets you and offers out his hand for you to shake.
                     </choice>
                 </event>
                 </choice>
+        </event>
+    </choice>
+    <choice>
+        <text>Hey I am not going anywhere buckko!</text>
+        <event>
+            <text>"Oh, no worries. It was lovely to meet you. I have a restock of supplies for you. Good luck on your mission"
+(+20 Scrap, +4 Fuel, +2 Missiles, +2 Drone Parts)
+
+You return to your ship. </text>
+        <item_modify>
+            <item type="scrap" min="+20" max="+20"/>
+            <item type="fuel" min="+4" max="+4"/>
+            <item type="missile" min="+2" max="+2"/>
+            <item type="drone" min="+2" max="+2"/>
+        </item_modify>
+        <choice>
+            <text>Do something onboard the ship.</text>
+            <event load="STORAGE_CHECK"/>
+        </choice>
+        <choice>
+            <text>Do nothing.</text>
+            <event/>
+        </choice>
         </event>
     </choice>
 </event>
