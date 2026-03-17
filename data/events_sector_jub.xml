@@ -705,7 +705,8 @@ I miss them. </text>
 (He scratches his belly with his foot)</text>
                                                 <choice>
                                                     <text>Continue...</text>
-                                                    <event load="JUB_ENCOUNTER_2"/>
+                                                    <!-- <event load="JUB_ENCOUNTER_2"/> -->
+                                                    <event/>
                                                 </choice>
                                             </event>
                                         </choice>
@@ -719,7 +720,8 @@ I miss them. </text>
                                 <text>No worries! Let me just explain what was supposed to happen.</text>
                                 <choice>
                                     <text>Continue...</text>
-                                    <event load="JUB_ENCOUNTER_2"/>
+                                    <event/>
+                                    <!-- <event load="JUB_ENCOUNTER_2"/> -->
                                 </choice>
                             </event>
                         </choice>
@@ -741,15 +743,15 @@ I miss them. </text>
             <choice>
                 <text>Return to your ship.</text>
                 <event>
-                <text>You decide to return to your ship.</text>
-                <choice>
-                    <text>Do something onboard the ship.</text>
-                    <event load="STORAGE_CHECK"/>
-                </choice>
-                <choice>
-                    <text>Do nothing.</text>
-                    <event/>
-                </choice>
+                    <text>You decide to return to your ship.</text>
+                    <choice>
+                        <text>Do something onboard the ship.</text>
+                        <event load="STORAGE_CHECK"/>
+                    </choice>
+                    <choice>
+                        <text>Do nothing.</text>
+                        <event/>
+                    </choice>
                 </event>
             </choice>
         </event>
