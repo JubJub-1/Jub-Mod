@@ -714,15 +714,18 @@ A definitely-regular-sized Dinosaur pokes his head out of the crate he was rumma
             <item type="missiles" min="+2" max="+2"/>
             <item type="drones" min="+2" max="+2"/>
         </item_modify>
-        <text>You return to your ship.</text>
         <choice>
-            <text>Do something onboard the ship.</text>
-            <event load="STORAGE_CHECK"/>
-        </choice>
-        <choice>
-            <text>Do nothing.</text>
-            <event/>
-        </choice>
+        <text>Return to your ship.</text>
+        <event>
+            <text>You decide to return to your ship.</text>
+            <choice>
+                <text>Do something onboard the ship.</text>
+                <event load="STORAGE_CHECK"/>
+            </choice>
+            <choice>
+                <text>Do nothing.</text>
+                <event/>
+            </choice>
         </event>
     </choice>
 </event>
