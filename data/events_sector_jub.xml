@@ -705,7 +705,7 @@ I miss them. </text>
 (He scratches his belly with his foot)</text>
                                                 <choice>
                                                     <text>Continue...</text>
-                                                    <!-- <event load="JUB_ENCOUNTER_2"/> -->
+                                                    <!-- <event load="JUB_ENCOUNTER_CONTINUED"/> -->
                                                     <event/>
                                                 </choice>
                                             </event>
@@ -721,7 +721,7 @@ I miss them. </text>
                                 <choice>
                                     <text>Continue...</text>
                                     <event/>
-                                    <!-- <event load="JUB_ENCOUNTER_2"/> -->
+                                    <!-- <event load="JUB_ENCOUNTER_CONTINUED"/> -->
                                 </choice>
                             </event>
                         </choice>
@@ -786,12 +786,12 @@ I miss them. </text>
 
 <!--
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-					JUB_ENCOUNTER_2
+					JUB_ENCOUNTER_CONTINUED
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 -->
 
 
-<event name="JUB_ENCOUNTER_2">
+<event name="JUB_ENCOUNTER_CONTINUED">
     <text>In the original Earth timeline the USSR landed on the Moon in 1968 with their Zond-5 craft which was manned by two cosmonauts. I greeted them and they agreed to take me back to Earth with them. The leader of the Soviet Union at the time Leonid Brezhnev was keen to take me on as an Ambassador to the USSR from the Dinoasurs (and also The Moon). The Zond-5 mission was then classified and records were changed to suggest it was an unmanned mission to circle the moon in a circumlunar trajectory. No mention of landing or of my existance was ever mentioned officially. So far as records show, the USSR never landed on the moon. I worked with Brezhnev, Andropov, Chernenko, and Gorbachev. I worked to assist with the aftermath and cleanup of the Chernobyl Disaster. I also worked to help train many Soviets in various different techniques that I had developed over the years. I proved an effective ally.</text>
     <choice>
         <text>Continue...</text>
