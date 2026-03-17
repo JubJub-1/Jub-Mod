@@ -110,9 +110,7 @@
             </choice>
             <choice req="jubjub">
                 <text>(JubJub) Whistle to greet the creatures</text> <!--CHOICE: JUBJUB ON BOARD-->
-                <event>
-                    <event load="JUBJUB_RETURNS"/>
-                </event>
+                <event load="JUBJUB_RETURNS"/>
             </choice>
             <choice hidden="true"> <!--CHOICE: IGNORE QUEST-->
                 <text>Leave.</text>
