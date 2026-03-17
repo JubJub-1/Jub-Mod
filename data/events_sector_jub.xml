@@ -669,8 +669,11 @@ The largest of the creatues greets you and offers out his hand for you to shake.
 -->
 <event name="JUB_ENCOUNTER">
     <text>The creature pulls out a strange deivce which crackles to life. After a couple of seconds the device begins to translate the strange whistling sounds. 
+
 "Hello there."
+
 "I am Major Clanger, it is a pleasure to meet you. Is this the first time you have visited here? I can't keep track of which multiverse we're in. Anyway, sorry, I'm rambling. You're on an important mission."
+
 "If you'd follow me I have someone I'd like you to meet."</text>
     <choice>
         <text>Follow him.</text>
@@ -704,15 +707,14 @@ A definitely-regular-sized Dinosaur pokes his head out of the crate he was rumma
         <text>Hey I am not going anywhere buckko!</text>
         <event>
             <text>"Oh, no worries. It was lovely to meet you. I have a restock of supplies for you. Good luck on your mission"
-(+20 Scrap, +4 Fuel, +2 Missiles, +2 Drone Parts)
-
-You return to your ship. </text>
+(+20 Scrap, +4 Fuel, +2 Missiles, +2 Drone Parts)</text>
         <item_modify>
             <item type="scrap" min="+20" max="+20"/>
             <item type="fuel" min="+4" max="+4"/>
             <item type="missiles" min="+2" max="+2"/>
             <item type="drones" min="+2" max="+2"/>
         </item_modify>
+        <text>You return to your ship.</text>
         <choice>
             <text>Do something onboard the ship.</text>
             <event load="STORAGE_CHECK"/>
