@@ -73,7 +73,8 @@ JUB SECTOR
 		<!--lizard-->
 		<blueprint name="lizard" rarity="5"/>
 	</rarityList>
-	<startEvent>ENTER_JUB</startEvent>
+	<!-- <startEvent>ENTER_JUB</startEvent> -->
+	<startEvent>JUB_WARP</startEvent>
 	<removeFirstBeaconNebula/>
 	<exitBeacon event="FINISH_BEACON_JUB" nebulaEvent="FINISH_BEACON_NEBULA" rebelEvent="FINISH_BEACON_FLEET_ELITE"/>
 	<rebelBeacon event="FLEET_THREAT_LOW" nebulaEvent="NEBULA_LIGHT_FLEET_THREAT_LOW"/>
