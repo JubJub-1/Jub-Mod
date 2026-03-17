@@ -96,7 +96,7 @@
         <color r="95" g="103" b="45" a="1.0"/>
         <unvisitedTooltip>This is the Moon (JUBJUB is here!!!)</unvisitedTooltip>
     </beaconType>
-	<text></text>
+	<text>You see a moon</text>
     <img planet="PLANET_POPULATED_MOON_JUB"/>
     <choice hidden="true">
 		<text>Land on The Moon.</text>
