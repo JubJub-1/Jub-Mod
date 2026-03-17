@@ -7,7 +7,7 @@ S6-7 (5-6): Risk Unique Sectors  minSector="5"
 S8 (7): Last Stand-->
 
 
-
+<FTL>
 
 <mod:findName type="sectorType" name="SECRET">
     <mod-append:sector>SECTOR_JUB</mod-append:sector>
@@ -29,41 +29,58 @@ JUB SECTOR
 		<track>civilian</track>
 	</trackList>
 	<rarityList> 
+		<!--human-->
 		<blueprint name="human" rarity="0"/>
 		<blueprint name="human_medic" rarity="0"/>
 		<blueprint name="human_engineer" rarity="0"/>
+		<!--engi-->
 		<blueprint name="engi" rarity="0"/>
 		<blueprint name="engi_separatist" rarity="0"/>
+		<!--zoltan-->
 		<blueprint name="zoltan" rarity="0"/>
 		<blueprint name="zoltan_monk" rarity="0"/>
 		<blueprint name="zoltan_devotee" rarity="0"/>
+		<!--rock-->
 		<blueprint name="rock" rarity="0"/>
 		<blueprint name="rock_outcast" rarity="0"/>
 		<blueprint name="rock_commando" rarity="0"/>
+		<!--mantis-->
 		<blueprint name="mantis" rarity="0"/>
 		<blueprint name="mantis_free" rarity="0"/>
+		<!--slug-->
 		<blueprint name="slug" rarity="0"/>
 		<blueprint name="slug_clansman" rarity="0"/>
+		<!--shell-->
 		<blueprint name="shell" rarity="0"/>
 		<blueprint name="shell_scientist" rarity="0"/>
 		<blueprint name="shell_mechanic" rarity="0"/>
 		<blueprint name="shell_guardian" rarity="0"/>
+		<!--crystal-->
 		<blueprint name="crystal" rarity="0"/>
 		<blueprint name="crystal_liberator" rarity="0"/>
+		<!--orchid-->
 		<blueprint name="orchid" rarity="0"/>
 		<blueprint name="orchid_vampweed" rarity="0"/>
+		<!--leech-->
 		<blueprint name="leech" rarity="0"/>
+		<!--lanius-->
 		<blueprint name="lanius" rarity="0"/>
+		<!--ghost-->
 		<blueprint name="phantom" rarity="0"/>
 		<blueprint name="phantom_goul" rarity="0"/>
 		<blueprint name="phantom_mare" rarity="0"/>
 		<blueprint name="phantom_wraith" rarity="0"/>
+		<!--lizard-->
+		<!-- <blueprint name="lizard" rarity="5"/> -->
 	</rarityList>
 	<startEvent>ENTER_JUB</startEvent>
 	<removeFirstBeaconNebula/>
 	<exitBeacon event="FINISH_BEACON_JUB" nebulaEvent="FINISH_BEACON_NEBULA" rebelEvent="FINISH_BEACON_FLEET_ELITE"/>
 	<rebelBeacon event="FLEET_THREAT_LOW" nebulaEvent="NEBULA_LIGHT_FLEET_THREAT_LOW"/>
 	<priorityEvent name="ANOMALY_SPAWNER" min="1" max="1" priority="1" req="ANOMALY_SPAWN_CHECK" lvl="1"/>
+	
+	<!--Events-->
+	<!--(MUST ADD UP TO AT LEAST 24)-->
 	<event name="MV_TRAVELER" min="1" max="1"/>
 	<event name="SYLVAN_CHANCE" min="0" max="1"/>
 	
@@ -84,3 +101,6 @@ JUB SECTOR
 	<event name="FILLER_LIST" min="5" max="5"/>
 </sectorDescription>
 
+
+
+</FTL>
