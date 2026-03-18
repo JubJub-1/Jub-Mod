@@ -997,7 +997,7 @@ The rover creates a copy of its data banks along with a schematic of its sensor 
 
 The creatures seem to trust you and wave at you to follow them before disappearing into their burrow.</text>
             <reveal_map/>
-            <upgrade amount="1" system="sensor"/>
+            <!-- <upgrade amount="1" system="sensor"/> -->
             <choice>
                 <text>Follow them down into their burrow.</text>
                 <event>
