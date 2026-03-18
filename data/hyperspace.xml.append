@@ -184,7 +184,7 @@
 	</aug>
 
 	<aug name="GREEN_SOUP">
-		<statBoosts>
+		<passiveStatBoosts>
 			<statBoost name="maxHealth">
 				<boostType>MULT</boostType>
 				<amount>1.20</amount>
@@ -196,7 +196,7 @@
 			</statBoost>
 			<statBoost name="powerRechargeMultiplier">
 				<boostType>MULT</boostType>
-				<amount>5</amount>
+				<amount>1.333</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
@@ -205,7 +205,7 @@
 					<jubjub/>
 				</whiteList>
 			</statBoost>
-		</statBoosts>
+		</passiveStatBoosts>
 	</aug>
 
 

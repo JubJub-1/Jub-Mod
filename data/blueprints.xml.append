@@ -410,7 +410,9 @@ GREEN_SOUP
 
 <augBlueprint name="GREEN_SOUP">
 	<title>Green Soup</title>
-	<desc>Increase all allied crew health by 20%</desc>
+	<desc>Increase all allied crew health by 20%
+	
+Decrease JubJub's Power Cooldown by 25%</desc>
 	<cost>40</cost>
 	<rarity>0</rarity>
 	<stackable>true</stackable>
