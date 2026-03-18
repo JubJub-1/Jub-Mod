@@ -370,7 +370,7 @@
 </crewBlueprint>
 
 
-<!-- <crewBlueprint name="soviet">
+<crewBlueprint name="soviet">
 	<desc>A Soviet Cosmonaut.</desc>
 	<title>Soviet Cosmonaut</title>
 	<short>Soviet</short>
@@ -381,7 +381,7 @@
 			<color r="95" g="102" b="116" a="0.1" />
 		</layer>
 	</colorList>
-</crewBlueprint> -->
+</crewBlueprint>
 
 
 
