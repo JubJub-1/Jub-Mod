@@ -933,8 +933,42 @@ The hatch remains inpenetrable.</text>
                                     </choice>
                                 </event>
                             </choice>
-                            <choice>
-                                <text>(Telepathic) Check for creatures nearby.</text>
+                            <choice req="LIST_CREW_SLUG">
+                                <text>(Slug Crew) Check for creatures nearby.</text>
+                                <event>
+                                    <text>Your crew can sense another telepath nearby but can't work out where they are or what kind of creature they are. Your crew member suddenly cries out in pain and refuses to use their telepathy while you remain on this planet.</text>
+                                    <choice>
+                                        <text>Take off.</text>
+                                        <event>
+                                            <text>As you take off you notice a faint ticking sound before a massive explosion rocks your ship.
+                                            
+(10 hull damage) </text>
+                                            <damage amount="-2" system="random" effect="breach"/>
+                                            <damage amount="-2" system="random" effect="breach"/>
+                                            <damage amount="-2" system="random" effect="breach"/>
+                                            <damage amount="-2" system="random" effect="breach"/>
+                                            <damage amount="-2" system="random" effect="breach"/>
+                                            <damage amount="10"/>
+                                            <choice>
+                                                <text>Continue...</text>
+                                                <event>
+                                                    <text>After patching the hole in your hull you find a note that reads, "Don't mess with my friends!! - JubJub"</text>
+                                                    <choice>
+                                                        <text>Do something onboard the ship.</text>
+                                                        <event load="STORAGE_CHECK"/>
+                                                    </choice>
+                                                    <choice>
+                                                        <text>Do nothing.</text>
+                                                        <event/>
+                                                    </choice>
+                                                </event>
+                                            </choice>
+                                        </event>
+                                    </choice>
+                                </event>
+                            </choice>
+                            <choice req="BLUELIST_CREW_SNAIL">
+                                <text>(Telepathic Shell) Check for creatures nearby.</text>
                                 <event>
                                     <text>Your crew can sense another telepath nearby but can't work out where they are or what kind of creature they are. Your crew member suddenly cries out in pain and refuses to use their telepathy while you remain on this planet.</text>
                                     <choice>
