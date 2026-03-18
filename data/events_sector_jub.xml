@@ -607,15 +607,7 @@ There is nothing else to do here. The locals do not seem keen on leaving their h
             </choice>
             <choice>
                 <text>Follow the creatures into their burrow.</text>
-                <event>
-                    <text>You crawl down into the burrow. This is a small but cosy space filled with a plethora of strange trinkets.
-
-The largest of the creatues gives you a wary look but greets you and offers out his hand for you to shake.</text>
-                    <choice>
-                        <text>Shake his hand.</text>
-                        <event load="JUB_ENCOUNTER"/>
-                    </choice>
-                </event>
+                <event load="CLANGER_BURROW_CLOSED"/>
             </choice>
             <choice>
                 <text>Try to shoot one of the creatures before they can make their way into their burrow.</text>
@@ -846,6 +838,151 @@ Prepare for a fight.</text>
 </event>
 
 
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					CLANGER_BURROW_CLOSED
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+<event name="CLANGER_BURROW_CLOSED">
+    <text>By the time you reach their burrow they have closed their hatches.<\text>
+    <choice>
+        <text>Knock on the hatch<\text>
+        <event>
+            <text>You hear whistling from inside.<\text>
+            <choice>
+                <text>Apologise for being rude.<\text>
+                <event>
+                    <text>The whistling inside instensifies before you hear bolts click and the hatch open.
+
+The largest of the creatues greets you and offers out his hand for you to shake. He seems to forgive you.<\text>
+                    <choice>
+                        <text>Shake his hand.</text>
+                        <event load="JUB_ENCOUNTER"/>
+                    </choice>
+                <\event>
+            <\choice>
+            <choice>
+                <text>Bang on the hatch even harder.<\text>
+                <event>
+                    <text>The noises inside stop. 
+
+The hatch remains inpenetrable.<\text>
+                    <choice>
+                        <text>Return to your ship.<\text>
+                        <event>
+                            <text>As you return to your ship you notice that the door has been pryed open.<\text>
+                            <choice>
+                                <text>I'm sure it's nothing. Take off.<\text>
+                                <event>
+                                    <text>As you take off you notice a faint ticking sound before a massive explosion rocks your ship.
+                                    
+(10 hull damage) <\text>
+                                    <damage amount="-2" system="random" effect="breach"/>
+                                    <damage amount="-2" system="random" effect="breach"/>
+                                    <damage amount="-2" system="random" effect="breach"/>
+                                    <damage amount="5"/>
+                                    <choice>
+                                         <text>Continue...<\text>
+                                         <event>
+                                            <text>After patching the hole in your hull you find a note that reads, "Don't mess with my friends!! - JubJub"<\text>
+                                            <choice>
+                                                <text>Do something onboard the ship.</text>
+                                                <event load="STORAGE_CHECK"/>
+                                            </choice>
+                                            <choice>
+                                                <text>Do nothing.</text>
+                                                <event/>
+                                            </choice>
+                                         <\event>
+                                    <\choice>
+                                <\event>
+                            <\choice>
+                            <choice>
+                                <text>Check your ship for damage.<\text>
+                                <event>
+                                    <text>There is no visible damage to your ship.<\text>
+                                    <choice>
+                                        <text>Take off.<\text>
+                                        <event>
+                                            <text>As you take off you notice a faint ticking sound before a massive explosion rocks your ship.
+                                            
+(10 hull damage) <\text>
+                                            <damage amount="-2" system="random" effect="breach"/>
+                                            <damage amount="-2" system="random" effect="breach"/>
+                                            <damage amount="-2" system="random" effect="breach"/>
+                                            <damage amount="5"/>
+                                            <choice>
+                                                <text>Continue...<\text>
+                                                <event>
+                                                    <text>After patching the hole in your hull you find a note that reads, "Don't mess with my friends!! - JubJub"<\text>
+                                                    <choice>
+                                                        <text>Do something onboard the ship.</text>
+                                                        <event load="STORAGE_CHECK"/>
+                                                    </choice>
+                                                    <choice>
+                                                        <text>Do nothing.</text>
+                                                        <event/>
+                                                    </choice>
+                                                <\event>
+                                            <\choice>
+                                        <\event>
+                                    <\choice>
+                                <\event>
+                            <\choice>
+                            <choice>
+                                <text>(Telepathic) Check for creatures nearby.<\text>
+                                <event>
+                                    <text>Your crew can sense another telepath nearby but can't work out where they are or what kind of creature they are. Your crew member suddenly cries out in pain and refuses to use their telepathy while you remain on this planet.<\text>
+                                    <choice>
+                                        <text>Take off.<\text>
+                                        <event>
+                                            <text>As you take off you notice a faint ticking sound before a massive explosion rocks your ship.
+                                            
+(10 hull damage) <\text>
+                                            <damage amount="-2" system="random" effect="breach"/>
+                                            <damage amount="-2" system="random" effect="breach"/>
+                                            <damage amount="-2" system="random" effect="breach"/>
+                                            <damage amount="5"/>
+                                            <choice>
+                                                <text>Continue...<\text>
+                                                <event>
+                                                    <text>After patching the hole in your hull you find a note that reads, "Don't mess with my friends!! - JubJub"<\text>
+                                                    <choice>
+                                                        <text>Do something onboard the ship.</text>
+                                                        <event load="STORAGE_CHECK"/>
+                                                    </choice>
+                                                    <choice>
+                                                        <text>Do nothing.</text>
+                                                        <event/>
+                                                    </choice>
+                                                <\event>
+                                            <\choice>
+                                        <\event>
+                                    <\choice>
+                                <\event>
+                            <\choice>
+                        <\event>
+                    <\choice>
+                <\event>
+            <\choice>
+
+        </event>
+    <\choice>
+    <choice>
+        <text>This is a waste of your time. Return to your ship.<\text>
+        <event>
+            <text>You make your way back to your ship and take off into orbit.</text>
+            <choice>
+                <text>Do something onboard the ship.</text>
+                <event load="STORAGE_CHECK"/>
+            </choice>
+            <choice>
+                <text>Do nothing.</text>
+                <event/>
+            </choice>
+        </event>
+    <\choice>
+</event>
 
 <!--
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
