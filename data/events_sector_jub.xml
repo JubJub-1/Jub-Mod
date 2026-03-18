@@ -1058,7 +1058,7 @@ The creatures seem glad that you have taken the time to learn about their soup a
                                 <event>
                                     <text>You crawl down into the burrow. This is a small but cosy space filled with a plethora of strange trinkets.
 
-                The largest of the creatues greets you and offers out his hand for you to shake.</text>
+The largest of the creatues greets you and offers out his hand for you to shake.</text>
                                     <choice>
                                         <text>Shake his hand.</text>
                                         <event load="JUB_ENCOUNTER"/>
