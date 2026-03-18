@@ -531,7 +531,26 @@ There is nothing else to do here. The locals do not seem keen on leaving their h
                             </choice>
                         </event>
                     </choice>
-                    <choice req="human_engineer" req="shell_mechanic", req="engi", req="engi_separatist">
+                    <choice req="LIST_CREW_ENGINEER">
+                        <text>(Human Engineer/Shell Engineer/Engi) Disasemble the machine to figure out how it works.</text>
+                        <event>
+                            <text>Your crew member expertly disassembles the machine, managing to figure out how part of it works and how it is powered. Although they seem just as confused as to how it creates lift, they manage to apply what they learned to your own ship.
+(+1 Engine Upgrade, +1 Reactor Power)
+
+There is nothing else to do here. The locals do not seem keen on leaving their homes. </text>
+                            <upgrade amount="1" system="reactor"/>
+                            <upgrade amount="1" system="engines"/>
+                            <choice>
+                                <text>Do something onboard the ship.</text>
+                                <event load="STORAGE_CHECK"/>
+                            </choice>
+                            <choice>
+                                <text>Do nothing.</text>
+                                <event/>
+                            </choice>
+                        </event>
+                    </choice>
+                    <choice req="LIST_CREW_SHELL_SCIENTIST">
                         <text>(Human Engineer/Shell Engineer/Engi) Disasemble the machine to figure out how it works.</text>
                         <event>
                             <text>Your crew member expertly disassembles the machine, managing to figure out how part of it works and how it is powered. Although they seem just as confused as to how it creates lift, they manage to apply what they learned to your own ship.
