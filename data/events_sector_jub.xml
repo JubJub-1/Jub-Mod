@@ -532,7 +532,26 @@ There is nothing else to do here. The locals do not seem keen on leaving their h
                         </event>
                     </choice>
                     <choice req="LIST_CREW_ENGINEER">
-                        <text>(Human Engineer/Shell Engineer/Engi) Disasemble the machine to figure out how it works.</text>
+                        <text>(Engineer Crew) Disasemble the machine to figure out how it works.</text>
+                        <event>
+                            <text>Your crew member expertly disassembles the machine, managing to figure out how part of it works and how it is powered. Although they seem just as confused as to how it creates lift, they manage to apply what they learned to your own ship.
+(+1 Engine Upgrade, +1 Reactor Power)
+
+There is nothing else to do here. The locals do not seem keen on leaving their homes. </text>
+                            <upgrade amount="1" system="reactor"/>
+                            <upgrade amount="1" system="engines"/>
+                            <choice>
+                                <text>Do something onboard the ship.</text>
+                                <event load="STORAGE_CHECK"/>
+                            </choice>
+                            <choice>
+                                <text>Do nothing.</text>
+                                <event/>
+                            </choice>
+                        </event>
+                    </choice>
+                    <choice req="LIST_CREW_ENGI">
+                        <text>(Engi Crew) Disasemble the machine to figure out how it works.</text>
                         <event>
                             <text>Your crew member expertly disassembles the machine, managing to figure out how part of it works and how it is powered. Although they seem just as confused as to how it creates lift, they manage to apply what they learned to your own ship.
 (+1 Engine Upgrade, +1 Reactor Power)
@@ -551,7 +570,7 @@ There is nothing else to do here. The locals do not seem keen on leaving their h
                         </event>
                     </choice>
                     <choice req="LIST_CREW_SHELL_SCIENTIST">
-                        <text>(Human Engineer/Shell Engineer/Engi) Disasemble the machine to figure out how it works.</text>
+                        <text>(Shell Scientist) Disasemble the machine to figure out how it works.</text>
                         <event>
                             <text>Your crew member expertly disassembles the machine, managing to figure out how part of it works and how it is powered. Although they seem just as confused as to how it creates lift, they manage to apply what they learned to your own ship.
 (+1 Engine Upgrade, +1 Reactor Power)
@@ -625,8 +644,88 @@ The largest of the creatues greets you and offers out his hand for you to shake.
             </choice>
         </event>
     </choice>
-    <choice>
-        <text>(Human Engineer/Shell Engineer/Engi) Ask to dissemble the machine to figure out how it works</text>
+    <choice req="LIST_CREW_ENGI">
+        <text>(Engi Crew) Ask to dissemble the machine to figure out how it works</text>
+        <event>
+            <text>The creatures seem unsure but they seem to trust you and allow your engineer to dissemble the machine. 
+
+Your crew member expertly disassembles the machine, managing to figure out how part of it works and how it is powered. Although they seem just as confused as to how it creates lift, they manage to apply what they learned to your own ship.
+
+(+1 Engine Upgrade, +1 Reactor Power)
+
+The creatures seem to trust you and wave at you to follow them before disappearing into their burrow. </text>
+            <upgrade amount="1" system="reactor"/>
+            <upgrade amount="1" system="engines"/>
+            <choice>
+                <text>Follow them down into their burrow.</text>
+                <event>
+                    <text>You crawl down into the burrow. This is a small but cosy space filled with a plethora of strange trinkets.
+
+The largest of the creatues greets you and offers out his hand for you to shake.</text>
+                    <choice>
+                        <text>Shake his hand.</text>
+                        <event load="JUB_ENCOUNTER"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice>
+                <text>This is too risky, we don't know what could be down there. Leave.</text>
+                <event>
+                    <text>You return to your ship and launch into orbit.</text>
+                    <choice>
+                        <text>Do something onboard the ship.</text>
+                        <event load="STORAGE_CHECK"/>
+                    </choice>
+                    <choice>
+                        <text>Do nothing.</text>
+                        <event/>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="LIST_CREW_ENGINEER">
+        <text>(Engineer Crew) Ask to dissemble the machine to figure out how it works</text>
+        <event>
+            <text>The creatures seem unsure but they seem to trust you and allow your engineer to dissemble the machine. 
+
+Your crew member expertly disassembles the machine, managing to figure out how part of it works and how it is powered. Although they seem just as confused as to how it creates lift, they manage to apply what they learned to your own ship.
+
+(+1 Engine Upgrade, +1 Reactor Power)
+
+The creatures seem to trust you and wave at you to follow them before disappearing into their burrow. </text>
+            <upgrade amount="1" system="reactor"/>
+            <upgrade amount="1" system="engines"/>
+            <choice>
+                <text>Follow them down into their burrow.</text>
+                <event>
+                    <text>You crawl down into the burrow. This is a small but cosy space filled with a plethora of strange trinkets.
+
+The largest of the creatues greets you and offers out his hand for you to shake.</text>
+                    <choice>
+                        <text>Shake his hand.</text>
+                        <event load="JUB_ENCOUNTER"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice>
+                <text>This is too risky, we don't know what could be down there. Leave.</text>
+                <event>
+                    <text>You return to your ship and launch into orbit.</text>
+                    <choice>
+                        <text>Do something onboard the ship.</text>
+                        <event load="STORAGE_CHECK"/>
+                    </choice>
+                    <choice>
+                        <text>Do nothing.</text>
+                        <event/>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="LIST_CREW_SHELL_SCIENTIST">
+        <text>(Shell Scientist) Ask to dissemble the machine to figure out how it works</text>
         <event>
             <text>The creatures seem unsure but they seem to trust you and allow your engineer to dissemble the machine. 
 
