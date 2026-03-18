@@ -993,35 +993,42 @@ The largest of the creatues greets you and offers out his hand for you to shake.
 
 The rover creates a copy of its data banks along with a schematic of its sensor array.
 
-(+1 Sensor Upgrade, Secotr Map)
+(Secotr Map)
 
+</text>
+            <reveal_map/>
+            <choice>
+                <text>Continue...</text>
+                <event>
+                    <text>Your sensors are also upgraded
+                    
 The creatures seem to trust you and wave at you to follow them before disappearing into their burrow.</text>
-            <upgrade amount="1" system="sensor"/>
-            <choice>
-                <text>Follow them down into their burrow.</text>
-                <event>
-                    <reveal_map/>
-                    <text>You crawl down into the burrow. This is a small but cosy space filled with a plethora of strange trinkets.
+                    <upgrade amount="1" system="sensor"/>
+                    <choice>
+                        <text>Follow them down into their burrow.</text>
+                        <event>
+                            <text>You crawl down into the burrow. This is a small but cosy space filled with a plethora of strange trinkets.
 
-The largest of the creatues greets you and offers out his hand for you to shake.</text>
-                    <choice>
-                        <text>Shake his hand.</text>
-                        <event load="JUB_ENCOUNTER"/>
-                    </choice>
-                </event>
-            </choice>
-            <choice>
-                <text>This is too risky, we don't know what could be down there. Leave.</text>
-                <event>
-                    <reveal_map/>
-                    <text>You return to your ship and launch into orbit.</text>
-                    <choice>
-                        <text>Do something onboard the ship.</text>
-                        <event load="STORAGE_CHECK"/>
+        The largest of the creatues greets you and offers out his hand for you to shake.</text>
+                            <choice>
+                                <text>Shake his hand.</text>
+                                <event load="JUB_ENCOUNTER"/>
+                            </choice>
+                        </event>
                     </choice>
                     <choice>
-                        <text>Do nothing.</text>
-                        <event/>
+                        <text>This is too risky, we don't know what could be down there. Leave.</text>
+                        <event>
+                            <text>You return to your ship and launch into orbit.</text>
+                            <choice>
+                                <text>Do something onboard the ship.</text>
+                                <event load="STORAGE_CHECK"/>
+                            </choice>
+                            <choice>
+                                <text>Do nothing.</text>
+                                <event/>
+                            </choice>
+                        </event>
                     </choice>
                 </event>
             </choice>
