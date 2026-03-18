@@ -179,6 +179,7 @@
 					<soviet/>
 				</whitelist>
 			</statBoost>
+		</passiveStatBoosts>
 	</mod-append:race>
 
 
