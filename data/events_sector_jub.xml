@@ -535,11 +535,10 @@ There is nothing else to do here. The locals do not seem keen on leaving their h
                         <text>(Engineer Crew) Disasemble the machine to figure out how it works.</text>
                         <event>
                             <text>Your crew member expertly disassembles the machine, managing to figure out how part of it works and how it is powered. Although they seem just as confused as to how it creates lift, they manage to apply what they learned to your own ship.
-(+1 Engine Upgrade, +1 Reactor Power)
+(+2 Engine Upgrade)
 
 There is nothing else to do here. The locals do not seem keen on leaving their homes. </text>
-                            <upgrade amount="1" system="reactor"/>
-                            <upgrade amount="1" system="engines"/>
+                            <upgrade amount="2" system="engines"/>
                             <choice>
                                 <text>Do something onboard the ship.</text>
                                 <event load="STORAGE_CHECK"/>
@@ -554,11 +553,10 @@ There is nothing else to do here. The locals do not seem keen on leaving their h
                         <text>(Engi Crew) Disasemble the machine to figure out how it works.</text>
                         <event>
                             <text>Your crew member expertly disassembles the machine, managing to figure out how part of it works and how it is powered. Although they seem just as confused as to how it creates lift, they manage to apply what they learned to your own ship.
-(+1 Engine Upgrade, +1 Reactor Power)
+(+2 Engine Upgrade)
 
 There is nothing else to do here. The locals do not seem keen on leaving their homes. </text>
-                            <upgrade amount="1" system="reactor"/>
-                            <upgrade amount="1" system="engines"/>
+                            <upgrade amount="2" system="engines"/>
                             <choice>
                                 <text>Do something onboard the ship.</text>
                                 <event load="STORAGE_CHECK"/>
@@ -573,11 +571,10 @@ There is nothing else to do here. The locals do not seem keen on leaving their h
                         <text>(Shell Scientist) Disasemble the machine to figure out how it works.</text>
                         <event>
                             <text>Your crew member expertly disassembles the machine, managing to figure out how part of it works and how it is powered. Although they seem just as confused as to how it creates lift, they manage to apply what they learned to your own ship.
-(+1 Engine Upgrade, +1 Reactor Power)
+(+2 Engine Upgrade)
 
 There is nothing else to do here. The locals do not seem keen on leaving their homes. </text>
-                            <upgrade amount="1" system="reactor"/>
-                            <upgrade amount="1" system="engines"/>
+                            <upgrade amount="2" system="engines"/>
                             <choice>
                                 <text>Do something onboard the ship.</text>
                                 <event load="STORAGE_CHECK"/>
@@ -588,15 +585,14 @@ There is nothing else to do here. The locals do not seem keen on leaving their h
                             </choice>
                         </event>
                     </choice>
-                    <choice req="LIST_CREW_SHELL_MECHANIC">
+                    <choice req="shell_mechanic">
                         <text>(Shell Mechanic) Disasemble the machine to figure out how it works.</text>
                         <event>
                             <text>Your crew member expertly disassembles the machine, managing to figure out how part of it works and how it is powered. Although they seem just as confused as to how it creates lift, they manage to apply what they learned to your own ship.
-(+1 Engine Upgrade, +1 Reactor Power)
+(+2 Engine Upgrade)
 
 There is nothing else to do here. The locals do not seem keen on leaving their homes. </text>
-                            <upgrade amount="1" system="reactor"/>
-                            <upgrade amount="1" system="engines"/>
+                            <upgrade amount="2" system="engines"/>
                             <choice>
                                 <text>Do something onboard the ship.</text>
                                 <event load="STORAGE_CHECK"/>
@@ -670,11 +666,10 @@ The largest of the creatues greets you and offers out his hand for you to shake.
 
 Your crew member expertly disassembles the machine, managing to figure out how part of it works and how it is powered. Although they seem just as confused as to how it creates lift, they manage to apply what they learned to your own ship.
 
-(+1 Engine Upgrade, +1 Reactor Power)
+(+2 Engine Upgrade)
 
 The creatures seem to trust you and wave at you to follow them before disappearing into their burrow. </text>
-            <upgrade amount="1" system="reactor"/>
-            <upgrade amount="1" system="engines"/>
+            <upgrade amount="2" system="engines"/>
             <choice>
                 <text>Follow them down into their burrow.</text>
                 <event>
@@ -710,11 +705,10 @@ The largest of the creatues greets you and offers out his hand for you to shake.
 
 Your crew member expertly disassembles the machine, managing to figure out how part of it works and how it is powered. Although they seem just as confused as to how it creates lift, they manage to apply what they learned to your own ship.
 
-(+1 Engine Upgrade, +1 Reactor Power)
+(+2 Engine Upgrade)
 
 The creatures seem to trust you and wave at you to follow them before disappearing into their burrow. </text>
-            <upgrade amount="1" system="reactor"/>
-            <upgrade amount="1" system="engines"/>
+            <upgrade amount="2" system="engines"/>
             <choice>
                 <text>Follow them down into their burrow.</text>
                 <event>
@@ -750,11 +744,10 @@ The largest of the creatues greets you and offers out his hand for you to shake.
 
 Your crew member expertly disassembles the machine, managing to figure out how part of it works and how it is powered. Although they seem just as confused as to how it creates lift, they manage to apply what they learned to your own ship.
 
-(+1 Engine Upgrade, +1 Reactor Power)
+(+2 Engine Upgrade)
 
 The creatures seem to trust you and wave at you to follow them before disappearing into their burrow. </text>
-            <upgrade amount="1" system="reactor"/>
-            <upgrade amount="1" system="engines"/>
+            <upgrade amount="2" system="engines"/>
             <choice>
                 <text>Follow them down into their burrow.</text>
                 <event>
@@ -783,18 +776,17 @@ The largest of the creatues greets you and offers out his hand for you to shake.
             </choice>
         </event>
     </choice>
-    <choice req="LIST_CREW_SHELL_MECHANIC">
+    <choice req="shell_mechanic">
         <text>(Shell Mechanic) Ask to dissemble the machine to figure out how it works</text>
         <event>
             <text>The creatures seem unsure but they seem to trust you and allow your engineer to dissemble the machine. 
 
 Your crew member expertly disassembles the machine, managing to figure out how part of it works and how it is powered. Although they seem just as confused as to how it creates lift, they manage to apply what they learned to your own ship.
 
-(+1 Engine Upgrade, +1 Reactor Power)
+(+2 Engine Upgrade)
 
 The creatures seem to trust you and wave at you to follow them before disappearing into their burrow. </text>
-            <upgrade amount="1" system="reactor"/>
-            <upgrade amount="1" system="engines"/>
+            <upgrade amount="2" system="engines"/>
             <choice>
                 <text>Follow them down into their burrow.</text>
                 <event>
