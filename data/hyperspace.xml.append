@@ -196,12 +196,10 @@
 			</statBoost>
 			<statBoost name="powerRechargeMultiplier">
 				<boostType>MULT</boostType>
-				<shipTarget>ORIGINAL_SHIP</shipTarget>
-				<crewTarget>ORIGINAL_ALLIES</crewTarget>
-				<droneTarget>CREW</droneTarget>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>jubjub</crewTarget>
 				<amount>1.2</amount>
 				<priority>0</priority>
-				<whitelist load="jubjub"/>
 			</statBoost>
 		</statBoosts>
 	</aug>
