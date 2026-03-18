@@ -537,7 +537,7 @@ There is nothing else to do here. The locals do not seem keen on leaving their h
                             <text>Your crew member expertly disassembles the machine, managing to figure out how part of it works and how it is powered. Although they seem just as confused as to how it creates lift, they manage to apply what they learned to your own ship.
 (+1 Engine Upgrade, +1 Reactor Power)
 
-There is nothing else to do here. The locals do not seem keen on leaveing their homes. </text>
+There is nothing else to do here. The locals do not seem keen on leaving their homes. </text>
                             <upgrade amount="1" system="reactor"/>
                             <upgrade amount="1" system="engines"/>
                             <choice>
@@ -553,8 +553,16 @@ There is nothing else to do here. The locals do not seem keen on leaveing their 
                 </event>
             </choice>
             <choice>
-                <text>Follow the creatures into the burrow.</text>
-                <event load="CLANGER_BURROW"/>
+                <text>Follow the creatures into their burrow.</text>
+                <event>
+                    <text>You crawl down into the burrow. This is a small but cosy space filled with a plethora of strange trinkets.
+
+The largest of the creatues gives you a wary look but greets you and offers out his hand for you to shake.</text>
+                    <choice>
+                        <text>Shake his hand.</text>
+                        <event load="JUB_ENCOUNTER"/>
+                    </choice>
+                </event>
             </choice>
             <choice>
                 <text>Try to shoot one of the creatures before they can make their way into their burrow.</text>
@@ -640,14 +648,6 @@ The largest of the creatues greets you and offers out his hand for you to shake.
     </choice>
 </event>
 
-<!--
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-					CLANGER_BURROW
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
--->
-<event name="CLANGER_BURROW">
-    <text>TEST</text>
-</event>
 
 <!--
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
