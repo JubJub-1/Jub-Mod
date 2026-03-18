@@ -880,7 +880,9 @@ The hatch remains inpenetrable.</text>
                                     <damage amount="-2" system="random" effect="breach"/>
                                     <damage amount="-2" system="random" effect="breach"/>
                                     <damage amount="-2" system="random" effect="breach"/>
-                                    <damage amount="5"/>
+                                    <damage amount="-2" system="random" effect="breach"/>
+                                    <damage amount="-2" system="random" effect="breach"/>
+                                    <damage amount="10"/>
                                     <choice>
                                         <text>Continue...</text>
                                         <event>
@@ -910,7 +912,9 @@ The hatch remains inpenetrable.</text>
                                             <damage amount="-2" system="random" effect="breach"/>
                                             <damage amount="-2" system="random" effect="breach"/>
                                             <damage amount="-2" system="random" effect="breach"/>
-                                            <damage amount="5"/>
+                                            <damage amount="-2" system="random" effect="breach"/>
+                                            <damage amount="-2" system="random" effect="breach"/>
+                                            <damage amount="10"/>
                                             <choice>
                                                 <text>Continue...</text>
                                                 <event>
@@ -942,7 +946,9 @@ The hatch remains inpenetrable.</text>
                                             <damage amount="-2" system="random" effect="breach"/>
                                             <damage amount="-2" system="random" effect="breach"/>
                                             <damage amount="-2" system="random" effect="breach"/>
-                                            <damage amount="5"/>
+                                            <damage amount="-2" system="random" effect="breach"/>
+                                            <damage amount="-2" system="random" effect="breach"/>
+                                            <damage amount="10"/>
                                             <choice>
                                                 <text>Continue...</text>
                                                 <event>
