@@ -143,6 +143,15 @@
 			<selfHealth>1000</selfHealth>
 		</powerEffect>	
 	</mod-append:race>
+
+	<mod-append:race name="soviet">
+		<maxHealth>100</maxHealth>
+		<animBase>human</animBase>
+		<deathSounds>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+		</deathSounds>
+	</mod-append:race>
 </mod:findName>
 
 

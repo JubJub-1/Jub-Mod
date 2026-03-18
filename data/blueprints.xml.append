@@ -370,6 +370,15 @@
 </crewBlueprint>
 
 
+<crewBlueprint name="soviet">
+	<desc>A Soviet Cosmonaut.</desc>
+	<title>Soviet Cosmonaut</title>
+	<short>Soviet</short>
+	<cost>60</cost>
+	<rarity>0</rarity>
+</crewBlueprint>
+
+
 
 <!-- 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
