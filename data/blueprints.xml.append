@@ -374,13 +374,9 @@
 	<desc>A Soviet Cosmonaut.</desc>
 	<title>Soviet Cosmonaut</title>
 	<short>Soviet</short>
-	<cost>60</cost>
+	<cost>45</cost>
 	<rarity>0</rarity>
-	<colorList>
-		<layer>
-			<color r="95" g="102" b="116" a="0.1" />
-		</layer>
-	</colorList>
+	<powerList></powerList>
 </crewBlueprint>
 
 
