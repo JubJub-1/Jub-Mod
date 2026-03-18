@@ -833,7 +833,7 @@ Prepare for a fight.
     <choice>
         <text>Continue...</text>
         <event>
-            <ship load="SHIP_ORCHID_ELITE_FIGHT" hostile="true"/>
+            <ship load="SHIP_ORCHID_REINFORCEMENTS" hostile="true"/>
             <environment type="PDS" target="player"/>
             <noASBPlanet/>
             <choice hidden="true">
