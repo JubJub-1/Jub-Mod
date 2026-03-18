@@ -201,7 +201,7 @@
 				<crewTarget>ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
 				<priority>0</priority>
-				<!-- <whiteList load="LIST_CREW_COGNITIVE_ALL"/> -->
+				<whiteList load="jubjub"/>
 			</statBoost>
 		</statBoosts>
 	</aug>
