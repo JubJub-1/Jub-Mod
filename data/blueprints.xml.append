@@ -377,7 +377,7 @@
 	<cost>45</cost>
 	<rarity>0</rarity>
 	<powerList>
-	<power>Other Soviet crew in the same room gain an additional 50% Max Health and repair speed</power>
+	<power>Other Soviet crew in the same room gain an additional 25% Max Health and Repair Speed</power>
 	</powerList>
 </crewBlueprint>
 

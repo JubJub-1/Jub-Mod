@@ -156,7 +156,7 @@
 		<passiveStatBoosts>
 			<statBoost name="maxHealth">
 				<boostType>MULT</boostType>
-				<amount>1.5</amount>
+				<amount>1.25</amount>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
@@ -168,7 +168,7 @@
 			</statBoost>
 			<statBoost name="repairSpeed">
 				<boostType>MULT</boostType>
-				<amount>1.5</amount>
+				<amount>1.25</amount>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
