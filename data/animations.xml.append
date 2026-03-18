@@ -135,7 +135,7 @@
 </anim>
 
 
-<animSheet name="soviet" w="315" h="455" fw="35" fh="35">people/soviet_base.png</animSheet>
+<!-- <animSheet name="soviet" w="315" h="455" fw="35" fh="35">people/soviet_base.png</animSheet>
 <anim name="soviet_clone">
 	<sheet>soviet</sheet>
 	<desc length="6" x="0" y="2" />
@@ -251,13 +251,9 @@
 	<desc length="4" x="4" y="4" />
 	<time>0.75</time>
 </anim>
-<anim name="crewLaser">
-	<sheet>soviet</sheet>
-	<desc length="1" x="1" y="0" />
-	<time>0.5</time>
-</anim>
 <anim name="soviet_portrait">
 	<sheet>soviet</sheet>
 	<desc length="1" x="0" y="0" />
 	<time>1</time>
-</anim>
+</anim> -->
+

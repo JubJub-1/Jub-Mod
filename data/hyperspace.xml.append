@@ -113,6 +113,8 @@
 
 
 <mod:findLike type="crew" limit="1">
+
+
 	<mod-append:race name="jubjub">
 		<essential>1</essential>
 		<maxHealth>100</maxHealth>
@@ -144,14 +146,16 @@
 		</powerEffect>	
 	</mod-append:race>
 
-	<mod-append:race name="soviet">
+	<!-- <mod-append:race name="soviet">
 		<maxHealth>100</maxHealth>
 		<animBase>human</animBase>
 		<deathSounds>
 			<deathSound>death1</deathSound>
 			<deathSound>death2</deathSound>
 		</deathSounds>
-	</mod-append:race>
+	</mod-append:race> -->
+
+
 </mod:findName>
 
 
