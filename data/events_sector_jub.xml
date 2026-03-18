@@ -812,6 +812,224 @@ The largest of the creatues greets you and offers out his hand for you to shake.
 
 <!--
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					LUNAR_ROVER
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+<event name="LUNAR_ROVER">
+    <text>This seems to be a lunar rover from Old Earth that has recently landed.</text>
+    <choice>
+        <text>Demand they hand over the Lunar Rover.</text>
+        <event>
+            <text>The creatures look alarmed by your tone and run off into their burrows, closing the hatches behind them. </text>
+            <choice>
+                <text>Take the Lunar Rover back to your ship.</text>
+                <event>
+                    <text>Your crew drag the Lunar Rover back to your ship and try to see what information it might contain.</text>
+                    <choice>
+                        <text>Press some buttons and try to figure out how to turn the rover on.</text>
+                        <event>
+                            <text> You manage to turn the rover on but have no way to control it. It tears through part of your hull, damaging a system as it does so.
+
+(5 Hull Damage and 2 Damage to Random System)
+                        
+There is nothing else to do here. The locals do not seem keen on leaving their homes. </text>
+                            <damage amount="-2" system="random" effect="breach"/>
+                            <damage amount="-2" system="random" effect="breach"/>
+                            <damage amount="-2" system="random" effect="breach"/>
+                            <damage amount="5"/>
+                            <choice>
+                                <text>Do something onboard the ship.</text>
+                                <event load="STORAGE_CHECK"/>
+                            </choice>
+                            <choice>
+                                <text>Do nothing.</text>
+                                <event/>
+                            </choice>
+                        </event>
+                    </choice>
+                    <choice>
+                        <text>Decide not to risk turning the rover on and leave.</text>
+                        <event>
+                            <text>You decide to give up and launch your ship into orbit, leaving The Lunar Rover and The Moon behind you.</text>
+                            <choice>
+                                <text>Do something onboard the ship.</text>
+                                <event load="STORAGE_CHECK"/>
+                            </choice>
+                            <choice>
+                                <text>Do nothing.</text>
+                                <event/>
+                            </choice>
+                        </event>
+                    </choice>
+                    <choice req="LIST_CREW_ENGINEER">
+                        <text>(Engineer Crew) Disasemble the rover to figure out how it works.</text>
+                        <event>
+                            <text>Your crew member expertly disassembles the rover, managing to figure out how part of it works. They make a copy of its data banks as they do so. Unforunatlety the FTL drive of your ship seems to have interfered with the Floppy Disk in the Rover and the data is corrupted. 
+
+(+1 Sensors)
+
+There is nothing else to do here. The locals do not seem keen on leaving their homes. </text>
+                            <upgrade amount="1" system="sensors"/>
+                            <choice>
+                                <text>Do something onboard the ship.</text>
+                                <event load="STORAGE_CHECK"/>
+                            </choice>
+                            <choice>
+                                <text>Do nothing.</text>
+                                <event/>
+                            </choice>
+                        </event>
+                    </choice>
+                    <choice req="LIST_CREW_ENGI">
+                        <text>(Engineer Crew) Disasemble the rover to figure out how it works.</text>
+                        <event>
+                            <text>Your crew member expertly disassembles the rover, managing to figure out how part of it works. They make a copy of its data banks as they do so. Unforunatlety the FTL drive of your ship seems to have interfered with the Floppy Disk in the Rover and the data is corrupted. 
+
+(+1 Sensors)
+
+There is nothing else to do here. The locals do not seem keen on leaving their homes. </text>
+                            <upgrade amount="1" system="sensors"/>
+                            <choice>
+                                <text>Do something onboard the ship.</text>
+                                <event load="STORAGE_CHECK"/>
+                            </choice>
+                            <choice>
+                                <text>Do nothing.</text>
+                                <event/>
+                            </choice>
+                        </event>
+                    </choice>
+                    <choice req="LIST_CREW_SHELL_SCIENTIST">
+                        <text>(Engineer Crew) Disasemble the rover to figure out how it works.</text>
+                        <event>
+                            <text>Your crew member expertly disassembles the rover, managing to figure out how part of it works. They make a copy of its data banks as they do so. Unforunatlety the FTL drive of your ship seems to have interfered with the Floppy Disk in the Rover and the data is corrupted. 
+
+(+1 Sensors)
+
+There is nothing else to do here. The locals do not seem keen on leaving their homes. </text>
+                            <upgrade amount="1" system="sensors"/>
+                            <choice>
+                                <text>Do something onboard the ship.</text>
+                                <event load="STORAGE_CHECK"/>
+                            </choice>
+                            <choice>
+                                <text>Do nothing.</text>
+                                <event/>
+                            </choice>
+                        </event>
+                    </choice>
+                    <choice req="shell_mechanic">
+                        <text>(Engineer Crew) Disasemble the rover to figure out how it works.</text>
+                        <event>
+                            <text>Your crew member expertly disassembles the rover, managing to figure out how part of it works. They make a copy of its data banks as they do so. Unforunatlety the FTL drive of your ship seems to have interfered with the Floppy Disk in the Rover and the data is corrupted. 
+
+(+1 Sensors)
+
+There is nothing else to do here. The locals do not seem keen on leaving their homes. </text>
+                            <upgrade amount="1" system="sensors"/>
+                            <choice>
+                                <text>Do something onboard the ship.</text>
+                                <event load="STORAGE_CHECK"/>
+                            </choice>
+                            <choice>
+                                <text>Do nothing.</text>
+                                <event/>
+                            </choice>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice>
+                <text>Follow the creatures into their burrow.</text>
+                <event load="CLANGER_BURROW_CLOSED"/>
+            </choice>
+            <choice>
+                <text>Try to shoot one of the creatures before they can make their way into their burrow.</text>
+                <event load="CLANGER_ATTACK"/>
+            </choice>
+        </event>
+    </choice>
+    <choice>
+        <text>Ask to access the database on the Rover.</text>
+        <event>
+            <text>The creatures are more than willing to assist. They plug in a hard drive and copy over any files on the Rover and hand it to you.
+
+(Sector Map)
+
+The creatures seem to trust you and wave at you to follow them before disappearing into their burrow.</text>
+            <reveal_map/>
+            <choice>
+                <text>Follow them down into their burrow.</text>
+                <event>
+                    <text>You crawl down into the burrow. This is a small but cosy space filled with a plethora of strange trinkets.
+
+The largest of the creatues greets you and offers out his hand for you to shake.</text>
+                    <choice>
+                        <text>Shake his hand.</text>
+                        <event load="JUB_ENCOUNTER"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice>
+                <text>This is too risky, we don't know what could be down there. Leave.</text>
+                <event>
+                    <text>You return to your ship and launch into orbit.</text>
+                    <choice>
+                        <text>Do something onboard the ship.</text>
+                        <event load="STORAGE_CHECK"/>
+                    </choice>
+                    <choice>
+                        <text>Do nothing.</text>
+                        <event/>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="soviet">
+        <text>(Soviet) Enter command codes.</text>
+        <event>
+            <text>The creatures seem unsure but they seem to trust you and allow your crew member to enter their command coeds into the rover.
+
+The rover creates a copy of its data banks along with a schematic of its sensor array.
+
+(+1 Sensor Upgrade, Secotr Map)
+
+The creatures seem to trust you and wave at you to follow them before disappearing into their burrow.</text>
+            <upgrade amount="1" system="sensor"/>
+            <reveal_map/>
+            <choice>
+                <text>Follow them down into their burrow.</text>
+                <event>
+                    <text>You crawl down into the burrow. This is a small but cosy space filled with a plethora of strange trinkets.
+
+The largest of the creatues greets you and offers out his hand for you to shake.</text>
+                    <choice>
+                        <text>Shake his hand.</text>
+                        <event load="JUB_ENCOUNTER"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice>
+                <text>This is too risky, we don't know what could be down there. Leave.</text>
+                <event>
+                    <text>You return to your ship and launch into orbit.</text>
+                    <choice>
+                        <text>Do something onboard the ship.</text>
+                        <event load="STORAGE_CHECK"/>
+                    </choice>
+                    <choice>
+                        <text>Do nothing.</text>
+                        <event/>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+</event>
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 					CLANGER_ATTACK
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 -->
