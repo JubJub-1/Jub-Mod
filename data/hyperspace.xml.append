@@ -198,10 +198,10 @@
 				<boostType>MULT</boostType>
 				<amount>5</amount>
 				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALLIES</crewTarget>
+				<crewTarget>jubjub</crewTarget>
 				<droneTarget>CREW</droneTarget>
 				<priority>0</priority>
-				<whiteList load="jubjub"/>
+				<!-- <whiteList load="jubjub"/> -->
 			</statBoost>
 		</statBoosts>
 	</aug>
