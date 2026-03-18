@@ -138,7 +138,7 @@
 			<buttonText>SOUP</buttonText>
 			<tooltip>[COOLDOWN: 30s]
 				Drink Soup made by the Soup Dragon to return to full HP. </tooltip>
-			<cooldownColor r="253" g="255" b="93" />
+			<cooldownColor r="167" g="255" b="93" />
 			<activateWhenReady>false</activateWhenReady>
 			<selfHealth>1000</selfHealth>
 		</powerEffect>	
@@ -176,12 +176,6 @@
 
 
 <augments>
-
-	<aug name="TEST">
-		<locked/>
-		<function name="ROCK_ARMOR" value="0.09" useForReqs="false" warning="false"/>
-		<function name="SHIELD_RECHARGE" value="0.09" useForReqs="true" warning="false"/>
-	</aug>
 
 	<aug name="GREEN_SOUP">
 		<statBoosts>
