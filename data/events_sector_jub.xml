@@ -471,7 +471,7 @@ It seems your crewmember has invited this new JubJub onto your crew.</text>
     </choice>
     <choice>
         <text>Ask about the Green Soup.</text>
-        <event/>
+        <event load="GREEN_SOUP"/>
     </choice>
     <choice>
         <text>Nevermind.</text>
@@ -1027,6 +1027,129 @@ The largest of the creatues greets you and offers out his hand for you to shake.
         </event>
     </choice>
 </event>
+
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					GREEN_SOUP
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<event name="GREEN_SOUP">
+    <text>The creatues bring you over to a volcanic soup well. This must be where the soup comes from.</text>
+    <choice>
+        <text>Ask if you can try some soup.</text>
+        <event>
+            <text>The creatures whistle excitedly and offer you a bowl of soup.</text>
+            <choice>
+                <text>Drink it.</text>
+                <event>
+                    <text>You drink the soup and an energy fills you. You feel youthful again. You feel alive.</text>
+                    <choice>
+                        <text>Ask if you can take some soup back to your ship.</text>
+                        <event>
+                            <text>The creatues whistle excitedly and help you bring back a large supply of soup to your ship.
+
+(Soup Augment)
+
+The creatures seem glad that you have taken the time to learn about their soup and they wave for you to follow them before disappearing into their burrow.</text>
+                            <choice>
+                                <text>Follow them down into their burrow.</text>
+                                <event>
+                                    <text>You crawl down into the burrow. This is a small but cosy space filled with a plethora of strange trinkets.
+
+                The largest of the creatues greets you and offers out his hand for you to shake.</text>
+                                    <choice>
+                                        <text>Shake his hand.</text>
+                                        <event load="JUB_ENCOUNTER"/>
+                                    </choice>
+                                </event>
+                            </choice>
+                            <choice>
+                                <text>This is too risky, we don't know what could be down there. Leave.</text>
+                                <event>
+                                    <text>You return to your ship and launch into orbit.</text>
+                                    <choice>
+                                        <text>Do something onboard the ship.</text>
+                                        <event load="STORAGE_CHECK"/>
+                                    </choice>
+                                    <choice>
+                                        <text>Do nothing.</text>
+                                        <event/>
+                                    </choice>
+                                </event>
+                            </choice>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice>
+                <text>Actually this isn't a good idea. Don't drink the soup.</text>
+                <event>
+                    <text>The creatures understand your hesistation but seem glad that you have taken the time to learn about their soup and they wave for you to follow them before disappearing into their burrow. </text>
+                    <choice>
+                        <text>Follow them down into their burrow.</text>
+                        <event>
+                            <text>You crawl down into the burrow. This is a small but cosy space filled with a plethora of strange trinkets.
+
+The largest of the creatues greets you and offers out his hand for you to shake.</text>
+                            <choice>
+                                <text>Shake his hand.</text>
+                                <event load="JUB_ENCOUNTER"/>
+                            </choice>
+                        </event>
+                    </choice>
+                    <choice>
+                        <text>This is too risky, we don't know what could be down there. Leave.</text>
+                        <event>
+                            <text>You return to your ship and launch into orbit.</text>
+                            <choice>
+                                <text>Do something onboard the ship.</text>
+                                <event load="STORAGE_CHECK"/>
+                            </choice>
+                            <choice>
+                                <text>Do nothing.</text>
+                                <event/>
+                            </choice>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice>
+        <text>Thank the creatures for their time.</text>
+        <event>
+            <text>The creatures seem glad that you have taken the time to learn about their soup and they wave for you to follow them before disappearing into their burrow. </text>
+            <choice>
+                <text>Follow them down into their burrow.</text>
+                <event>
+                    <text>You crawl down into the burrow. This is a small but cosy space filled with a plethora of strange trinkets.
+
+The largest of the creatues greets you and offers out his hand for you to shake.</text>
+                    <choice>
+                        <text>Shake his hand.</text>
+                        <event load="JUB_ENCOUNTER"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice>
+                <text>This is too risky, we don't know what could be down there. Leave.</text>
+                <event>
+                    <text>You return to your ship and launch into orbit.</text>
+                    <choice>
+                        <text>Do something onboard the ship.</text>
+                        <event load="STORAGE_CHECK"/>
+                    </choice>
+                    <choice>
+                        <text>Do nothing.</text>
+                        <event/>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+</event>
+
 
 <!--
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
