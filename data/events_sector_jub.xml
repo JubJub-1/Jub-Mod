@@ -856,9 +856,9 @@ Prepare for a fight.</text>
 
 The largest of the creatues greets you and offers out his hand for you to shake. He seems to forgive you.<\text>
                     <choice>
-                        <text>Shake his hand.</text>
+                        <text>Shake his hand.<\text>
                         <event load="JUB_ENCOUNTER"/>
-                    </choice>
+                    <\choice>
                 <\event>
             <\choice>
             <choice>
@@ -882,18 +882,18 @@ The hatch remains inpenetrable.<\text>
                                     <damage amount="-2" system="random" effect="breach"/>
                                     <damage amount="5"/>
                                     <choice>
-                                         <text>Continue...<\text>
-                                         <event>
+                                        <text>Continue...<\text>
+                                        <event>
                                             <text>After patching the hole in your hull you find a note that reads, "Don't mess with my friends!! - JubJub"<\text>
                                             <choice>
-                                                <text>Do something onboard the ship.</text>
+                                                <text>Do something onboard the ship.<\text>
                                                 <event load="STORAGE_CHECK"/>
-                                            </choice>
+                                            <\choice>
                                             <choice>
-                                                <text>Do nothing.</text>
+                                                <text>Do nothing.<\text>
                                                 <event/>
-                                            </choice>
-                                         <\event>
+                                            <\choice>
+                                        <\event>
                                     <\choice>
                                 <\event>
                             <\choice>
@@ -916,13 +916,13 @@ The hatch remains inpenetrable.<\text>
                                                 <event>
                                                     <text>After patching the hole in your hull you find a note that reads, "Don't mess with my friends!! - JubJub"<\text>
                                                     <choice>
-                                                        <text>Do something onboard the ship.</text>
+                                                        <text>Do something onboard the ship.<\text>
                                                         <event load="STORAGE_CHECK"/>
-                                                    </choice>
+                                                    <\choice>
                                                     <choice>
-                                                        <text>Do nothing.</text>
+                                                        <text>Do nothing.<\text>
                                                         <event/>
-                                                    </choice>
+                                                    <\choice>
                                                 <\event>
                                             <\choice>
                                         <\event>
@@ -948,13 +948,13 @@ The hatch remains inpenetrable.<\text>
                                                 <event>
                                                     <text>After patching the hole in your hull you find a note that reads, "Don't mess with my friends!! - JubJub"<\text>
                                                     <choice>
-                                                        <text>Do something onboard the ship.</text>
+                                                        <text>Do something onboard the ship.<\text>
                                                         <event load="STORAGE_CHECK"/>
-                                                    </choice>
+                                                    <\choice>
                                                     <choice>
-                                                        <text>Do nothing.</text>
+                                                        <text>Do nothing.<\text>
                                                         <event/>
-                                                    </choice>
+                                                    <\choice>
                                                 <\event>
                                             <\choice>
                                         <\event>
@@ -965,24 +965,23 @@ The hatch remains inpenetrable.<\text>
                     <\choice>
                 <\event>
             <\choice>
-
-        </event>
+        <\event>
     <\choice>
     <choice>
         <text>This is a waste of your time. Return to your ship.<\text>
         <event>
-            <text>You make your way back to your ship and take off into orbit.</text>
+            <text>You make your way back to your ship and take off into orbit.<\text>
             <choice>
-                <text>Do something onboard the ship.</text>
+                <text>Do something onboard the ship.<\text>
                 <event load="STORAGE_CHECK"/>
-            </choice>
+            <\choice>
             <choice>
-                <text>Do nothing.</text>
+                <text>Do nothing.<\text>
                 <event/>
-            </choice>
-        </event>
+            <\choice>
+        <\event>
     <\choice>
-</event>
+<\event>
 
 <!--
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
