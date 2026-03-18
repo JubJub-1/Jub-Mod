@@ -827,13 +827,14 @@ The largest of the creatues greets you and offers out his hand for you to shake.
     <text>Your shot hits one of the creatures who falls down. The remaining creatures drag the fallen creature into the burrow and close the hatches. Your radio picks up a distress signal coming from the burrows. It sounds like backup is on its way. 
 
 You hurry back to your ship but it is too late. There is a gathering ship already in Orbit. 
-Prepare for a fight.
 
-(ASB Activated)</text>
+(ASB Activated)
+
+Prepare for a fight.</text>
     <choice>
         <text>Continue...</text>
         <event>
-            <ship load="SHIP_ORCHID_REINFORCEMENTS" hostile="true"/>
+            <ship load="SHIP_ORCHID_ELITE_FIGHT" hostile="true"/>
             <environment type="PDS" target="player"/>
             <noASBPlanet/>
             <choice hidden="true">
