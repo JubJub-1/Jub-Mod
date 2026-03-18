@@ -996,11 +996,11 @@ The rover creates a copy of its data banks along with a schematic of its sensor 
 (+1 Sensor Upgrade, Secotr Map)
 
 The creatures seem to trust you and wave at you to follow them before disappearing into their burrow.</text>
-            <reveal_map/>
-            <!-- <upgrade amount="1" system="sensor"/> -->
+            <upgrade amount="1" system="sensor"/>
             <choice>
                 <text>Follow them down into their burrow.</text>
                 <event>
+                    <reveal_map/>
                     <text>You crawl down into the burrow. This is a small but cosy space filled with a plethora of strange trinkets.
 
 The largest of the creatues greets you and offers out his hand for you to shake.</text>
@@ -1013,6 +1013,7 @@ The largest of the creatues greets you and offers out his hand for you to shake.
             <choice>
                 <text>This is too risky, we don't know what could be down there. Leave.</text>
                 <event>
+                    <reveal_map/>
                     <text>You return to your ship and launch into orbit.</text>
                     <choice>
                         <text>Do something onboard the ship.</text>
