@@ -153,6 +153,32 @@
 			<deathSound>death1</deathSound>
 			<deathSound>death2</deathSound>
 		</deathSounds>
+		<passiveStatBoosts>
+			<statBoost name="maxHealth">
+				<boostType>MULT</boostType>
+				<amount>1.5</amount>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<affectsSelf>false</affectsSelf>
+				<priority>0</priority>
+				<boostAnim>spores_buff</boostAnim>
+				<whitelist>
+					<soviet/>
+				</whitelist>
+			</statBoost>
+			<statBoost name="repairSpeed">
+				<boostType>MULT</boostType>
+				<amount>1.5</amount>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<affectsSelf>false</affectsSelf>
+				<priority>0</priority>
+				<whitelist>
+					<soviet/>
+				</whitelist>
+			</statBoost>
 	</mod-append:race>
 
 

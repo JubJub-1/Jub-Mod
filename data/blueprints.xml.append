@@ -371,12 +371,14 @@
 
 
 <crewBlueprint name="soviet">
-	<desc>A Soviet Cosmonaut.</desc>
+	<desc>A Soviet Cosmonaut from the 20th Century. They thrive on the dismantling of capitalist ideologies and are strongly against private property.</desc>
 	<title>Soviet Cosmonaut</title>
 	<short>Soviet</short>
 	<cost>45</cost>
 	<rarity>0</rarity>
-	<powerList></powerList>
+	<powerList>
+	<power>Other Soviet crew in the same room gain an additional 50% Max Health and repair speed</power>
+	</powerList>
 </crewBlueprint>
 
 
