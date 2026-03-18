@@ -196,7 +196,7 @@
 			</statBoost>
 			<statBoost name="powerRechargeMultiplier">
 				<boostType>MULT</boostType>
-				<amount>0.8</amount>
+				<amount>5</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
