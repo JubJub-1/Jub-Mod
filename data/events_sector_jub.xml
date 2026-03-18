@@ -467,7 +467,7 @@ It seems your crewmember has invited this new JubJub onto your crew.</text>
     </choice>
     <choice>
         <text>Ask about the Lunar Rover.</text>
-        <event/>
+        <event load="LUNAR_ROVER"/>
     </choice>
     <choice>
         <text>Ask about the Green Soup.</text>
