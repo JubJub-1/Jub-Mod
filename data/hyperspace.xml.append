@@ -162,7 +162,6 @@
 				<droneTarget>CREW</droneTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
-				<boostAnim>spores_buff</boostAnim>
 				<whitelist>
 					<soviet/>
 				</whitelist>
