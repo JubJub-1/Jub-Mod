@@ -163,3 +163,48 @@
 <mod:findLike type="events" limit="1">
     <mod-append:eventFile>sector_jub</mod-append:eventFile>
 </mod:findLike>
+
+
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////AUGMENTS
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+
+<augments>
+
+	<aug name="TEST">
+		<locked/>
+		<function name="ROCK_ARMOR" value="0.09" useForReqs="false" warning="false"/>
+		<function name="SHIELD_RECHARGE" value="0.09" useForReqs="true" warning="false"/>
+	</aug>
+
+	<aug name="GREEN_SOUP">
+		<statBoosts>
+			<statBoost name="maxHealth">
+				<boostType>MULT</boostType>
+				<amount>1.20</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>0</priority>
+				<!-- <blackList load="LIST_CREW_GHOST"/> -->
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>MULT</boostType>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<amount>1.2</amount>
+				<priority>0</priority>
+				<whitelist load="jubjub"/>
+			</statBoost>
+		</statBoosts>
+	</aug>
+
+
+</augments>

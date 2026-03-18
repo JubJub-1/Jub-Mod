@@ -385,9 +385,32 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+DUNG_MAGNET
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
 <augBlueprint name="DUNG_MAGNET">
 	<title>Dung Magnet</title>
 	<desc>Single use combat augment that can be deployed before combat to deal 5 damage to an enemy system of your choice as well as against their hull.</desc>
+	<cost>40</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+GREEN_SOUP
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<augBlueprint name="GREEN_SOUP">
+	<title>Green Soup</title>
+	<desc>Increase all allied crew health by 20%</desc>
 	<cost>40</cost>
 	<rarity>0</rarity>
 	<stackable>true</stackable>
