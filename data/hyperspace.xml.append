@@ -114,6 +114,11 @@
 
 <mod:findLike type="crew" limit="1">
 
+<!-- 
+*********************************************************************************************************
+                   JUBJUB
+*********************************************************************************************************
+-->
 
 	<mod-append:race name="jubjub">
 		<essential>1</essential>
@@ -145,6 +150,12 @@
 			<selfHealth>1000</selfHealth>
 		</powerEffect>	
 	</mod-append:race>
+
+<!-- 
+*********************************************************************************************************
+                   SOVIET
+*********************************************************************************************************
+-->
 
 	<mod-append:race name="soviet">
 		<maxHealth>100</maxHealth>
@@ -179,6 +190,32 @@
 				</whitelist>
 			</statBoost>
 		</passiveStatBoosts>
+	</mod-append:race>
+
+<!-- 
+*********************************************************************************************************
+                   HORSE
+*********************************************************************************************************
+-->
+
+	<mod-append:race name="horse">
+		<maxHealth>100</maxHealth>
+		<controllable>true</controllable>
+		<canMan>true</canMan>
+		<canRepair>true</canRepair>
+		<repairSpeed>0.5</repairSpeed>
+		<fireRepairMultiplier>6.0</fireRepairMultiplier>
+		<moveSpeedMultiplier>2.5</moveSpeedMultiplier>
+		<damageMultiplier>1.5</damageMultiplier>
+		<animBase>rock</animBase>
+		<deathSounds>
+			<deathSound>horseDeath</deathSound>
+		</deathSounds>
+		<shootingSounds>
+			<shootingSound>rockThrow1</shootingSound>
+			<shootingSound>rockThrow2</shootingSound>
+			<shootingSound>rockThrow3</shootingSound>
+		</shootingSounds>
 	</mod-append:race>
 
 

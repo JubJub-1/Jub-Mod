@@ -384,6 +384,18 @@
 </crewBlueprint>
 
 
+<crewBlueprint name="horse">
+	<desc>A highly intelligent and articulate horse.</desc>
+	<title>Horse</title>
+	<short>Horse</short>
+	<cost>30</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>2.5x move speed, 1.5x combat damage</power>
+		<power>Repairs at 0.5x speed but puts out fires at 2.0x speed</power>
+	</powerList>
+</crewBlueprint>
+
 
 <!-- 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -6,6 +6,11 @@
 	<time>2</time>
 </anim>
 
+<!-- 
+*********************************************************************************************************
+                   JUBJUB
+*********************************************************************************************************
+-->
 
 <animSheet name="jubjub" w="315" h="455" fw="35" fh="35">people/jubjub_base.png</animSheet>
 <anim name="jubjub_clone">
@@ -134,6 +139,11 @@
 	<time>1</time>
 </anim>
 
+<!-- 
+*********************************************************************************************************
+                   SOVIET
+*********************************************************************************************************
+-->
 
 <animSheet name="soviet" w="315" h="455" fw="35" fh="35">people/soviet_base.png</animSheet>
 <anim name="soviet_clone">
@@ -257,14 +267,127 @@
 	<time>1</time>
 </anim>
 
+<!-- 
+*********************************************************************************************************
+                   HORSE
+*********************************************************************************************************
+-->
+
+<animSheet name="horse" w="735" h="385" fw="35" fh="35">people/horse_base.png</animSheet>
+<anim name="horse_clone">
+	<sheet>horse</sheet>
+	<desc length="8" x="0" y="1"/>
+	<time>0.75</time>
+</anim>
+<anim name="horse_death_right">
+	<sheet>horse</sheet>
+	<desc length="21" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="horse_death_left">
+	<sheet>horse</sheet>
+	<desc length="21" x="0" y="2"/>
+	<time>2</time>
+</anim>
+<anim name="horse_walk_down">
+	<sheet>horse</sheet>
+	<desc length="4" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="horse_walk_right">
+	<sheet>horse</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="horse_walk_up">
+	<sheet>horse</sheet>
+	<desc length="4" x="4" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="horse_walk_left">
+	<sheet>horse</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="horse_shoot_down">
+	<sheet>horse</sheet>
+	<desc length="9" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="horse_shoot_right">
+	<sheet>horse</sheet>
+	<desc length="8" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="horse_shoot_up">
+	<sheet>horse</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="horse_shoot_left">
+	<sheet>horse</sheet>
+	<desc length="8" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="horse_fire_down">
+	<sheet>horse</sheet>
+	<desc length="9" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="horse_fire_right">
+	<sheet>horse</sheet>
+	<desc length="9" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="horse_fire_up">
+	<sheet>horse</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="horse_fire_left">
+	<sheet>horse</sheet>
+	<desc length="9" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="horse_repair">
+	<sheet>horse</sheet>
+	<desc length="9" x="0" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="horse_punch_up">
+	<sheet>horse</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="horse_punch_down">
+	<sheet>horse</sheet>
+	<desc length="9" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="horse_teleport">
+	<sheet>horse</sheet>
+	<desc length="7" x="3" y="1"/>
+	<time>0.5</time>
+</anim>
+<anim name="horse_portrait">
+	<sheet>horse</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
 <!--
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////Weapons
+//////////////	Weapons
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 
+<!-- 
+*********************************************************************************************************
+                   DUNG TORPEDOES
+*********************************************************************************************************
+-->
 
 <animSheet name="dung_torpedoes_1" w="20" h="62" fw="20" fh="62">projectiles/dung_torpedoes_1.png</animSheet>
 <anim name="dung_torpedoes_1">
