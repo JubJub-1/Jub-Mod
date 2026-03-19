@@ -452,17 +452,17 @@ Decrease JubJub's Power Cooldown by 25%</desc>
 	<title>Dung Torpedoes</title>
 	<short>D. Torpedo</short>
 	<desc>Rockets laced with dinosaur dung, are the Sauropod's main weapons during space battles. They also appear to be incredibly precise.</desc>
-	<tooltip>Fires 3 missiles; does 2 damage each; pierces all shields.</tooltip>
+	<tooltip>Fires up to 3 missiles; does 2 damage each; pierces all shields.</tooltip>
 	<damage>2</damage>
 	<missiles>1</missiles>
 	<accuracyMod>80</accuracyMod>
-	<speed>50</speed>
+	<speed>25</speed>
 	<shots>1</shots>
 	<sp>10</sp>
 	<fireChance>3</fireChance>
 	<breachChance>3</breachChance>
 	<stunChance>4</stunChance>
-	<cooldown>15</cooldown>
+	<cooldown>5</cooldown>
 	<power>3</power>
 	<cost>60</cost>
 	<bp>6</bp>
@@ -484,6 +484,6 @@ Decrease JubJub's Power Cooldown by 25%</desc>
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>dung_torpedoes_2</weaponArt>
+	<weaponArt>chargemissile</weaponArt>
 	<iconImage>missile</iconImage>
 </weaponBlueprint>
