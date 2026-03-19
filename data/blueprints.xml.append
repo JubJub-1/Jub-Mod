@@ -230,7 +230,7 @@
 			</slot>
 		</shields>
 		<teleporter power="1" room="5" start="false" />
-		<weapons power="2" room="3" start="true" img="room_weapons_10">
+		<weapons power="3" room="3" start="true" img="room_weapons_10">
 			<slot>
 				<direction>up</direction>
 				<number>0</number>
@@ -245,7 +245,7 @@
 	</weaponList>
 	<droneList drones="3" count="2" />
 	<health amount="30" />
-	<maxPower amount="7" />
+	<maxPower amount="8" />
 	<!--crew is in hyperspace.xml-->
 	<mv-mapImage>map_icon_Dinosaur_Space_Ship</mv-mapImage>
 </shipBlueprint>
