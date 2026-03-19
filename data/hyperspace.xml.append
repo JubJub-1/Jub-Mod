@@ -244,7 +244,7 @@
 			<shootingSound>mantisSpit3</shootingSound>
 		</shootingSounds>
 		<powerEffect>
-			<cooldown>30</cooldown>
+			<cooldown>20</cooldown>
 			<req type="enemy">
 				<enemyInRoom/>
 			</req>
@@ -252,10 +252,11 @@
 			<powerSounds>
 				<powerSound>multiexplosion</powerSound>
 			</powerSounds>
-			<buttonText>BOMB</buttonText>
-			<tooltip>[COOLDOWN:30s DURATION:12s] Instantly divorces enemies in the room which stuns them for 5s. Crab cannot move during this time as he is finalising his paperwork. Lock and Load.</tooltip>
+			<buttonText>DIVORCE</buttonText>
+			<tooltip>[COOLDOWN:20s DURATION:12s] Instantly divorces enemies in the room which stuns them for 5s. Crab cannot move during this time as he is finalising his paperwork. Lock and Load.</tooltip>
 			<cooldownColor r="255" g="228" b="0"/>
 			<friendlyFire>false</friendlyFire>
+			<shipFriendlyFire>false</shipFriendlyFire>
 			<stun>5</stun>
 			<effectAnim>stun_bomb_detinate</effectAnim>
 			<animFrame>8</animFrame>
@@ -265,7 +266,6 @@
 				<finishSounds>
 					<finishSound>decloak</finishSound>
 				</finishSounds>
-				<damageMultiplier>1</damageMultiplier>
 				<canMove>false</canMove>
 				<snapToSlot>true</snapToSlot>
 				<validTarget>false</validTarget>
