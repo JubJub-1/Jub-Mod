@@ -240,7 +240,7 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="10" count="4">
-		<weapon name="BOMB_1" />
+		<weapon name="DUNG_TORPEDOES" />
 		<weapon name="LASER_HEAVY_1" />
 	</weaponList>
 	<droneList drones="3" count="2" />
