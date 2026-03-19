@@ -369,6 +369,26 @@
 	<desc length="7" x="3" y="1"/>
 	<time>0.5</time>
 </anim>
+<anim name="horse_type_right">
+	<sheet>horse</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>2</time>
+</anim>
+<anim name="horse_type_left">
+	<sheet>horse</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>2</time>
+</anim>
+<anim name="horse_type_up">
+	<sheet>soviet</sheet>
+	<desc horse="4" x="4" y="10" />
+	<time>2</time>
+</anim>
+<anim name="horse_type_down">
+	<sheet>soviet</sheet>
+	<desc horse="4" x="0" y="10" />
+	<time>2</time>
+</anim>
 <anim name="horse_portrait">
 	<sheet>horse</sheet>
 	<desc length="1" x="0" y="0"/>
