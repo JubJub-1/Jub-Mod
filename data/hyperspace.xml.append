@@ -219,6 +219,33 @@
 	</mod-append:race>
 
 
+<!-- 
+*********************************************************************************************************
+                   CRAB
+*********************************************************************************************************
+-->
+
+	<mod-append:race name="crab">
+		<controllable>true</controllable>
+		<maxHealth>100</maxHealth>
+		<moveSpeedMultiplier>1.5</moveSpeedMultiplier>
+		<damageMultiplier>2</damageMultiplier>
+		<repairSpeed>0.25</repairSpeed>
+		<fireRepairMultiplier>1</fireRepairMultiplier>
+		<fireDamageMultiplier>1</fireDamageMultiplier>
+		<healSpeed>2.0</healSpeed>
+		<animBase>mantis</animBase>
+			<deathSounds>
+			<deathSound>spiderDeath</deathSound>
+		</deathSounds>
+		<shootingSounds>
+			<shootingSound>mantisSpit1</shootingSound>
+			<shootingSound>mantisSpit2</shootingSound>
+			<shootingSound>mantisSpit3</shootingSound>
+		</shootingSounds>
+	</mod-append:race>
+
+
 </mod:findName>
 
 

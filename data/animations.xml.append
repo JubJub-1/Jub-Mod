@@ -390,6 +390,137 @@
 	<time>1</time>
 </anim>
 
+
+<!-- 
+*********************************************************************************************************
+                   CRAB
+*********************************************************************************************************
+-->
+
+<animSheet name="crab" w="350" h="525" fw="35" fh="35">people/crab_base.png</animSheet>
+<anim name="crab_clone">
+	<sheet>crab</sheet>
+	<desc length="6" x="2" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="crab_death_right">
+	<sheet>crab</sheet>
+	<desc length="7" x="0" y="8"/>
+	<time>1.2</time>
+</anim>
+<anim name="crab_death_left">
+	<sheet>crab</sheet>
+	<desc length="7" x="0" y="8"/>
+	<time>1.2</time>
+</anim>
+<anim name="crab_walk_down">
+	<sheet>crab</sheet>
+	<desc length="4" x="0" y="14"/>
+	<time>1.0</time>
+</anim>
+<anim name="crab_walk_right">
+	<sheet>crab</sheet>
+	<desc length="5" x="0" y="13"/>
+	<time>1.0</time>
+</anim>
+<anim name="crab_walk_up">
+	<sheet>crab</sheet>
+	<desc length="4" x="4" y="14"/>
+	<time>1.0</time>
+</anim>
+<anim name="crab_walk_left">
+	<sheet>crab</sheet>
+	<desc length="5" x="5" y="13"/>
+	<time>1.0</time>
+</anim>
+<anim name="crab_shoot_down">
+	<sheet>crab</sheet>
+	<desc length="4" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="crab_shoot_right">
+	<sheet>crab</sheet>
+	<desc length="4" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="crab_shoot_up">
+	<sheet>crab</sheet>
+	<desc length="4" x="4" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="crab_shoot_left">
+	<sheet>crab</sheet>
+	<desc length="4" x="4" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="crab_fire_down">
+	<sheet>crab</sheet>
+	<desc length="8" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="crab_fire_right">
+	<sheet>crab</sheet>
+	<desc length="7" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="crab_fire_up">
+	<sheet>crab</sheet>
+	<desc length="8" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="crab_fire_left">
+	<sheet>crab</sheet>
+	<desc length="7" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="crab_repair">
+	<sheet>crab</sheet>
+	<desc length="4" x="4" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="crab_punch_up">
+	<sheet>crab</sheet>
+	<desc length="8" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="crab_punch_down">
+	<sheet>crab</sheet>
+	<desc length="8" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="crab_teleport">
+	<sheet>crab</sheet>
+	<desc length="8" x="0" y="5"/>
+	<time>0.5</time>
+</anim>
+<anim name="crab_type_right">
+	<sheet>crab</sheet>
+	<desc length="4" x="0" y="2"/>
+	<time>1</time>
+</anim>
+<anim name="crab_type_left">
+	<sheet>crab</sheet>
+	<desc length="4" x="4" y="2"/>
+	<time>1</time>
+</anim>
+<anim name="crab_type_up">
+	<sheet>crab</sheet>
+	<desc length="4" x="4" y="1"/>
+	<time>1</time>
+</anim>
+<anim name="crab_type_down">
+	<sheet>crab</sheet>
+	<desc length="4" x="0" y="1"/>
+	<time>1</time>
+</anim>
+<anim name="crab_portrait">
+	<sheet>crab</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+
+
 <!--
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////

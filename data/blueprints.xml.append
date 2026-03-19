@@ -343,6 +343,13 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 
+
+<!-- 
+*********************************************************************************************************
+                   JUBJUB
+*********************************************************************************************************
+-->
+
 <crewBlueprint name="jubjub">
 	<desc>The Dinosaur Ambassador to the Moon (and subsequently the USSR).</desc>
 	<title>Dinosaur</title>
@@ -372,6 +379,12 @@
 </crewBlueprint>
 
 
+<!-- 
+*********************************************************************************************************
+                   SOVIET
+*********************************************************************************************************
+-->
+
 <crewBlueprint name="soviet">
 	<desc>A Soviet Cosmonaut from the 20th Century. They thrive on the dismantling of capitalist ideologies and are strongly against private property.</desc>
 	<title>Soviet Cosmonaut</title>
@@ -383,6 +396,12 @@
 	</powerList>
 </crewBlueprint>
 
+
+<!-- 
+*********************************************************************************************************
+                   HORSE
+*********************************************************************************************************
+-->
 
 <crewBlueprint name="horse">
 	<desc>A highly intelligent and articulate horse.</desc>
@@ -396,6 +415,25 @@
 	</powerList>
 </crewBlueprint>
 
+
+<!-- 
+*********************************************************************************************************
+                   CRAB
+*********************************************************************************************************
+-->
+
+<crewBlueprint name="crab">
+	<desc>A crafty and intelligent species originally from Earth.</desc>
+	<title>Crab</title>
+	<short>Crab</short>
+	<cost>30</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>0.25x repairs</power>
+		<power>2x combat damage, 1.5x movement speed</power>
+		<power>Heals at double speed</power>
+	</powerList>
+</crewBlueprint>
 
 <!-- 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
