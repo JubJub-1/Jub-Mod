@@ -87,8 +87,8 @@
 		<crewLimit>8</crewLimit>
         <customReactor maxLevel="30"/>
 		<crew>
-			<spider_weaver room="0" name="Crab"/>  <!--piloting-->
-			<pony_tamed room="2" name="Albert"/> <!--shields-->
+			<crab room="0" name="Crab"/>  <!--piloting-->
+			<horse room="2" name="Albert"/> <!--shields-->
 		</crew>
     </mod-append:customShip>
 
