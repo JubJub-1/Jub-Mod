@@ -349,11 +349,6 @@
 	<desc length="9" x="0" y="5"/>
 	<time>1.0</time>
 </anim>
-<anim name="horse_repair">
-	<sheet>horse</sheet>
-	<desc length="9" x="0" y="4"/>
-	<time>1.0</time>
-</anim>
 <anim name="horse_punch_up">
 	<sheet>horse</sheet>
 	<desc length="9" x="0" y="7"/>
@@ -366,28 +361,28 @@
 </anim>
 <anim name="horse_teleport">
 	<sheet>horse</sheet>
-	<desc length="7" x="3" y="1"/>
+	<desc length="7" x="9" y="1"/>
 	<time>0.5</time>
 </anim>
 <anim name="horse_type_right">
 	<sheet>horse</sheet>
-	<desc length="4" x="0" y="9" />
-	<time>2</time>
+	<desc length="4" x="2" y="6" />
+	<time>0.75</time>
 </anim>
 <anim name="horse_type_left">
 	<sheet>horse</sheet>
-	<desc length="4" x="4" y="9" />
-	<time>2</time>
+	<desc length="4" x="2" y="5" />
+	<time>0.75</time>
 </anim>
 <anim name="horse_type_up">
-	<sheet>soviet</sheet>
-	<desc horse="4" x="4" y="10" />
-	<time>2</time>
+	<sheet>horse</sheet>
+	<desc length="4" x="2" y="7" />
+	<time>0.75</time>
 </anim>
 <anim name="horse_type_down">
-	<sheet>soviet</sheet>
-	<desc horse="4" x="0" y="10" />
-	<time>2</time>
+	<sheet>horse</sheet>
+	<desc length="4" x="2" y="8" />
+	<time>0.75</time>
 </anim>
 <anim name="horse_portrait">
 	<sheet>horse</sheet>
