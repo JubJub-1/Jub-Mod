@@ -267,7 +267,7 @@
 
 <animSheet name="dung_torpedoes_2" w="308" h="56" fw="44" fh="56">weapon_jub/dung_torpedoes_2.png</animSheet>
 <weaponAnim name="dung_torpedoes_2">
-	<sheet>dung_torpedoes</sheet>
+	<sheet>dung_torpedoes_2</sheet>
 	<desc length="7" x="0" y="0"/>
 	<chargedFrame>5</chargedFrame>
 	<fireFrame>6</fireFrame>
