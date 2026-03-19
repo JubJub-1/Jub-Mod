@@ -265,7 +265,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 
-<animSheet name="dung_torpedoes_2" w="308" h="56" fw="44" fh="56">weapon_missile/dung_torpedoes_2.png</animSheet>
+<animSheet name="dung_torpedoes_2" w="308" h="56" fw="44" fh="56">weapon_jub/dung_torpedoes_2.png</animSheet>
 <weaponAnim name="dung_torpedoes_2">
 	<sheet>dung_torpedoes</sheet>
 	<desc length="7" x="0" y="0"/>
@@ -274,4 +274,10 @@
 	<firePoint  x="25" y="21"/>
 	<mountPoint x="9" y="35"/>
 </weaponAnim>
+
+<animSheet name="dung_torpedoes_1" w="32" h="80" fw="32" fh="80">projectiles_jub/dung_torpedoes_1.png</animSheet>
+<anim name="dung_torpedoes_1">
+	<sheet>dung_torpedoes_1</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
 </anim>
