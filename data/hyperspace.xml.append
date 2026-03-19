@@ -63,7 +63,7 @@
         <customReactor maxLevel="30"/>
 		<crew>
 			<jubjub room="0" name="JubJub"/>  <!--piloting-->
-			<human room="2"/> <!--shields-->
+			<human room="2" name="Lil' Dog"/> <!--shields-->
 		</crew>
     </mod-append:customShip>
 
@@ -243,6 +243,35 @@
 			<shootingSound>mantisSpit2</shootingSound>
 			<shootingSound>mantisSpit3</shootingSound>
 		</shootingSounds>
+		<powerEffect>
+			<cooldown>30</cooldown>
+			<req type="enemy">
+				<enemyInRoom/>
+			</req>
+			<jumpCooldown>full</jumpCooldown>
+			<powerSounds>
+				<powerSound>multiexplosion</powerSound>
+			</powerSounds>
+			<buttonText>BOMB</buttonText>
+			<tooltip>[COOLDOWN:30s DURATION:12s] Instantly divorces enemies in the room which stuns them for 5s. Crab cannot move during this time as he is finalising his paperwork. Lock and Load.</tooltip>
+			<cooldownColor r="255" g="228" b="0"/>
+			<friendlyFire>false</friendlyFire>
+			<stun>5</stun>
+			<effectAnim>stun_bomb_detinate</effectAnim>
+			<animFrame>8</animFrame>
+			<temporaryEffect>
+				<duration>12</duration>
+				<cooldownColor r="255" g="242" b="140"/>
+				<finishSounds>
+					<finishSound>decloak</finishSound>
+				</finishSounds>
+				<damageMultiplier>1</damageMultiplier>
+				<canMove>false</canMove>
+				<snapToSlot>true</snapToSlot>
+				<validTarget>false</validTarget>
+				<canRepair>false</canRepair>
+			</temporaryEffect>
+		</powerEffect>
 	</mod-append:race>
 
 
