@@ -104,7 +104,7 @@
 	<class>Dinosaur Space Ship</class>
 	<name>Diplomatic Roar</name>
 	unlock id="ship_PLAYER_SHIP_DINOSAUR_SPACE_SHIP_unlock"/>
-	<desc>This ship was used to transport Ambassador JubJub to the Moon, it is equipt with entirely peacekeeping measures...</desc>
+	<desc>This ship was used to transport Ambassador JubJub to the Moon, it is equipped with entirely peacekeeping measures...</desc>
 	<systemList>
 		<artillery power="1" room="14" start="true" weapon="ARTILLERY_MFK_2" img="room_artillery_3" />
 		<battery power="1" room="12" start="false" img="room_battery_15" />
@@ -170,6 +170,7 @@
 	<droneList drones="3" count="2" />
 	<health amount="30" />
 	<maxPower amount="7" />
+	<aug name="GREEN_SOUP" />
 	<!--crew is in hyperspace.xml-->
 	<mv-mapImage>map_icon_Dinosaur_Space_Ship</mv-mapImage>
 </shipBlueprint>
@@ -246,6 +247,7 @@
 	<droneList drones="3" count="2" />
 	<health amount="30" />
 	<maxPower amount="8" />
+	<aug name="DUNG_TORPEDOES" />
 	<!--crew is in hyperspace.xml-->
 	<mv-mapImage>map_icon_Dinosaur_Space_Ship</mv-mapImage>
 </shipBlueprint>
