@@ -367,22 +367,22 @@
 <anim name="horse_type_right">
 	<sheet>horse</sheet>
 	<desc length="4" x="2" y="6" />
-	<time>0.75</time>
+	<time>2</time>
 </anim>
 <anim name="horse_type_left">
 	<sheet>horse</sheet>
 	<desc length="4" x="2" y="5" />
-	<time>0.75</time>
+	<time>2</time>
 </anim>
 <anim name="horse_type_up">
 	<sheet>horse</sheet>
 	<desc length="4" x="2" y="7" />
-	<time>0.75</time>
+	<time>2</time>
 </anim>
 <anim name="horse_type_down">
 	<sheet>horse</sheet>
 	<desc length="4" x="2" y="8" />
-	<time>0.75</time>
+	<time>2</time>
 </anim>
 <anim name="horse_portrait">
 	<sheet>horse</sheet>
