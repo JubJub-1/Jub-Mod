@@ -265,8 +265,8 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 
-<animSheet name="dung_torpedoes" w="308" h="56" fw="44" fh="56">weapon_missile/dung_torpedoes.png</animSheet>
-<weaponAnim name="dung_torpedoes">
+<animSheet name="dung_torpedoes_2" w="308" h="56" fw="44" fh="56">weapon_missile/dung_torpedoes_2.png</animSheet>
+<weaponAnim name="dung_torpedoes_2">
 	<sheet>dung_torpedoes</sheet>
 	<desc length="7" x="0" y="0"/>
 	<chargedFrame>5</chargedFrame>

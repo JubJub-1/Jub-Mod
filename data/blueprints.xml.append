@@ -467,7 +467,7 @@ Decrease JubJub's Power Cooldown by 25%</desc>
 	<cost>60</cost>
 	<bp>6</bp>
 	<rarity>3</rarity>
-	<image>dung_torpedoes</image>
+	<image>dung_torpedoes_1</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
 		<sound>smallMissile2</sound>
@@ -483,6 +483,6 @@ Decrease JubJub's Power Cooldown by 25%</desc>
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>dung_torpedoes</weaponArt>
+	<weaponArt>dung_torpedoes_2</weaponArt>
 	<iconImage>missile</iconImage>
 </weaponBlueprint>
