@@ -1602,4 +1602,183 @@ I miss them. </text>
 </event>
 
 
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					FIND_SOVIET_SHIP
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<event name="FIND_SOVIET_SHIP">
+    <text>You arrive at the beacon looking for the distress call. It takes you a minute to realise the call is coming from a small shuttle that looks like something out of a history book.</text>
+    <choice>
+        <text>Attempt to contact them.</text>
+        <event>
+            <text>It appears that the ship does not have a two-way video link but connects to an audio line.
+
+Your translator flags the language as an Old Earth language, Russian.
+
+"Hello? Kan you help us? Ve arrre having engine trrrouble."</text>
+            <choice>
+                <text>Offer to assist them.</text>
+                <event load="SOVIET_SHIP_HELP"/>
+            </choice>
+            <choice>
+                <text>Ignore their request for help and leave.</text>
+                <event>
+                    <text>You turn your attention back to your own ship.</text>
+                    <choice>
+                        <text>Do something onboard the ship.</text>
+                        <event load="STORAGE_CHECK"/>
+                    </choice>
+                    <choice>
+                        <text>Do nothing.</text>
+                        <event/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="LIST_CREW_SLUG">
+                <text>(Slug) Mimic their accent and offer to assist them. "Aw,  someone having engine trrrouble? Ve arrre happy to help"</text>
+                <event>
+                    <text>"You sound like Amerrrikan spy.."</text>
+                    <choice>
+                        <text>That's right, we're Spies.</text>
+                        <event>
+                            <text>The voice on the other end of the line shouts "You vill never steal ourrr secrrrets!" before their ship explodes, leaving nothing but a few pieces of scrap.
+                            
+(+10 Scrap)</text>
+                            <item_modify>
+                                <item type="scrap" min="+10" max="+10"/>
+                            </item_modify>
+                        </event>
+                    </choice>
+                    <choice>
+                        <text>We're clearly not Spies.</text>
+                        <event>
+                            <text>The voice on the other line seems to relax a little, they seem convinced.</text>
+                            <event load="SOVIET_SHIP_HELP"/>
+                        </event>
+                    </choice>
+                    <choice req="LIST_CREW_SLUG">
+                        <text>(Slug) Ahaha, I bet  Amerrrikans haven't made it to space yet. Ve arrre herrre to help.</text>
+                            <event>
+                                <text>The voice on the other end of the line seems to relax a little.</text>
+                                <event load="SOVIET_SHIP_HELP"/>
+                            </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="sensors" lvl="2" hidden="true">
+                <text>(Sensors LV.2) Scan their ship</text>
+                <event>
+                    <text>The ship appears to be an Old Earth Spacecraft with crew from that era. They have no FTL drive and are working with a simple rocket engine.</text>
+                    <choice>
+                        <text>Offer to assist them.</text>
+                        <event load="SOVIET_SHIP_HELP"/>
+                    </choice>
+                    <choice>
+                        <text>Ignore their request for help and leave.</text>
+                        <event>
+                            <text>You turn your attention back to your own ship.</text>
+                            <choice>
+                                <text>Do something onboard the ship.</text>
+                                <event load="STORAGE_CHECK"/>
+                            </choice>
+                            <choice>
+                                <text>Do nothing.</text>
+                                <event/>
+                            </choice>
+                        </event>
+                    </choice>
+                    <choice>
+                        <text>Try to steal some scrap from the hull of their ship, it doesn't seem like their sensors would pick you up.</text>
+                        <event>
+                            <text>Their hull is very fragile, attempting to collect scrap caused their ship to collapse. 
+
+(+15 Scrap)</text>
+                            <item_modify>
+                                <item type="scrap" min="+15" max="+15"/>
+                            </item_modify>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="soviet" hidden="true">
+                <text>(Soviet) "I rrremember zis, you arrre us!"</text>
+                <event>
+                    <text>"You.. arrre us..? Frrrom another time? Zen you know ourrr strrruggles, please help us!"</text>
+                    <choice>
+                        <text>"We can help you!"</text>
+                        <event load="SOVIET_SHIP_HELP"/>
+                    </choice>
+                    <choice>
+                        <text>"We don't have time for this, we've already helped you once."</text>
+                        <event>
+                            <text>"I see yourrr goodvill has its limits.. verrry vell Kaptain"</text>
+                            <choice>
+                                <text>Continue...</text>
+                                <event>
+                                    <text>You turn your attention back to your own ship</text>
+                                    <choice>
+                                        <text>Do something onboard the ship.</text>
+                                        <event load="STORAGE_CHECK"/>
+                                    </choice>
+                                    <choice>
+                                        <text>Do nothing.</text>
+                                        <event/>
+                                    </choice>
+                                </event>
+                            </choice>
+                        </event>
+                    </choice>
+                    <choice req="soviet" hidden="true">
+                        <text>(Soviet) "Of kourrrse ve vill help you."</text>
+                        <event load="SOVIET_SHIP_HELP"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice req="jubjub" hidden="true">
+                <text>(JubJub) "Hello comrades! Happy to help!"</text>
+                    <event load="JUBJUB_COMRADE"/>
+            </choice>
+        </event>
+    </choice>
+    <choice>
+        <text>Leave.</text>
+        <event>
+            <text>You turn your attention back to your own ship.</text>
+            <choice>
+                <text>Do something onboard the ship.</text>
+                <event load="STORAGE_CHECK"/>
+            </choice>
+            <choice>
+                <text>Do nothing.</text>
+                <event/>
+            </choice>
+        </event>
+    </choice>
+</event>
+
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					SOVIET_SHIP_HELP
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<event name="SOVIET_SHIP_HELP">
+    <text>TEST</text>
+</event>
+
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					JUBJUB_COMRADE
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<event name="JUBJUB_COMRADE">
+    <text>TEST2</text>
+</event>
+
+
 </FTL>
