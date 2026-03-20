@@ -2,7 +2,7 @@
 <animSheet name="potential_small_thruster" w="293" h="340" fw="293" fh="340">thrusters/Dinosaur_Space_Ship_thrusters.png</animSheet>
 <anim name="potential_small_thruster">
 	<sheet>potential_small_thruster</sheet>
-	<desc length="1" x="0" y="0"/>
+	<desc length="4" x="0" y="0"/>
 	<time>2</time>
 </anim>
 
