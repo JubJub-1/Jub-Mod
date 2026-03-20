@@ -483,6 +483,21 @@ Decrease JubJub's Power Cooldown by 25%</desc>
 </augBlueprint>
 
 
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+STRANGE_SATELLITE
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+
+<augBlueprint name="STRANGE_SATELLITE">
+	<title>Strange Satellite</title>
+	<desc>A strange satelite found floating in space. It looks old and out of place in your hold.</desc>
+	<cost>15</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
 
 <!-- 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
