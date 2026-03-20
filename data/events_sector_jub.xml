@@ -1609,7 +1609,7 @@ I miss them. </text>
 -->
 
 <event name="FIND_SOVIET_SHIP" unique="true">
-    <ship load="PLAYER_SHIP_SOVIET_LUNAR" hostile="false"/>
+    <ship load="NONPLAYER_SHIP_SOVIET_LUNAR" hostile="false"/>
     <text>You arrive at the beacon looking for the distress call. It takes you a minute to realise the call is coming from a small shuttle that looks like something out of a history book.</text>
     <choice>
         <text>Attempt to contact them.</text>
