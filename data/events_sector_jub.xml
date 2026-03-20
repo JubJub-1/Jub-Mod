@@ -96,7 +96,8 @@
         <color r="95" g="103" b="45" a="1.0"/>
         <unvisitedTooltip>This is the Moon (JUBJUB is here!!!)</unvisitedTooltip>
     </beaconType>
-    <img planet="PLANET_POPULATED_MOON_JUB"/>
+    <!-- <img planet="PLANET_POPULATED_MOON_JUB"/> -->
+    <img back="MOON_STARS_JUB" planet="PLANET_POPULATED_MOON_JUB"/>
 	<text>You've discovered a small celestial body that seems to be very familar, although you're not normally this close. It's Luna, more often referred to as The Moon: Earth's only natural satellite.</text>
     <choice hidden="true">
 		<text>Land on The Moon.</text>
