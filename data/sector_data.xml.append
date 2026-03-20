@@ -1,5 +1,5 @@
 <!--ZONES:
-S1 (0): Droppoint                 
+S1 (0): Droppoint
 S2 (1): Safe zone                maxSector="4"
 S3-5 (2-4): Generic Sectors      minSector="2" maxSector="4"
 S4-7 (3-6): Safe Unique Sectors  minSector="3"
@@ -28,7 +28,7 @@ JUB SECTOR
 	<trackList>
 		<track>civilian</track>
 	</trackList>
-	<rarityList> 
+	<rarityList>
 		<!--human-->
 		<blueprint name="human" rarity="0"/>
 		<blueprint name="human_medic" rarity="0"/>
@@ -85,20 +85,20 @@ JUB SECTOR
 	<!--(MUST ADD UP TO AT LEAST 24)-->
 	<event name="MV_TRAVELER" min="1" max="1"/>
 	<event name="SYLVAN_CHANCE" min="0" max="1"/>
-	
-    <!-- <event name="SOVIET_LUNAR_QUEST" min="1" max="1"/> -->
+
+    <event name="FIND_SOVIET_SHIP" min="1" max="1"/>
 	<event name="JUBJUB_QUEST" min="1" max="1"/>
 
 	<!-- <event name="OUTPOST_FACTION_SPAWNER" min="0" max="1"/> -->
 	<!-- <event name="STORELIST_JUB" min="2" max="3"/> -->
-	
+
 	<!-- <event name="ITEMS_JUB_UNIQUE" min="3" max="4"/> -->
 	<!-- <event name="NEUTRAL_JUB_UNIQUE" min="4" max="5"/> -->
 	<!-- <event name="DISTRESS_JUB" min="1" max="2"/> -->
 	<!-- <event name="QUESTS_JUB" min="1" max="1"/> -->
-	
+
 	<!-- <event name="HOSTILE_JUB" min="4" max="6"/> -->
-	
+
 	<event name="PIRACY_LIST" min="0" max="20"/>
 	<event name="FILLER_LIST" min="5" max="20"/>
 </sectorDescription>
