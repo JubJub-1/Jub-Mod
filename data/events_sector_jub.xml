@@ -1503,6 +1503,7 @@ I miss them. </text>
             <choice hidden="true" req="soviet">
                 <text>(Soviet) "We know the landing coordinates, we can help you! Welcome aboard Comrade!"</text>
                 <event>
+                    <text>Let's do this comrades!</text>
                     <quest event="JUB_EARTH_QUEST"/>
                     <crewMember amount="1" class="jubjub">JubJub</crewMember>
                     <choice hidden="true">
