@@ -2030,7 +2030,49 @@ As you approach the coordinates that the Soviet's provided, your radio crackles 
 -->
 
 <event name="JUB_TRANSLATED_MESSAGE">
-    <text>JUB_TRANSLATED_MESSAGE</text>
+    <text>Your translator kicks in as the voice repeats its message,
+
+"You arrre in USSR airrrspace, please justify yourrr existence."</text>
+    <choice>
+        <text>We mean you no harm. We are here to return your crew.
+
+Zis good news. Please land in designated arrrea and ve vill grrreet you in perrrson.</text>
+        <event load="JUB_EARTH_LANDING"/>
+    </choice>
+    <choice>
+        <text>That is none of your business.</text>
+        <event>
+            <text>The comms shut off and you hear warning sounds as several missiles head in your direction.</text>
+            <damage amount="-2" system="random" effect="breach"/>
+            <damage amount="-2" system="random" effect="breach"/>
+            <damage amount="-2" system="random" effect="breach"/>
+            <damage amount="-2" system="random" effect="breach"/>
+            <damage amount="-2" system="random" effect="breach"/>
+            <damage amount="10"/>
+            <choice>
+                <text>Do something onboard the ship.</text>
+                <event load="STORAGE_CHECK"/>
+            </choice>
+            <choice>
+                <text>Do nothing.</text>
+                <event/>
+            </choice>
+        </event>
+    </choice>
+    <choice>
+        <text>Ignore the message and return to orbit.</text>
+        <event>
+            <text>You turn your attention back to your own ship.</text>
+            <choice>
+                <text>Do something onboard the ship.</text>
+                <event load="STORAGE_CHECK"/>
+            </choice>
+            <choice>
+                <text>Do nothing.</text>
+                <event/>
+            </choice>
+        </event>
+    </choice>
 </event>
 
 
