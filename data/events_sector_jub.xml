@@ -2034,10 +2034,14 @@ As you approach the coordinates that the Soviet's provided, your radio crackles 
 
 "You arrre in USSR airrrspace, please justify yourrr existence."</text>
     <choice>
-        <text>We mean you no harm. We are here to return your crew.
-
-Zis good news. Please land in designated arrrea and ve vill grrreet you in perrrson.</text>
-        <event load="JUB_EARTH_LANDING"/>
+        <text>We mean you no harm. We are here to return your crew.</text>
+        <event>
+            <text>Zis good news. Please land in designated arrrea and ve vill grrreet you in perrrson.</text>
+            <choice>
+                <text>Continue...</text>
+                <event load="JUB_EARTH_LANDING"/>
+            </choice>
+        </event>
     </choice>
     <choice>
         <text>That is none of your business.</text>
