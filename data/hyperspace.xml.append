@@ -13,7 +13,11 @@
 -->
 
 <mod:findLike type="ships">
-    <mod-append:ship name="PLAYER_SHIP_SOVIET_LUNAR" b="false" c="false" />
+    <mod-append:ship name="PLAYER_SHIP_SOVIET_LUNAR" b="false" c="false">
+		<unlock variant="a" silent="false">
+			<type>4</type>
+		</unlock>
+	</mod-append:ship>
     <mod:findLike type="shipOrder">
         <mod-append:ship>PLAYER_SHIP_SOVIET_LUNAR</mod-append:ship>
     </mod:findLike>
@@ -35,20 +39,23 @@
 <mod:findLike type="ships">
 
     <mod-append:ship name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP" b="true" c="true" secret="true">
+		<unlock variant="a" silent="false">
+			<type>4</type>
+		</unlock>
 		<unlock variant="b" silent="false">
-					<type>1</type>
-					<shipReq>PLAYER_SHIP_DINOSAUR_SPACE_SHIP</shipReq>
-					<value>5</value>
-				</unlock>
-				<unlock variant="c" silent="false">
-					<type>1</type>
-					<shipReq>PLAYER_SHIP_DINOSAUR_SPACE_SHIP_2</shipReq>
-					<value>5</value>
-				</unlock>
-				<unlock variant="c" silent="false">
-					<type>2</type>
-					<shipReq>PLAYER_SHIP_DINOSAUR_SPACE_SHIP</shipReq>
-				</unlock>
+			<type>1</type>
+			<shipReq>PLAYER_SHIP_DINOSAUR_SPACE_SHIP</shipReq>
+			<value>5</value>
+		</unlock>
+		<unlock variant="c" silent="false">
+			<type>1</type>
+			<shipReq>PLAYER_SHIP_DINOSAUR_SPACE_SHIP_2</shipReq>
+			<value>5</value>
+		</unlock>
+		<unlock variant="c" silent="false">
+			<type>2</type>
+			<shipReq>PLAYER_SHIP_DINOSAUR_SPACE_SHIP</shipReq>
+		</unlock>
 	</mod-append:Ship>
 
     <mod:findLike type="shipOrder">
