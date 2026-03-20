@@ -1880,11 +1880,7 @@ One of us vill kome vith you, other vill pilot rrrocket back to Earrrth, it  too
                 <text>Blast this ship apart.</text>
                 <event> <!-- Perhaps "<destroyed>" will work here? -->
                     <enemyDamage amount="50"/>
-                    <text>(Ship Explodes)
-
-JubJub walks over to you, "You didn't have to do that! I can't continue to work with you." He then proceeds to put on his space suit before hopping in the airlock.
-
-(JubJub leaves your crew)</text>
+                    <text> JubJub walks over to you, "You didn't have to do that! I can't continue to work with you." He then proceeds to put on his space suit before hopping in the airlock.</text>
                     <removeCrew class="jubjub">
                         <clone>false</clone>
                         <text>You cannot clone your crew, as they are not dead.</text>
