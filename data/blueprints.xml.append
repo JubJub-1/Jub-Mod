@@ -103,7 +103,7 @@
 <shipBlueprint name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP" layout="Dinosaur_Space_Ship_a" img="Dinosaur_Space_Ship_a">
 	<class>Dinosaur Space Ship</class>
 	<name>Diplomatic Roar</name>
-	unlock id="ship_PLAYER_SHIP_DINOSAUR_SPACE_SHIP_unlock"/>
+	<unlock id="ship_PLAYER_SHIP_DINOSAUR_SPACE_SHIP_unlock"/>
 	<desc>This ship was used to transport Ambassador JubJub to the Moon, it is equipped with entirely peacekeeping measures...</desc>
 	<systemList>
 		<artillery power="1" room="14" start="true" weapon="ARTILLERY_MFK_2" img="room_artillery_3" />

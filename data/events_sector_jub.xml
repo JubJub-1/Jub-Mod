@@ -2190,6 +2190,7 @@ JubJub looks to you for approval.</text>
                 <text>Let JubJub stay with Brezhnev.</text>
                 <event>
                     <text>JubJub looks at you gratefully before saying, "Thank you dear friend. This action will not be forgotten. To aid you in your mission, take these blueprints to my ship. I have no need for them now."</text>
+                    <unlockCustomShip silent="false">ship_PLAYER_SHIP_DINOSAUR_SPACE_SHIP_unlock</unlockCustomShip>
                     <removeCrew class="jubjub">
                         <clone>false</clone>
                         <text>You cannot clone your crew, as they are not dead.</text>
