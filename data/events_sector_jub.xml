@@ -1939,4 +1939,118 @@ One of us vill kome vith you, other vill pilot rrrocket back to Earrrth, it  too
 </event>
 
 
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					JUB_EARTH_QUEST
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<event name="JUB_EARTH_QUEST">
+    <text>As you approach the planet that is all too familiar to you from the history books, you hear a slow but rhythmic beeping from your radio.</text>
+    <choice>
+        <text>Approach the surface of the planet.</text>
+        <event>
+            <text>(Scene change to surface of the Earth) As you enter Earth's atmosphere it becomes clear that this is not the Earth that you have learned about. There is something missing. The Federation shipyards do not exist, the technology that you deem essential does not seem to exist. This is Earth from 1968. 
+
+As you approach the coordinates that the Soviet's provided, your radio crackles to life:
+
+"Вы находитесь в воздушном пространстве СССР, пожалуйста, обоснуйте своё присутствие."</text>
+            <choice>
+                <text>"Err, Hello?"</text>
+                <event load="JUB_TRANSLATED_MESSAGE"/>
+            </choice>
+            <choice>
+                <text>Tap your translator to see if it does anything.</text>
+                <event load="JUB_TRANSLATED_MESSAGE"/>
+            </choice>
+            <choice req="jubjub" hidden="true">
+                <text>(JubJub) Hello Comrade!</text>
+                <event>
+                    <text>Komrrrade? Ve do not rrrekognise you. Please land in designated arrrea and ve vill grrreet you in perrrson.</text>
+                    <event load="JUB_EARTH_LANDING"/>
+                </event>
+            </choice>
+            <choice req="soviet" hidden="true">
+                <text>(Soviet) Мы — экипаж «Зонд-5», прибыли на инструктаж.</text>
+                <event>
+                    <text>Your translator kicks in.
+
+"Ah, velkome back! Ve have been vaiting to hearrr frrrom you. Please land in designated arrrea and ve vill grrreet you in perrrson."</text>
+                    <choice>
+                        <text>Continue...</text>
+                        <event load="JUB_EARTH_LANDING"/>
+                    </choice>
+                </event>
+            </choice>
+            <choice>
+                <text>(Sputnik) We found this sattelite, does it belong to you?</text>
+                <event load="JUB_EARTH_SPUTNIK"/>
+            </choice>
+            <choice>
+                <text>Leave.</text>
+                <event>
+                    <text>You turn your attention back to your own ship.</text>
+                    <choice>
+                        <text>Do something onboard the ship.</text>
+                        <event load="STORAGE_CHECK"/>
+                    </choice>
+                    <choice>
+                        <text>Do nothing.</text>
+                        <event/>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice>
+        <text>Leave.</text>
+        <event>
+            <text>You turn your attention back to your own ship.</text>
+            <choice>
+                <text>Do something onboard the ship.</text>
+                <event load="STORAGE_CHECK"/>
+            </choice>
+            <choice>
+                <text>Do nothing.</text>
+                <event/>
+            </choice>
+        </event>
+    </choice>
+</event>
+
+
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					JUB_TRANSLATED_MESSAGE
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<event name="JUB_TRANSLATED_MESSAGE">
+    <text>JUB_TRANSLATED_MESSAGE</text>
+</event>
+
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					JUB_EARTH_LANDING
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<event name="JUB_EARTH_LANDING">
+    <text>JUB_EARTH_LANDING</text>
+</event>
+
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					JUB_EARTH_SPUTNIK
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<event name="JUB_EARTH_SPUTNIK">
+    <text>JUB_EARTH_SPUTNIK</text>
+</event>
+
+
 </FTL>
