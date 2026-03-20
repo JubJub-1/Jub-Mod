@@ -2328,7 +2328,7 @@ JubJub looks to you for approval.</text>
             </choice>
         </event>
     </choice>
-    <choice>
+    <choice hidden="true">
         <text>Take it on board.</text>
         <event>
             <text>You add the strange sattelite to your hold</text>
