@@ -1868,7 +1868,69 @@ One of us vill kome vith you, other vill pilot rrrocket back to Earrrth, it  too
 -->
 
 <event name="JUBJUB_COMRADE">
-    <text>TEST2</text>
+    <text>"Komrrrade? You arrre Soviet?"</text>
+    <choice>
+        <text>I'm not a Soviet! How dare you!</text>
+        <event>
+            <text>JubJub looks at you dissaprovingly as the ship responds
+
+"Sorrry, ve did not mean to offend you"</text>
+            <chocie>
+                <text>Blast this ship apart.</text>
+                <event> <!-- Perhaps "<destroyed>" will work here? -->
+                    <text>(Ship Explodes)
+
+JubJub walks over to you, "You didn't have to do that! I can't continue to work with you." He then proceeds to put on his space suit before hopping in the airlock.
+
+(JubJub leaves your crew)</text>
+                    <removeCrew class="jubjub">
+                        <clone>false</clone>
+                        <text>You cannot clone your crew, as they are not dead.</text>
+                    </removeCrew>
+                </event>
+            </chocie>
+            <choice>
+                <text>Leave.</text>
+                <event>
+                    <text>You turn your attention back to your own ship.</text>
+                    <choice>
+                        <text>Do something onboard the ship.</text>
+                        <event load="STORAGE_CHECK"/>
+                    </choice>
+                    <choice>
+                        <text>Do nothing.</text>
+                        <event/>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice>
+        <text>We are froma different time but we are happy to help!</text>
+        <event load="SOVIET_SHIP_HELP"/>
+    </choice>
+    <choice req="jubjub" hidden="true">
+        <text>(JubJub) In an uncanny Sean Connory accent, "Give me a ping, Vasily. One ping only, please"</text>
+        <event>
+            <text>"You know Vasily, legendarrry submarrrine sonarrr officer?"</text>
+            <choice>
+                <text>I have no idea what you're talking about but we're happy to help.</text>
+                <event load="SOVIET_SHIP_HELP"/>
+            </choice>
+            <choice req="jubjub" hidden="true">
+                <text>(JubJub) "Once more, we play our dangerous game, a game of chess against our old adversary - The American Navy. For forty years, your fathers before you and your older brothers played this game and played it well. But today the game is different. We have the advantage"</text>
+                <event>
+                    <text>You hear laughter from the other end of the line. 
+
+"I like zis one, you arrre funny."</text>
+                    <choice>
+                        <text>Continue...</text>
+                        <event load="SOVIET_SHIP_HELP"/>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
 </event>
 
 
