@@ -2244,7 +2244,65 @@ JubJub looks to you for approval.</text>
 -->
 
 <event name="JUB_EARTH_SPUTNIK">
-    <text>JUB_EARTH_SPUTNIK</text>
+    <text>Your translator kicks in, "Ah da! Zat ourrrs. Please rrreturrrn it to us.</text>
+    <choice>
+        <text>Return the sattelite.</text>
+        <event>
+            <text>"Zank you! Take schematics forrr yourrr trrrouble."
+
+(Added Sputnik Drone)</text>
+            <choice>
+                <text>Do something onboard the ship.</text>
+                <event load="STORAGE_CHECK"/>
+            </choice>
+            <choice>
+                <text>Do nothing.</text>
+                <event/>
+            </choice>
+        </event>
+    </choice>
+    <choice>
+        <text>"It's ours now!"</text>
+        <event>
+            <text>"Zis not rrrequest, rrreturrrn  sattelite now orrr face konsequences."</text>
+            <choice>
+                <text>Return the sattelite.</text>
+                <event>
+                    <text>"Zank you! Take schematics forrr yourrr trrrouble."
+
+(Added Sputnik Drone)</text>
+                    <choice>
+                        <text>Do something onboard the ship.</text>
+                        <event load="STORAGE_CHECK"/>
+                    </choice>
+                    <choice>
+                        <text>Do nothing.</text>
+                        <event/>
+                    </choice>
+                </event>
+            </choice>
+            <choice>
+                <text>"You are not getting this sattelite."</text>
+                <event>
+                    <text>The comms shut off and you hear warning sounds as several missiles head in your direction.</text>
+                    <damage amount="-2" system="random" effect="breach"/>
+                    <damage amount="-2" system="random" effect="breach"/>
+                    <damage amount="-2" system="random" effect="breach"/>
+                    <damage amount="-2" system="random" effect="breach"/>
+                    <damage amount="-2" system="random" effect="breach"/>
+                    <damage amount="10"/>
+                    <choice>
+                        <text>Do something onboard the ship.</text>
+                        <event load="STORAGE_CHECK"/>
+                    </choice>
+                    <choice>
+                        <text>Do nothing.</text>
+                        <event/>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
 </event>
 
 
