@@ -1695,7 +1695,7 @@ Your translator flags the language as an Old Earth language, Russian.
                             </choice>
                         </event>
                     </choice>
-                    <choice>
+                    <choice hidden="true">
                         <text>Try to steal some scrap from the hull of their ship, it doesn't seem like their sensors would pick you up.</text>
                         <event>
                             <text>Their hull is very fragile, attempting to collect scrap caused their ship to collapse. 
@@ -1800,7 +1800,7 @@ They offer you some scrap in return.
 "One of us vill kome vith you, other vill pilot rrrocket back to Earrrth, it  too valuable to leave forrr Amerrrikans to kapturrre."
 
 (Soviet joins your Crew)</text>
-                    <!-- <crewMember amount="1" class="soviet"></crewMember> -->
+                    <crewMember amount="1" class="soviet"></crewMember>
                 </event>
             </choice>
             <choice hidden="true">
@@ -1811,7 +1811,7 @@ They offer you some scrap in return.
 One of us vill kome vith you, other vill pilot rrrocket back to Earrrth, it  too valuable to leave forrr Amerrrikans to kapturrre."
 
 (Soviet joins your Crew)</text>
-                    <!-- <crewMember amount="1" class="soviet"></crewMember> -->
+                    <crewMember amount="1" class="soviet"></crewMember>
                 </event>
             </choice>
         </event>
