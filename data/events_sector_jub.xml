@@ -92,7 +92,7 @@
 -->
 
 <event name="JUBJUB_QUEST" unique="true">
-    <beaconType id="map_icon_jubjub_quest" global="true">
+    <beaconType id="map_icon_quest" global="true">
         <color r="95" g="103" b="45" a="1.0"/>
         <unvisitedTooltip>This is the Moon (JUBJUB is here!!!)</unvisitedTooltip>
     </beaconType>
@@ -140,7 +140,7 @@
 -->
 
 <event name="JUBJUB_MOON" unique="false">
-    <beaconType id="map_icon_jubjub_quest" global="true">
+    <beaconType id="map_icon_quest" global="true">
         <color r="95" g="103" b="45" a="1.0"/>
         <unvisitedTooltip>This is the Moon (JUBJUB is here!!!)</unvisitedTooltip>
     </beaconType>
@@ -1609,7 +1609,7 @@ I miss them. </text>
 -->
 
 <event name="FIND_SOVIET_SHIP" unique="true">
-    <beaconType id="map_icon_soviet_quest" global="true">
+    <beaconType id="map_icon_quest" global="true">
         <color r="95" g="103" b="45" a="1.0"/>
         <unvisitedTooltip>A strange flashing light shows up on your sensors here</unvisitedTooltip>
     </beaconType>
