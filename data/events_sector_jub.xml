@@ -1985,7 +1985,7 @@ As you approach the coordinates that the Soviet's provided, your radio crackles 
                     </choice>
                 </event>
             </choice>
-            <choice>
+            <choice req="STRANGE_SATELLITE" hidden="true">
                 <text>(Sputnik) We found this sattelite, does it belong to you?</text>
                 <event load="JUB_EARTH_SPUTNIK"/>
             </choice>
@@ -2180,8 +2180,6 @@ You are invited into the cars and driven to a large fortified complex. Inside yo
             </choice>
         </event>
     </choice>
-
-
     <choice req="jubjub" hidden="true">
         <text>(JubJub) JubJub comes forward and explains his story.</text>
         <event>
