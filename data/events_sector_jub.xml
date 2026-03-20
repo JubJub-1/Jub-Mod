@@ -1967,7 +1967,10 @@ As you approach the coordinates that the Soviet's provided, your radio crackles 
                 <text>(JubJub) Hello Comrade!</text>
                 <event>
                     <text>Komrrrade? Ve do not rrrekognise you. Please land in designated arrrea and ve vill grrreet you in perrrson.</text>
-                    <event load="JUB_EARTH_LANDING"/>
+                    <choice>
+                        <text>Continue...</text>
+                        <event load="JUB_EARTH_LANDING"/>
+                    </choice>
                 </event>
             </choice>
             <choice req="soviet" hidden="true">
