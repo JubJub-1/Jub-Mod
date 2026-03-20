@@ -1655,6 +1655,7 @@ Your translator flags the language as an Old Earth language, Russian.
                             <item_modify>
                                 <item type="scrap" min="+10" max="+10"/>
                             </item_modify>
+                            <enemyDamage amount="50"/>
                         </event>
                     </choice>
                     <choice>
@@ -1710,6 +1711,7 @@ Your translator flags the language as an Old Earth language, Russian.
                             <item_modify>
                                 <item type="scrap" min="+15" max="+15"/>
                             </item_modify>
+                            <enemyDamage amount="50"/>
                         </event>
                     </choice>
                 </event>
