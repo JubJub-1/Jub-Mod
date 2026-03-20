@@ -2306,4 +2306,45 @@ JubJub looks to you for approval.</text>
 </event>
 
 
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					JUB_SPACE_SPUTNIK
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<event name="JUB_SPACE_SPUTNIK" unique="true">
+    <img back="MOON_STARS_JUB" planet="NONE"/>
+    <text>You come across a strange sattelite floating in space.</text>
+    <choice>
+        <text>Leave it alone.</text>
+        <event>
+            <choice>
+                <text>Do something onboard the ship.</text>
+                <event load="STORAGE_CHECK"/>
+            </choice>
+            <choice>
+                <text>Do nothing.</text>
+                <event/>
+            </choice>
+        </event>
+    </choice>
+    <choice>
+        <text>Take it on board.</text>
+        <event>
+            <text>You add the strange sattelite to your hold
+
+(Strange satellite augment added)</text>
+            <choice>
+                <text>Do something onboard the ship.</text>
+                <event load="STORAGE_CHECK"/>
+            </choice>
+            <choice>
+                <text>Do nothing.</text>
+                <event/>
+            </choice>
+        </event>
+    </choice>
+</event>
+
+
 </FTL>
