@@ -2249,6 +2249,7 @@ JubJub looks to you for approval.</text>
             <text>"Zank you! Take schematics forrr yourrr trrrouble."
 
 (Added Sputnik Drone)</text>
+            <remove name="STRANGE_SATELLITE"/>
             <choice>
                 <text>Do something onboard the ship.</text>
                 <event load="STORAGE_CHECK"/>
@@ -2269,6 +2270,7 @@ JubJub looks to you for approval.</text>
                     <text>"Zank you! Take schematics forrr yourrr trrrouble."
 
 (Added Sputnik Drone)</text>
+                    <remove name="STRANGE_SATELLITE"/>
                     <choice>
                         <text>Do something onboard the ship.</text>
                         <event load="STORAGE_CHECK"/>
