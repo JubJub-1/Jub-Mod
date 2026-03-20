@@ -90,18 +90,18 @@ JUB SECTOR
 	<event name="JUBJUB_QUEST" min="1" max="1"/>
 	<event name="JUB_SPACE_SPUTNIK" min="0" max="1"/>
 
-	<!-- <event name="OUTPOST_FACTION_SPAWNER" min="0" max="1"/> -->
-	<!-- <event name="STORELIST_JUB" min="2" max="3"/> -->
-
-	<!-- <event name="ITEMS_JUB_UNIQUE" min="3" max="4"/> -->
-	<!-- <event name="NEUTRAL_JUB_UNIQUE" min="4" max="5"/> -->
-	<!-- <event name="DISTRESS_JUB" min="1" max="2"/> -->
-	<!-- <event name="QUESTS_JUB" min="1" max="1"/> -->
-
-	<!-- <event name="HOSTILE_JUB" min="4" max="6"/> -->
-
-	<event name="PIRACY_LIST" min="0" max="20"/>
-	<event name="FILLER_LIST" min="5" max="20"/>
+	<event name="OUTPOST_FACTION_SPAWNER" min="0" max="1"/>
+	<event name="STORELIST_SECTOR" min="2" max="3"/>
+	
+	<event name="ITEMS_SECTOR" min="3" max="4"/>
+	<event name="NEUTRAL_SECTOR" min="4" max="5"/>
+	<event name="DISTRESS_SECTOR" min="1" max="2"/>
+	<event name="QUESTS_SECTOR" min="1" max="1"/>
+	
+	<event name="HOSTILE_SECTOR" min="4" max="6"/>
+	
+	<event name="PIRACY_LIST" min="0" max="2"/>
+	<event name="FILLER_LIST" min="5" max="5"/>
 </sectorDescription>
 
 
