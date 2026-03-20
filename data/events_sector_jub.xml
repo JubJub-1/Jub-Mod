@@ -2087,7 +2087,153 @@ As you approach the coordinates that the Soviet's provided, your radio crackles 
 -->
 
 <event name="JUB_EARTH_LANDING">
-    <text>JUB_EARTH_LANDING</text>
+    <text>As you land you see a line of cars with small red flags with a Hammer and Sickle flying at the front. 
+
+You are invited into the cars and driven to a large fortified complex. Inside you are greeted by none other than Leonid Brezhnev himself. 
+
+"Greetings Comrades. I am very pleased to meet you. I hope you have travelled well?"</text>
+    <choice>
+        <text>Explain your mission to him.</text>
+        <event>
+            <text>Brezhnev listens intently before saying, "That does indeed sound like quite the task. I wish you the very best."
+
+"While you are out there, saving the.. Multiverse?, would you mind helping to spread and share the Communist Ideology?"</text>
+            <choice>
+                <text>"We would be more than happy to!"</text>
+                <event>
+                    <text>"I am very glad to hear it! Feel free to stay as long as you like."</text>
+                    <choice>
+                        <text>Leave.</text>
+                        <event>
+                            <text>You return to your ship.</text>
+                            <choice>
+                                <text>Do something onboard the ship.</text>
+                                <event load="STORAGE_CHECK"/>
+                            </choice>
+                            <choice>
+                                <text>Do nothing.</text>
+                                <event/>
+                            </choice>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice>
+                <text>I will do no such thing!</text>
+                <event>
+                    <text>"No worries, I welcome your company all the same. Feel free to stay as long as you like."</text>
+                    <choice>
+                        <text>Leave.</text>
+                        <event>
+                            <text>You return to your ship.</text>
+                            <choice>
+                                <text>Do something onboard the ship.</text>
+                                <event load="STORAGE_CHECK"/>
+                            </choice>
+                            <choice>
+                                <text>Do nothing.</text>
+                                <event/>
+                            </choice>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice>
+                <text>Say nothing.</text>
+                <event>
+                    <text>Ah, a Comrade of few words. I can respect that. Feel free to stay as long as you like.</text>
+                    <choice>
+                        <text>Leave.</text>
+                        <event>
+                            <text>You return to your ship.</text>
+                            <choice>
+                                <text>Do something onboard the ship.</text>
+                                <event load="STORAGE_CHECK"/>
+                            </choice>
+                            <choice>
+                                <text>Do nothing.</text>
+                                <event/>
+                            </choice>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice>
+        <text>Say nothing.</text>
+        <event>
+            <text>Ah, a Comrade of few words. I can respect that. Feel free to stay as long as you like.</text>
+            <choice>
+                <text>Leave.</text>
+                <event>
+                    <text>You return to your ship.</text>
+                    <choice>
+                        <text>Do something onboard the ship.</text>
+                        <event load="STORAGE_CHECK"/>
+                    </choice>
+                    <choice>
+                        <text>Do nothing.</text>
+                        <event/>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+
+
+    <choice req="jubjub" hidden="true">
+        <text>(JubJub) JubJub comes forward and explains his story.</text>
+        <event>
+            <text>"Ah! A fellow Comrade! Welcome! We have much to discuss. If you wouldn't mind staying a while we would really value your support.
+
+JubJub looks to you for approval.</text>
+            <choice>
+                <text>Let JubJub stay with Brezhnev.</text>
+                <event>
+                    <text>JubJub looks at you gratefully before saying, "Thank you dear friend. This action will not be forgotten. To aid you in your mission, take these blueprints to my ship. I have no need for them now."</text>
+                    <removeCrew class="jubjub">
+                        <clone>false</clone>
+                        <text>You cannot clone your crew, as they are not dead.</text>
+                    </removeCrew>
+                    <choice>
+                        <text>Leave.</text>
+                        <event>
+                            <text>You return to your ship.</text>
+                            <choice>
+                                <text>Do something onboard the ship.</text>
+                                <event load="STORAGE_CHECK"/>
+                            </choice>
+                            <choice>
+                                <text>Do nothing.</text>
+                                <event/>
+                            </choice>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+            <choice>
+                <text>"There's too much at stake, we need you."</text>
+                <event>
+                    <text>JubJub looks a little sad but says, "I understand, Friend. The rebellion must be quashed!"</text>
+                    <choice>
+                        <text>Leave.</text>
+                        <event>
+                            <text>You return to your ship.</text>
+                            <choice>
+                                <text>Do something onboard the ship.</text>
+                                <event load="STORAGE_CHECK"/>
+                            </choice>
+                            <choice>
+                                <text>Do nothing.</text>
+                                <event/>
+                            </choice>
+                        </event>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
 </event>
 
 
