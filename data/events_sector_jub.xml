@@ -1875,7 +1875,7 @@ One of us vill kome vith you, other vill pilot rrrocket back to Earrrth, it  too
             <text>JubJub looks at you dissaprovingly as the ship responds
 
 "Sorrry, ve did not mean to offend you"</text>
-            <chocie>
+            <choice>
                 <text>Blast this ship apart.</text>
                 <event> <!-- Perhaps "<destroyed>" will work here? -->
                     <text>(Ship Explodes)
@@ -1888,7 +1888,7 @@ JubJub walks over to you, "You didn't have to do that! I can't continue to work 
                         <text>You cannot clone your crew, as they are not dead.</text>
                     </removeCrew>
                 </event>
-            </chocie>
+            </choice>
             <choice>
                 <text>Leave.</text>
                 <event>
