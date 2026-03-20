@@ -1640,7 +1640,7 @@ Your translator flags the language as an Old Earth language, Russian.
                 <text>(Slug) Mimic their accent and offer to assist them. "Aw,  someone having engine trrrouble? Ve arrre happy to help"</text>
                 <event>
                     <text>"You sound like Amerrrikan spy.."</text>
-                    <choice>
+                    <choice hidden="true">
                         <text>That's right, we're Spies.</text>
                         <event>
                             <text>The voice on the other end of the line shouts "You vill never steal ourrr secrrrets!" before their ship explodes, leaving nothing but a few pieces of scrap.
@@ -1655,14 +1655,20 @@ Your translator flags the language as an Old Earth language, Russian.
                         <text>We're clearly not Spies.</text>
                         <event>
                             <text>The voice on the other line seems to relax a little, they seem convinced.</text>
-                            <event load="SOVIET_SHIP_HELP"/>
+                            <choice>
+                                <text>Continue...</text>
+                                <event load="SOVIET_SHIP_HELP"/>
+                            </choice>
                         </event>
                     </choice>
                     <choice req="LIST_CREW_SLUG">
                         <text>(Slug) Ahaha, I bet  Amerrrikans haven't made it to space yet. Ve arrre herrre to help.</text>
                             <event>
                                 <text>The voice on the other end of the line seems to relax a little.</text>
-                                <event load="SOVIET_SHIP_HELP"/>
+                                <choice>
+                                    <text>Continue...</text>
+                                    <event load="SOVIET_SHIP_HELP"/>
+                                </choice>
                             </event>
                     </choice>
                 </event>
