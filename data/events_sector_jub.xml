@@ -1772,7 +1772,86 @@ Your translator flags the language as an Old Earth language, Russian.
 -->
 
 <event name="SOVIET_SHIP_HELP">
-    <text>TEST</text>
+    <text>Ve arrre on  mission to land on moon. If you vouldn't mind helping us fix ourrr engines ve vill be on ourrr vay.</text>
+    <choice hidden="true">
+        <text>Of course!</text>
+        <event>
+            <text>You help them repair their engines and they continue their tradjectory towards the moon. 
+
+They offer you some scrap in return.
+
+(+20 Scrap)</text>
+            <item_modify>
+                <item type="scrap" min="+20" max="20"/>
+            </item_modify>
+        </event>
+    </choice>
+    <choice>
+        <text>You are welcome to join our crew if you'd like, we can take you to the moon?</text>
+        <event>
+            <text>Zat verrry kind offer. But how vould ve rrreturrrn frrrom moon vithout ourrr rrrocket?</text>
+            <choice hidden="true">
+                <text>You could keep travelling with us afterwards if you would like?</text>
+                <event>
+                    <text>Perrrhaps ve vill learrrn many new zings to brrring back to  USSRRR. Ve agrrree.
+
+One of us vill kome vith you, other vill pilot rrrocket back to Earrrth, it  too valuable to leave forrr Amerrrikans to kapturrre.
+
+(Soviet joins your Crew)</text>
+                    <crewMember amount="1" class="soviet">JubJub</crewMember>
+                </event>
+            </choice>
+            <choice hidden="true">
+                <text>We can take you back to Earth afterwards.</text>
+                <event>
+                    <text>Zis sounds like good deal. I beginning to like you Kaptain. 
+                One of us vill kome vith you, other vill pilot rrrocket back to Earrrth, it  too valuable to leave forrr Amerrrikans to kapturrre.
+
+(Soviet joins your Crew)</text>
+                    <crewMember amount="1" class="soviet">JubJub</crewMember>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice req="jubjub" hidden="true">
+        <text>(JubJub) I am hoping to return to Earth to assit Brezhnev. Would I be able to join you?</text>
+        <event>
+            <text>"Ve vould value yourrr serrrvice to ourrr nation."</text>
+            <removeCrew class="jubjub">
+        </event>
+    </choice>
+    <choice req="jubjub" hidden="true">
+        <text>(JubJub) I am hoping to return to Earth to assit Brezhnev. We can take you to Earth if you would like? </text>
+        <event>
+            <text>"Fellow Komrrrade, you speak of zings you should not know. I feel  strrrange konnection to you. I vill accept zis offer."
+
+"Ve must take ourrr rrrocket vith us, it  too valuable to fall into hands of Amerrrikans"</text>
+            <choice hidden="true">
+                <text>We can destroy the ship if you would like, leave no trace?</text>
+                    <event>
+                        <text>"Zis bad plan, it make mission look like failurrre. But I apprrreciate yourrr offer"</text>
+                        <crewMember amount="1" class="soviet">JubJub</crewMember>
+                    </event>
+            </choice>
+            <choice hidden="true">
+                <text>We can tow your ship with us if you would like, you will be safer on board our ship.</text>
+                    <event>
+                        <text>"Zis sounds like  good plan. Successful rrreturrrn key forrr Soviet image. Ve vill both join you on yourrr ship"</text>
+                        <crewMember amount="2" class="soviet">JubJub</crewMember>
+                    </event>
+            </choice>
+            <choice hidden="true" req="BLUELIST_MINELAUNCHERS_ALL">
+                <text>(Mine launcher - [-13}]) We can set a trap for the Americans. If they try to recover your ship it will explode.</text>
+                <event>
+                    <text>"You arrre zinking rrright Komrrrade, you arrre zinking rrright. I like zis plan. Brrrezhnev vill be most pleased."</text>
+                    <crewMember amount="2" class="soviet">JubJub</crewMember>
+                    <item_modify>
+                        <item type="missiles" min="-5" max="-5"/>
+                    </item_modify>
+                </event>
+            </choice>
+        </event>
+    </choice>
 </event>
 
 
