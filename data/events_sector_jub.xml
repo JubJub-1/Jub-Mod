@@ -2275,7 +2275,7 @@ JubJub looks to you for approval.</text>
 
 <event name="JUB_EARTH_SPUTNIK">
     <text>Your translator kicks in, "Ah da! Zat ourrrs. Please rrreturrrn it to us.</text>
-    <choice>
+    <choice hidden="true">
         <text>Return the sattelite.</text>
         <event>
             <text>"Zank you! Take schematics forrr yourrr trrrouble."</text>
@@ -2295,12 +2295,11 @@ JubJub looks to you for approval.</text>
         <text>"It's ours now!"</text>
         <event>
             <text>"Zis not rrrequest, rrreturrrn  sattelite now orrr face konsequences."</text>
-            <choice>
+            <choice hidden="true">
                 <text>Return the sattelite.</text>
                 <event>
-                    <text>"Zank you! Take schematics forrr yourrr trrrouble."
-
-(Added Sputnik Drone)</text>
+                    <text>"Zank you! Take schematics forrr yourrr trrrouble."</text>
+                    <drone name="SPUTNIK_DRONE"/>
                     <remove name="STRANGE_SATELLITE"/>
                     <choice>
                         <text>Do something onboard the ship.</text>
