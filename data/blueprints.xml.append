@@ -37,7 +37,7 @@
 				<number>0</number>
 			</slot>
 		</doors>
-		<drones power="2" room="10" start="false" img="room_drones" />
+		<drones power="2" room="10" start="true" img="room_drones" />
 		<engines power="2" room="7" start="true" img="room_engines_2">
 			<slot>
 				<direction>down</direction>
@@ -84,6 +84,8 @@
 		<weapon name="MISSILES_2" />
 	</weaponList>
 	<droneList drones="5" count="0" />
+		<drone name="SPUTNIK_DRONE" />
+	</droneList>
 	<health amount="30" />
 	<maxPower amount="7" />
 	<crewCount amount="1" class="soviet" />
