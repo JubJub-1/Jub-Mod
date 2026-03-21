@@ -2117,6 +2117,7 @@ As you approach the coordinates that the Soviet's provided, your radio crackles 
 -->
 
 <event name="JUB_EARTH_LANDING">
+    <img back="kremlin" planet="NONE"/>
     <text>As you land you see a line of cars with small red flags with a Hammer and Sickle flying at the front. 
 
 You are invited into the cars and driven to a large fortified complex. Inside you are greeted by none other than Leonid Brezhnev himself. 
