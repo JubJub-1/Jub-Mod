@@ -1,7 +1,7 @@
 <textList name="TEXT_START_JUB">
-	<text>You have arrived at the Jub Sector</text>
-	<text>2nd line of Jub Sector</text>
-    <text>3rd line of Jub Sector</text>
+	<text>You have arrived at the Time Distorted Sector and are met with an Orchid Guard who seems to ignore you.</text>
+	<text>Your insides twist and turn while your brain seems to spin. This sector feels strange. There is an Orchid Guard keeping the peace but they seem to ignore you for now.</text>
+    <text>You have a strange feeling of nostalgia, almost like you've been here before, only moments ago. There is an Orchid guard stationed here. As long as you create no trouble, they will leave you alone.</text>
 </textList>
 <event name="START_JUB">
 	<metaVariable name="juke_orchid" op="set" val="1"/>
