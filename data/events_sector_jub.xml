@@ -2016,7 +2016,7 @@ As you approach the coordinates that the Soviet's provided, your radio crackles 
                 </event>
             </choice>
             <choice req="STRANGE_SATELLITE" hidden="true">
-                <text>(Sputnik) We found this sattelite, does it belong to you?</text>
+                <text>(Strange Satellite) We found this sattelite, does it belong to you?</text>
                 <event load="JUB_EARTH_SPUTNIK"/>
             </choice>
             <choice>
@@ -2278,9 +2278,8 @@ JubJub looks to you for approval.</text>
     <choice>
         <text>Return the sattelite.</text>
         <event>
-            <text>"Zank you! Take schematics forrr yourrr trrrouble."
-
-(Added Sputnik Drone)</text>
+            <text>"Zank you! Take schematics forrr yourrr trrrouble."</text>
+            <drone name="SPUTNIK_DRONE"/>
             <remove name="STRANGE_SATELLITE"/>
             <choice>
                 <text>Do something onboard the ship.</text>

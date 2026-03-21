@@ -83,7 +83,8 @@
 		<weapon name="MISSILES_3" />
 		<weapon name="MISSILES_2" />
 	</weaponList>
-	<droneList drones="5" count="0" />
+	<droneSlots>2</droneSlots>
+	<droneList drones="5" count="3">
 		<drone name="SPUTNIK_DRONE" />
 	</droneList>
 	<health amount="30" />
