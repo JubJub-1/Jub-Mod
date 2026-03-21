@@ -650,7 +650,7 @@ SPUTNIK_DRONE
 	<speed>20</speed> <!-- Change this to increase/decrease firing speed -->
 	<cost>75</cost>
 	<bp>8</bp>
-	<droneImage>weapons/sputnik_combat</droneImage>
+	<droneImage>sputnik_combat</droneImage>
 	<weaponBlueprint>DRONE_LASER</weaponBlueprint>
 	<rarity>0</rarity>
 	<iconImage>combat</iconImage>
