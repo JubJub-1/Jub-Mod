@@ -13,6 +13,10 @@ S8 (7): Last Stand-->
     <mod-append:sector>SECTOR_JUB</mod-append:sector>
 </mod:findName>
 
+<mod:findName type="sectorType" name="SECTOR_LIST_UNIQUE_SAFE">
+    <mod-append:sector>SECTOR_JUB</mod-append:sector>
+</mod:findName>
+
 
 
 <!--
