@@ -9,7 +9,7 @@ S8 (7): Last Stand-->
 
 <FTL>
 
-<mod:findName type="sectorType" name="SECRET">
+<mod:findName type="sectorType" name="CIVILIAN">
     <mod-append:sector>SECTOR_JUB</mod-append:sector>
 </mod:findName>
 
@@ -30,9 +30,9 @@ JUB SECTOR
 	</trackList>
 	<rarityList>
 		<!--human-->
-		<blueprint name="human" rarity="0"/>
-		<blueprint name="human_medic" rarity="0"/>
-		<blueprint name="human_engineer" rarity="0"/>
+		<blueprint name="human" rarity="1"/>
+		<blueprint name="human_medic" rarity="1"/>
+		<blueprint name="human_engineer" rarity="1"/>
 		<!--engi-->
 		<blueprint name="engi" rarity="0"/>
 		<blueprint name="engi_separatist" rarity="0"/>
@@ -59,10 +59,10 @@ JUB SECTOR
 		<blueprint name="crystal" rarity="0"/>
 		<blueprint name="crystal_liberator" rarity="0"/>
 		<!--orchid-->
-		<blueprint name="orchid" rarity="0"/>
+		<blueprint name="orchid" rarity="1"/>
 		<blueprint name="orchid_vampweed" rarity="0"/>
 		<!--leech-->
-		<blueprint name="leech" rarity="0"/>
+		<blueprint name="leech" rarity="1"/>
 		<!--lanius-->
 		<blueprint name="lanius" rarity="0"/>
 		<!--ghost-->
@@ -71,7 +71,7 @@ JUB SECTOR
 		<blueprint name="phantom_mare" rarity="0"/>
 		<blueprint name="phantom_wraith" rarity="0"/>
 		<!--lizard-->
-		<blueprint name="lizard" rarity="5"/>
+		<blueprint name="lizard" rarity="0"/>
 	</rarityList>
 	<startEvent>ENTER_JUB</startEvent>
 	<!-- <startEvent>JUB_WARP</startEvent> -->
