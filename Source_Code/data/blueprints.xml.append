@@ -22,6 +22,7 @@
 <shipBlueprint name="PLAYER_SHIP_SOVIET_LUNAR" layout="SOVIET_LUNAR" img="SOVIET_LUNAR">
 	<class>Soviet Lunar</class>
 	<name>Zond 5</name>
+	<unlock id="ship_PLAYER_SHIP_SOVIET_LUNAR_unlock"/>
 	<desc>This Soviet Lunar mission may seem outdated but pair it's crew's determination along with it's cold-war era weapons and it may pose a formidable threat</desc>
 	<systemList>
 		<battery power="1" room="2" start="false" img="room_battery_3" />
@@ -257,7 +258,7 @@
 
 
 
-<shipBlueprint name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP_3" layout="Dinosaur_Space_Ship_c" img="Dinosaur_Space_Ship_c">
+<!-- <shipBlueprint name="PLAYER_SHIP_DINOSAUR_SPACE_SHIP_3" layout="Dinosaur_Space_Ship_c" img="Dinosaur_Space_Ship_c">
 	<class>Dinosaur Space Ship</class>
 	<name>Albert & Crab</name>
 	<unlock id="ship_PLAYER_SHIP_DINOSAUR_SPACE_SHIP_3_unlock"/>
@@ -329,7 +330,7 @@
 	<maxPower amount="7" />
 	<!--crew is in hyperspace.xml-->
 	<mv-mapImage>map_icon_Dinosaur_Space_Ship</mv-mapImage>
-</shipBlueprint>
+</shipBlueprint> -->
 
 
 <!-- 
