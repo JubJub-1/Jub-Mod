@@ -1,0 +1,87 @@
+<FTL>
+
+<blueprintList name="NONPLAYER_SHIP_SOVIET_LUNAR_GENERIC">
+	<name>NONPLAYER_SHIP_SOVIET_LUNAR</name>
+</blueprintList>
+
+
+<shipBlueprint name="NONPLAYER_SHIP_SOVIET_LUNAR" layout="SOVIET_LUNAR" img="SOVIET_LUNAR">
+	<class>Soviet Lunar</class>
+	<maxSector>4</maxSector>
+	<systemList>
+		<battery power="1" room="2" start="false" img="room_battery_3" />
+		<cloaking power="1" room="13" start="false" img="room_cloaking_9" />
+		<clonebay power="1" room="9" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="6" start="true" img="room_doors_2">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="2" room="10" start="false" img="room_drones" />
+		<engines power="2" room="7" start="true" img="room_engines_2">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="11" start="false" img="room_hacking_7" />
+		<medbay power="1" room="9" start="true" img="room_medbay_4">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<oxygen power="1" room="5" start="true" img="room_oxygen" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>3</number>
+			</slot>
+		</pilot>
+		<sensors power="2" room="3" start="true" img="room_sensors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="12" start="true" img="room_shields_zond">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="8" start="false" />
+		<weapons power="3" room="1" start="true" img="room_weapons_zond">
+			<slot>
+				<direction>up</direction>
+				<number>-2</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4">
+		<weapon name="MISSILES_3" />
+		<weapon name="MISSILES_2" />
+	</weaponList>
+	<droneList drones="5" count="0" />
+	<health amount="30" />
+	<maxPower amount="7" />
+	<crewCount amount="2" max="2" class="soviet" />
+	<aug name="ADV_SCANNERS" />
+</shipBlueprint>
+
+
+
+
+
+
+
+
+
+
+</FTL>

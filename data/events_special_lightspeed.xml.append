@@ -1,0 +1,45 @@
+<mod:findName type="event" name="ATLAS_MENU">
+	<mod-append:choice hidden="true" req="SEC SECTOR_JUB" blue="false">
+		<text>Proceed to the Time Distorted Sector Sector.</text>
+		<event load="JUB_WARP"/>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="ATLAS_MENU_NOEQUIPMENT">
+	<mod-append:choice hidden="true" req="SEC SECTOR_JUB" blue="false">
+		<text>Proceed to the Time Distorted Sector sector.</text>
+		<event load="JUB_WARP"/>
+	</mod-append:choice>
+</mod:findName>
+
+
+
+<event name="ENTER_JUB">
+	<text load="TEXT_LIGHTSPEED"/>
+	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<!-- <event load="LOAD_ATLAS_MARKER"/> -->
+		<event load="ATLAS_MENU"/>
+	</choice>
+</event>
+
+
+
+<event name="JUB_WARP">
+	<text>Name: Time Distorted Sector
+	Type: Friendly
+	Unique: True
+	Dominant Faction: Orchids
+	Rebel Threat Level: Low
+	
+	There is something strange about this sector, you feel time slipping away as your approach. Whatever is happening in this sector, the Orchids seem to be keeping the peace.</text>
+	<choice hidden="true">
+		<text>Exit hyperspeed.</text>
+		<event load="START_JUB"/>
+	</choice>
+	<choice hidden="true" req="COORDS" blue="false">
+		<text>Reroute.</text>
+		<event load="REROUTE_MENU"/>
+	</choice>
+</event>

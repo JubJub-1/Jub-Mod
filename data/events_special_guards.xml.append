@@ -1,0 +1,25 @@
+<textList name="TEXT_START_JUB">
+	<text>You have arrived at the Time Distorted Sector and are met with an Orchid Guard who seems to ignore you.</text>
+	<text>Your insides twist and turn while your brain seems to spin. This sector feels strange. There is an Orchid Guard keeping the peace but they seem to ignore you for now.</text>
+    <text>You have a strange feeling of nostalgia, almost like you've been here before, only moments ago. There is an Orchid guard stationed here. As long as you create no trouble, they will leave you alone.</text>
+</textList>
+<event name="START_JUB">
+	<metaVariable name="juke_orchid" op="set" val="1"/>
+	<preventQuest/>
+	<beaconType id="map_icon_start" global="false">
+		<color r="46" g="252" b="51" a="1"/>
+	</beaconType>
+	<text load="TEXT_START_JUB"/>
+	<changeBackground>BACK_SECTOR_ORCHID</changeBackground>
+	<playSound>lightspeed</playSound>
+	<customFleet right="false" firing="true" autoDarkening="true">CUSTOM_FLEET_ORCHID</customFleet>
+	<ship load="SHIP_GUARD_ORCHID" hostile="false"/>
+	<choice hidden="true" req="rep_comb_orchid" lvl="-999" max_lvl="1" max_group="0" blue="false">
+		<text>Continue...</text>
+		<event load="GUARD_ORCHID"/>
+	</choice>
+	<choice hidden="true" req="rep_comb_orchid" lvl="2" max_lvl="999" max_group="0" blue="false">
+		<text>Continue...</text>
+		<event load="GUARD_ORCHID_CRIMINAL"/>
+	</choice>
+</event>

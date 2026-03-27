@@ -1,0 +1,121 @@
+<!--ZONES:
+S1 (0): Droppoint
+S2 (1): Safe zone                maxSector="4"
+S3-5 (2-4): Generic Sectors      minSector="2" maxSector="4"
+S4-7 (3-6): Safe Unique Sectors  minSector="3"
+S6-7 (5-6): Risk Unique Sectors  minSector="5"
+S8 (7): Last Stand-->
+
+
+<FTL>
+
+<mod:findName type="sectorType" name="CIVILIAN">
+    <mod-append:sector>SECTOR_JUB</mod-append:sector>
+</mod:findName>
+
+<mod:findName type="sectorType" name="SECTOR_LIST_UNIQUE_SAFE">
+    <mod-append:sector>SECTOR_JUB</mod-append:sector>
+</mod:findName>
+
+
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+JUB SECTOR
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<sectorDescription name="SECTOR_JUB" unique="true">
+	<nameList>
+		<name>Earth 1968</name>
+	</nameList>
+	<trackList>
+		<track>civilian</track>
+	</trackList>
+	<rarityList>
+		<!--human-->
+		<blueprint name="human" rarity="1"/>
+		<blueprint name="human_medic" rarity="1"/>
+		<blueprint name="human_engineer" rarity="1"/>
+		<!--engi-->
+		<blueprint name="engi" rarity="0"/>
+		<blueprint name="engi_separatist" rarity="0"/>
+		<!--zoltan-->
+		<blueprint name="zoltan" rarity="0"/>
+		<blueprint name="zoltan_monk" rarity="0"/>
+		<blueprint name="zoltan_devotee" rarity="0"/>
+		<!--rock-->
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="rock_outcast" rarity="0"/>
+		<blueprint name="rock_commando" rarity="0"/>
+		<!--mantis-->
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="mantis_free" rarity="0"/>
+		<!--slug-->
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="slug_clansman" rarity="0"/>
+		<!--shell-->
+		<blueprint name="shell" rarity="0"/>
+		<blueprint name="shell_scientist" rarity="0"/>
+		<blueprint name="shell_mechanic" rarity="0"/>
+		<blueprint name="shell_guardian" rarity="0"/>
+		<!--crystal-->
+		<blueprint name="crystal" rarity="0"/>
+		<blueprint name="crystal_liberator" rarity="0"/>
+		<!--orchid-->
+		<blueprint name="orchid" rarity="1"/>
+		<blueprint name="orchid_vampweed" rarity="0"/>
+		<!--leech-->
+		<blueprint name="leech" rarity="1"/>
+		<!--lanius-->
+		<blueprint name="lanius" rarity="0"/>
+		<!--ghost-->
+		<blueprint name="phantom" rarity="0"/>
+		<blueprint name="phantom_goul" rarity="0"/>
+		<blueprint name="phantom_mare" rarity="0"/>
+		<blueprint name="phantom_wraith" rarity="0"/>
+		<!--lizard-->
+		<blueprint name="lizard" rarity="0"/>
+	</rarityList>
+	<startEvent>ENTER_JUB</startEvent>
+	<!-- <startEvent>JUB_WARP</startEvent> -->
+	<removeFirstBeaconNebula/>
+	<exitBeacon event="FINISH_BEACON_JUB" nebulaEvent="FINISH_BEACON_NEBULA" rebelEvent="FINISH_BEACON_FLEET_ELITE"/>
+	<rebelBeacon event="FLEET_THREAT_LOW" nebulaEvent="NEBULA_LIGHT_FLEET_THREAT_LOW"/>
+	<priorityEvent name="ANOMALY_SPAWNER" min="1" max="1" priority="1" req="ANOMALY_SPAWN_CHECK" lvl="1"/>
+	<removeFirstBeaconNebula/>
+
+	<!--Events-->
+	<!--(MUST ADD UP TO AT LEAST 24)-->
+	<event name="MV_TRAVELER" min="1" max="1"/>
+	<event name="SYLVAN_CHANCE" min="0" max="1"/>
+
+    <event name="FIND_SOVIET_SHIP" min="1" max="1"/>
+	<event name="JUBJUB_QUEST" min="1" max="1"/>
+	<event name="JUB_SPACE_SPUTNIK" min="0" max="1"/>
+
+
+
+	<event name="STORELIST_UNION" min="2" max="3"/>
+	
+	<event name="ITEMS_UNION" min="3" max="4"/>
+	<event name="NEUTRAL_UNION" min="4" max="5"/>
+	
+	<event name="HOSTILE_UNION" min="4" max="6"/>
+	<!-- <event name="OUTPOST_FACTION_SPAWNER" min="0" max="1"/> -->
+	<!-- <event name="STORELIST_JUB" min="2" max="3"/> -->
+
+	<!-- <event name="ITEMS_JUB_UNIQUE" min="3" max="4"/> -->
+	<!-- <event name="NEUTRAL_JUB_UNIQUE" min="4" max="5"/> -->
+	<!-- <event name="DISTRESS_JUB" min="1" max="2"/> -->
+	<!-- <event name="QUESTS_JUB" min="1" max="1"/> -->
+
+	<!-- <event name="HOSTILE_JUB" min="4" max="6"/> -->
+
+	<event name="PIRACY_LIST" min="0" max="20"/>
+	<event name="FILLER_LIST" min="5" max="20"/>
+</sectorDescription>
+
+
+
+</FTL>
