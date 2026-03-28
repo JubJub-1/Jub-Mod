@@ -187,7 +187,7 @@
 	<unlock id="ship_PLAYER_SHIP_DINOSAUR_SPACE_SHIP_2_unlock"/>
 	<desc>The DSS Sauropod is Captain Teggs and his faithful crew's trusty ship. It is featured in all of the Astrosaurs books and was given to Teggs by Admiral Rosso.</desc>
 	<systemList>
-		<artillery power="1" room="14" start="true" weapon="ARTILLERY_MFK_2" img="room_artillery_3" />
+		<!-- <artillery power="1" room="14" start="true" weapon="ARTILLERY_MFK_2" img="room_artillery_3" /> -->
 		<battery power="1" room="12" start="false" img="room_battery_15" />
 		<cloaking power="1" room="8" start="false" img="room_cloaking_13" />
 		<clonebay power="1" room="4" start="false">
