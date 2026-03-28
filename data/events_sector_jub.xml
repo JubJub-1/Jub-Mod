@@ -1874,6 +1874,7 @@ One of us vill kome vith you, other vill pilot rrrocket back to Earrrth, it  too
                 <text>We can destroy the ship if you would like, leave no trace?</text>
                     <event>
                         <text>"Zis bad plan, it make mission look like failurrre. But I apprrreciate yourrr offer"</text>
+                        <quest event="JUB_EARTH_QUEST"/>
                         <crewMember amount="1" class="soviet"></crewMember>
                     </event>
             </choice>
@@ -1881,6 +1882,7 @@ One of us vill kome vith you, other vill pilot rrrocket back to Earrrth, it  too
                 <text>We can tow your ship with us if you would like, you will be safer on board our ship.</text>
                     <event>
                         <text>"Zis sounds like  good plan. Successful rrreturrrn key forrr Soviet image. Ve vill both join you on yourrr ship"</text>
+                        <quest event="JUB_EARTH_QUEST"/>
                         <crewMember amount="2" class="soviet"></crewMember>
                     </event>
             </choice>
@@ -1888,6 +1890,7 @@ One of us vill kome vith you, other vill pilot rrrocket back to Earrrth, it  too
                 <text>(Use your Mine Launcher. [-5}]) We can set a trap for the Americans. If they try to recover your ship it will explode.</text>
                 <event>
                     <text>"You arrre zinking rrright Komrrrade, you arrre zinking rrright. I like zis plan. Brrrezhnev vill be most pleased."</text>
+                    <quest event="JUB_EARTH_QUEST"/>
                     <crewMember amount="2" class="soviet"></crewMember>
                     <item_modify>
                         <item type="missiles" min="-5" max="-5"/>
