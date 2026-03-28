@@ -615,7 +615,44 @@ DINOSAUR_ARTILLERY
 </weaponBlueprint>
 
 
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+JUBJUB_BEAM
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
 
+<weaponBlueprint name="JUBJUB_BEAM">
+	<type>BEAM</type>
+	<tip>tip_beams</tip>
+	<title>JubJub Beam</title>
+	<short>JubBeam</short>
+	<desc>JubJub Beam!</desc>
+	<tooltip>Beam weapon, 2 damage per room and pierces 2 Sheilds.</tooltip>
+	<!--<desc>Power Req: 3    A powerful but slow beam that deals 2 damage in a short line with a low chance of breaches.</desc>-->
+	<damage>2</damage>
+	<sp>2</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>10</cooldown>
+	<power>3</power>
+	<cost>65</cost>
+	<!--was 70-->
+	<bp>7</bp>
+	<rarity>0</rarity>
+	<length>100</length>
+	<speed>10</speed>
+	<color>
+        <r>245</r>
+        <g>160</g>
+        <b>192</b>
+    </color>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>beam2</sound>
+	</launchSounds>
+	<weaponArt>beam_longbow</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
 
 
 
