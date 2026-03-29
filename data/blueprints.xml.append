@@ -656,6 +656,51 @@ JUBJUB_BEAM
 
 
 
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+DIVORCE_BOMB
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<weaponBlueprint name="DIVORCE_BOMB"> 
+	<type>BOMB</type>
+	<tip>tip_bombs</tip>
+	<title>Divorce Bomb</title>
+	<short>Divorce B.</short>
+	<locked>1</locked>
+	<desc>Self-teleporting divorce explosive that does 5 ion damage and stuns all crew inside the room. Can target your own ship. Costs 5 scrap to fire. </desc>
+	<tooltip>Bomb weapon; requires a missile; does 5 ion damage. Stuns all crew inside the room. Can target your own ship. Costs 5 scrap to fire. </tooltip>
+	<damage>0</damage>
+	<stun>25</stun>
+	<accuracyMod>30</accuracyMod>
+	<sysDamage>0</sysDamage>
+	<persDamage>0</persDamage>
+	<ion>5</ion>
+	<mv-resources>
+		<scrap>5</scrap>
+	</mv-resources>
+	<!-- <missiles>1</missiles> -->
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>5</cooldown>
+	<power>2</power>
+	<cost>60</cost>
+	<bp>4</bp>
+	<rarity>4</rarity>
+	<image>bomb_stun</image>
+	<explosion>explosion_big1_ion</explosion>
+	<launchSounds>
+		<sound>bombTeleport</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<weaponArt>bomblauncher_stun</weaponArt> 
+	<iconImage>bomb</iconImage>
+</weaponBlueprint>
+
 
 <!-- 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
