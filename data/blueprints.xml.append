@@ -110,7 +110,7 @@
 	<unlock id="ship_PLAYER_SHIP_DINOSAUR_SPACE_SHIP_unlock"/>
 	<desc>This ship was used to transport Ambassador JubJub to the Moon, it is equipped with entirely peacekeeping measures...</desc>
 	<systemList>
-		<artillery power="1" room="14" start="true" weapon="DINOSAUR_ARTILLERY" img="room_artillery_3" />
+		<artillery max="3" power="1" room="14" start="true" weapon="DINOSAUR_ARTILLERY" img="room_artillery_3" />
 		<battery power="1" room="12" start="false" img="room_battery_15" />
 		<cloaking power="1" room="8" start="false" img="room_cloaking_13" />
 		<clonebay power="1" room="4" start="true">
@@ -168,7 +168,7 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="10" count="4">
-		<weapon name="BOMB_1" />
+		<weapon name="JUBJUB_BEAM" />
 		<weapon name="LASER_HEAVY_1" />
 	</weaponList>
 	<droneList drones="3" count="2" />
