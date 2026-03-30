@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased]
+
+### Changed
+
+- Modified Crab sprite set and added ranged attack
+
+
 ## [1.0.21] - 2026-03-29
 
 ### Added
