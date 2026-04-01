@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Modified Crab sprite set and added ranged attack
+- Removed Sheild Piercing on JubJub Beam for balance.
 
 
 ## [1.0.21] - 2026-03-29
