@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unrelesaed]
+
+### Added
+
+- Added backgorund image for Jub Earth Quest
+
 ## [1.0.22]
 
 ### Added
