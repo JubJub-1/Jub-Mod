@@ -341,6 +341,31 @@
 		</statBoosts>
 	</aug>
 
+	<aug name="LOCKED_GREEN_SOUP">
+		<locked/>
+		<statBoosts>
+			<statBoost name="maxHealth"><!-- <Increase Max Health by 20%> -->
+				<boostType>MULT</boostType>
+				<amount>1.20</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>0</priority>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier"><!-- <Increase JubJub Power Recharge by 33%> -->
+				<boostType>MULT</boostType>
+				<amount>1.333</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>0</priority>
+				<whiteList>
+					<jubjub/>
+				</whiteList>
+			</statBoost>
+		</statBoosts>
+	</aug>
+
 
 </augments>
 

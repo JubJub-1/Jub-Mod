@@ -174,7 +174,7 @@
 	<droneList drones="3" count="2" />
 	<health amount="30" />
 	<maxPower amount="7" />
-	<aug name="GREEN_SOUP" />
+	<aug name="LOCKED_GREEN_SOUP" />
 	<!--crew is in hyperspace.xml-->
 	<mv-mapImage>map_icon_Dinosaur_Space_Ship</mv-mapImage>
 </shipBlueprint>
@@ -478,6 +478,16 @@ GREEN_SOUP
 -->
 
 <augBlueprint name="GREEN_SOUP">
+	<title>Green Soup</title>
+	<desc>Increase all allied crew health by 20%
+	
+Decrease JubJub's Power Cooldown by 25%</desc>
+	<cost>40</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="LOCKED_GREEN_SOUP">
 	<title>Green Soup</title>
 	<desc>Increase all allied crew health by 20%
 	
