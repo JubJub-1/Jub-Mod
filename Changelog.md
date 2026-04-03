@@ -2,18 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+## [1.0.22]
+
+### Added
+
+- Add manning direction for all systems to JubShip for compatability with other mods.
 
 ### Fixed
 
-- Fixed Clanger shop quest reward not appearing
+- Fixed Clanger shop quest reward not appearing.
 
 ### Changed
 
-- Modified Crab sprite set and added ranged attack
+- Modified Crab sprite set and added ranged attack.
 - Removed Sheild Piercing on JubJub Beam for balance.
-- Locking Green Soup augment to JubShip
-
+- Locking Green Soup augment to JubShip.
+- Set Drone system max power to 8 for JubShip (was 15).
+- Reformatted the Mod-Appendix file.
 
 ## [1.0.21] - 2026-03-29
 
