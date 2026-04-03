@@ -1075,14 +1075,14 @@ The largest of the creatues greets you and offers out his hand for you to shake.
                 <text>Drink it.</text>
                 <event>
                     <text>You drink the soup and an energy fills you. You feel youthful again. You feel alive.</text>
-                    <choice>
+                    <choice hidden="true">
                         <text>Ask if you can take some soup back to your ship.</text>
                         <event>
                             <text>The creatues whistle excitedly and help you bring back a large supply of soup to your ship.
 
-(Soup Augment)
 
 The creatures seem glad that you have taken the time to learn about their soup and they wave for you to follow them before disappearing into their burrow.</text>
+                            <augment name="GREEN_SOUP"/>
                             <choice>
                                 <text>Follow them down into their burrow.</text>
                                 <event>
