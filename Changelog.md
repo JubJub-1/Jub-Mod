@@ -9,6 +9,10 @@ All notable changes to this project will be documented in this file.
 - Added backgorund image for Jub Earth Quest
 - Added Shark Race
 
+### Changed
+
+- Changed Jub Sector guard to be a Shark Ship
+
 ## [1.0.22]
 
 ### Added

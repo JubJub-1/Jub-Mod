@@ -33,7 +33,9 @@
 	Dominant Faction: Orchids
 	Rebel Threat Level: Low
 	
-	There is something strange about this sector, you feel time slipping away as your approach. Whatever is happening in this sector, the Orchids seem to be keeping the peace.</text>
+	There is something strange about this sector, you feel time slipping away as your approach. 
+	
+	It seems the Time Shark Authority (TSA) are on the case and are monitoring activity in the sector. They are not unfriendly, but be careful of creating too many ripples in space-time while they are around.</text>
 	<choice hidden="true">
 		<text>Exit hyperspeed.</text>
 		<event load="START_JUB"/>

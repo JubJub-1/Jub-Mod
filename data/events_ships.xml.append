@@ -4,6 +4,8 @@
 </ship>
 
 
+<ship name="SHARK_GUARD_SHIP" auto_blueprint="SHARK_GUARD_SHIP_GENERIC">
+</ship>
 
 
 

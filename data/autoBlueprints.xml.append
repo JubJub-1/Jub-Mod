@@ -5,6 +5,14 @@
 </blueprintList>
 
 
+
+
+<!-- 
+///////////////////////////////////////////////////////////////////////////////////////////////////////					
+					SOVIET LUNAR				
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
 <shipBlueprint name="NONPLAYER_SHIP_SOVIET_LUNAR" layout="SOVIET_LUNAR" img="SOVIET_LUNAR">
 	<class>Soviet Lunar</class>
 	<maxSector>4</maxSector>
@@ -77,10 +85,42 @@
 
 
 
+<!-- 
+///////////////////////////////////////////////////////////////////////////////////////////////////////					
+					SHARK_GUARD_SHIP				
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
 
 
+<blueprintList name="SHARK_GUARD_SHIP_GENERIC">
+	<name>SHARK_GUARD_SHIP</name>
+</blueprintList>
 
 
+<shipBlueprint name="SHARK_GUARD_SHIP" layout="Jub_Sector_Guard_layout" img="Jub_Sector_Guard">
+	<class>Time Shark Authority</class>
+	<minSector>4</minSector>
+	<maxSector>7</maxSector>
+	<systemList>
+		<cloaking power="1" max="2" room="8" start="true" />
+		<clonebay power="1" max="3" room="3" start="true" />
+		<doors power="2" max="3" room="10" start="true" />
+		<engines power="2" max="6" room="7" start="true" />
+		<oxygen power="1" max="3" room="5" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<sensors power="1" max="3" room="2" start="true" />
+		<shields power="6" max="10" room="4" start="true" />
+		<weapons power="6" max="8" room="1" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4" load="STANDARD_WEAPONS" />
+	<droneList drones="0" count="0" />
+	<health amount="15" />
+	<maxPower amount="20" />
+	<crewCount amount="3" max="5" class="shark" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
 
 
 

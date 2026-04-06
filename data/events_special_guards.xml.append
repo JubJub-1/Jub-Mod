@@ -1,10 +1,10 @@
 <textList name="TEXT_START_JUB">
-	<text>You have arrived at the Time Distorted Sector and are met with an Orchid Guard who seems to ignore you.</text>
-	<text>Your insides twist and turn while your brain seems to spin. This sector feels strange. There is an Orchid Guard keeping the peace but they seem to ignore you for now.</text>
-    <text>You have a strange feeling of nostalgia, almost like you've been here before, only moments ago. There is an Orchid guard stationed here. As long as you create no trouble, they will leave you alone.</text>
+	<text>You have arrived at the Time Distorted Sector and are met with a strange guard who seems to ignore you.</text>
+	<text>Your insides twist and turn while your brain seems to spin. This sector feels strange. There is a strange guard keeping the peace but they seem to ignore you for now.</text>
+    <text>You have a strange feeling of nostalgia, almost like you've been here before, only moments ago. There is a strange guard stationed here. As long as you create no trouble, they will leave you alone.</text>
 </textList>
 <event name="START_JUB">
-	<metaVariable name="juke_orchid" op="set" val="1"/>
+	<metaVariable name="juke_SHARK" op="set" val="1"/>
 	<preventQuest/>
 	<beaconType id="map_icon_start" global="false">
 		<color r="46" g="252" b="51" a="1"/>
@@ -13,13 +13,218 @@
 	<changeBackground>BACK_SECTOR_ORCHID</changeBackground>
 	<playSound>lightspeed</playSound>
 	<customFleet right="false" firing="true" autoDarkening="true">CUSTOM_FLEET_ORCHID</customFleet>
-	<ship load="SHIP_GUARD_ORCHID" hostile="false"/>
-	<choice hidden="true" req="rep_comb_orchid" lvl="-999" max_lvl="1" max_group="0" blue="false">
+	<ship load="SHARK_GUARD_SHIP" hostile="false"/>
+	<choice hidden="true" req="rep_comb_ORCHID" lvl="-999" max_lvl="1" max_group="0" blue="false">
 		<text>Continue...</text>
-		<event load="GUARD_ORCHID"/>
+		<event load="GUARD_SHARK"/>
 	</choice>
-	<choice hidden="true" req="rep_comb_orchid" lvl="2" max_lvl="999" max_group="0" blue="false">
+	<choice hidden="true" req="rep_comb_ORCHID" lvl="2" max_lvl="999" max_group="0" blue="false">
 		<text>Continue...</text>
 		<event load="GUARD_ORCHID_CRIMINAL"/>
+	</choice>
+</event>
+
+
+
+
+
+<event name="GUARD_SHARK">
+	<text> The guard smiles and waves at you as you pass by.</text>
+	<choice>
+		<text>Ignore the guard.</text>
+		<event>
+			<text>You now have some time to do something on the ship.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Contact the guard.</text>
+		<event load="GUARD_SHARK_INTERACT"/>
+	</choice>
+	<choice>
+		<text>Attack the guard.</text>
+		<event>
+			<text id="text_guard_attack"/>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="MORALITY_UPDATE_ORCHID_FIGHT"/>	<!-- CHANGE TO BE SHARK MORALITY -->
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<textList name="TEXT_GUARD_SHARK_CONTACT">
+<text>The guard looks at you, it feels like they're looking deep into your past. They pause, acknowledging your presence, and wait for your next move.</text>
+<text>The guard speaks briefly to say hello and falls silent once again.</text>
+</textList>
+
+<event name="GUARD_SHARK_INTERACT">
+	<text load="TEXT_GUARD_SHARK_CONTACT"/>
+	<choice hidden="true">
+		<text>Request supplies.</text>
+		<event load="GUARD_SHARK_REQUEST"/>
+	</choice>
+	<choice hidden="true">
+		<text>Demand supplies.</text>
+		<event load="GUARD_SHARK_DEMAND"/>
+	</choice>
+		<choice req="weapons" lvl="5" hidden="true">
+		<text>(Upg. Weapons) Threaten the guard.</text>
+		<event load="GUARD_SHARK_THREATEN"/>
+	</choice>
+	<choice req="shark" hidden="true">
+		<text>(Shark Crew) Request assistance.</text>
+		<event>
+			<text>Your Shark crew communicates briefly with the guard after which they agree to give some supplies.</text>
+			<autoReward level="LOW">stuff</autoReward>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Change your mind and leave the guard alone.</text>
+		<event>
+			<text>You apologize and end comms. The guard makes no attempts to communicate further.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+
+<eventList name="GUARD_SHARK_REQUEST">
+	<event>
+		<text>The guard shakes their head, signifying that they have no supplies to spare.</text>
+	</event>
+	<event>
+		<text>The guard nods transfers over some supplies.</text>
+		<autoReward level="LOW">stuff</autoReward>
+	</event>
+</eventList>
+
+<eventList name="GUARD_SHARK_DEMAND">
+	<event>
+		<text>These guards do not seem inanately aggresive, but when you start making demands of them you can expect they're going to retaliate.</text>
+		<ship hostile="true"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="MORALITY_UPDATE_ORCHID_FIGHT"/>
+		</choice>
+	</event>
+	<event>
+		<text>The guard does not wish to fight. They give over some supplies.</text>
+		<autoReward level="MED">stuff</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="MORALITY_UPDATE_ORCHID"/>
+		</choice>
+	</event>
+</eventList>
+
+
+<eventList name="GUARD_SHARK_THREATEN">
+	<event>
+		<text>These guards do not seem inanately aggresive, but when you start making demands of them you can expect they're going to retaliate.</text>
+		<ship hostile="true"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="MORALITY_UPDATE_ORCHID_FIGHT"/>
+		</choice>
+	</event>
+	<event>
+		<text>The guard does not wish to fight. They give over some supplies.</text>
+		<autoReward level="LOW">stuff</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="MORALITY_UPDATE_ORCHID"/>
+		</choice>
+	</event>
+	<event>
+		<text>The guard does not wish to fight. They give over some supplies.</text>
+		<autoReward level="LOW">stuff</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="MORALITY_UPDATE_ORCHID"/>
+		</choice>
+	</event>
+</eventList>
+
+
+<ship name="SHARK_GUARD_SHIP" auto_blueprint="SHARK_GUARD_SHIP">
+	<surrender min="5" max="6" load="GUARD_SIGNAL"/>
+	<destroyed load="GUARD_SHARK_DESTROY"/>
+	<deadCrew load="GUARD_SHARK_DEADCREW"/>
+	<crew>
+		<crewMember type="shark" prop="1"/>
+	</crew>
+</ship>
+
+
+<event name="GUARD_SHARK_DESTROY">
+	<text>You have defeated the guard. Whatever might have been in their cargo has for certain been destroyed, but you can at least salvage some supplies from the ship.</text>
+	<autoReward level="MED">standard</autoReward>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="GUARD_SHARK_FOLLOWUP"/>
+	</choice>
+</event>
+
+<event name="GUARD_SHARK_DEADCREW">
+	<text>You have defeated the guard. Without crew on board to stop you, you can investigate their cargo. You find a weapon to bring back to the ship, and move on to scrap their hull.</text>
+	<autoReward level="MED">standard</autoReward>
+	<weapon name="GIFTLIST_KERNEL"/> <!-- Change List to Shark list!! -->
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="GUARD_SHARK_FOLLOWUP"/>
+	</choice>
+</event>
+
+<ship name="SHIP_SHARK_REINFORCEMENTS" auto_blueprint="SHARK_GUARD_SHIP_GENERIC">
+	<destroyed load="DESTROYED_REINFORCEMENTS"/>
+	<deadCrew load="DEADCREW_REINFORCEMENTS"/>
+</ship>
+
+<event name="GUARD_SHARK_FOLLOWUP">
+	<noQuestText/>
+	<removeHazards/>
+	<clearCustomFleet/>
+	<text>By killing the guard, you have no doubt caused them to dispatch reinforcements to track you down. Watch your step as you explore the sector.</text>
+	<quest event="REINFORCEMENTS_SHARK"/>
+	<choice>
+		<text>Do something onboard the ship.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+	<choice>
+		<text>Do nothing.</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="REINFORCEMENTS_SHARK">
+	<preventQuest/>
+	<beaconType id="map_icon_reinforcements" global="true" req="LOOT_COMPASS">
+		<color r="200" g="55" b="82" a="1"/>
+		<unvisitedTooltip>An unvisited location.</unvisitedTooltip>
+		<visitedTooltip>Explored location. Nothing left of interest.</visitedTooltip>
+		<undiscoveredTooltip>An unvisited location.</undiscoveredTooltip>
+	</beaconType>
+	<text>You thought you were safe but it appears by killing the guard this ship has set out for revenge.</text>
+	<ship load="SHIP_SHARK_REINFORCEMENTS" hostile="true"/>
+	<environment type="PDS" target="player"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
 	</choice>
 </event>
