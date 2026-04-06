@@ -141,6 +141,140 @@
 
 <!-- 
 *********************************************************************************************************
+                   SHARK
+*********************************************************************************************************
+-->
+
+<animSheet name="shark" w="315" h="455" fw="35" fh="35">people/shark_base.png</animSheet>
+<anim name="shark_clone">
+	<sheet>shark</sheet>
+	<desc length="5" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="shark_death_right">
+	<sheet>shark</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="shark_death_left">
+	<sheet>shark</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="shark_walk_down">
+	<sheet>shark</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="shark_walk_right">
+	<sheet>shark</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="shark_walk_up">
+	<sheet>shark</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="shark_walk_left">
+	<sheet>shark</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="shark_shoot_down">
+	<sheet>shark</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="shark_shoot_right">
+	<sheet>shark</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="shark_shoot_up">
+	<sheet>shark</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="shark_shoot_left">
+	<sheet>shark</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="shark_fire_down">
+	<sheet>shark</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="shark_fire_right">
+	<sheet>shark</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="shark_fire_up">
+	<sheet>shark</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="shark_fire_left">
+	<sheet>shark</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="shark_repair">
+	<sheet>shark</sheet>
+	<desc length="4" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="shark_punch_up">
+	<sheet>shark</sheet>
+	<desc length="4" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="shark_punch_down">
+	<sheet>shark</sheet>
+	<desc length="9" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="shark_teleport">
+	<sheet>shark</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="shark_type_right">
+	<sheet>shark</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="shark_type_left">
+	<sheet>shark</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="shark_type_up">
+	<sheet>shark</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="shark_type_down">
+	<sheet>shark</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>shark</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="shark_portrait">
+	<sheet>shark</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+
+<!-- 
+*********************************************************************************************************
                    SOVIET
 *********************************************************************************************************
 -->

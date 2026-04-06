@@ -441,6 +441,26 @@
 
 <!-- 
 *********************************************************************************************************
+                   Shark
+*********************************************************************************************************
+-->
+
+<crewBlueprint name="shark">
+	<desc>A member of the Time Shark Authority (TSA); agents sworn to maintraining the stability of the multiverse and timelines within.</desc>
+	<title>Time Shark Agent</title>
+	<short>Shark</short>
+	<cost>55</cost>
+	<rarity>3</rarity>
+	<powerList>
+	<power>Time Agent: Can cancel the effect of any time-shifting system. (Work-in-progress)</power>
+	<power>Focused: True dedication to their mission and immune to mind control.</power>
+	<power>Wet: Puts out fires at 2x speed.</power>
+	</powerList>
+</crewBlueprint>
+
+
+<!-- 
+*********************************************************************************************************
                    SOVIET
 *********************************************************************************************************
 -->

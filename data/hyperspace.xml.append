@@ -154,9 +154,39 @@
 				Drink Soup made by the Soup Dragon to return to full HP. </tooltip>
 			<cooldownColor r="167" g="255" b="93" />
 			<activateWhenReady>false</activateWhenReady>
+		</powerEffect>	
+	</mod-append:race>
+
+<!-- 
+*********************************************************************************************************
+                   Shark
+*********************************************************************************************************
+-->
+
+	<mod-append:race name="shark">
+		<essential>0</essential>
+		<maxHealth>100</maxHealth>
+		<animBase>human</animBase>
+		<resistsMindControl>true</resistsMindControl>
+		<fireRepairMultiplier>2.0</fireRepairMultiplier>
+		<deathSounds>
+			<deathSound>mantisDeath</deathSound>
+		</deathSounds>
+		<powerEffect>
+			<cooldown>30</cooldown>
+			<jumpCooldown>full</jumpCooldown>
+			<powerSounds>
+				<powerSound>healBomb</powerSound>
+			</powerSounds>
+			<buttonText>NORMALISE</buttonText>
+			<tooltip>[COOLDOWN: 30s]
+				Normalise the time in the current room. </tooltip>
+			<cooldownColor r="53" g="73" b="110" />
+			<activateWhenReady>false</activateWhenReady>
 			<selfHealth>1000</selfHealth>
 		</powerEffect>	
 	</mod-append:race>
+
 
 <!-- 
 *********************************************************************************************************

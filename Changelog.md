@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Added backgorund image for Jub Earth Quest
+- Added Shark Race
 
 ## [1.0.22]
 
