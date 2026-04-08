@@ -1,22 +1,22 @@
 <textList name="TEXT_START_JUB">
-	<text>You have arrived at the Time Distorted Sector and are met with a strange guard who seems to ignore you.</text>
-	<text>Your insides twist and turn while your brain seems to spin. This sector feels strange. There is a strange guard keeping the peace but they seem to ignore you for now.</text>
-    <text>You have a strange feeling of nostalgia, almost like you've been here before, only moments ago. There is a strange guard stationed here. As long as you create no trouble, they will leave you alone.</text>
+	<text>You have arrived at the Time Distorted Sector and are met by a TSA guard who seems to ignore you.</text>
+	<text>Your insides twist and turn while your brain seems to spin. This sector feels strange. There is a TSA guard keeping the peace but they seem to ignore you for now.</text>
+    <text>You have a strange feeling of nostalgia, almost like you've been here before, only moments ago. There is a TSA guard stationed here. As long as you create no trouble, they will leave you alone.</text>
 </textList>
 <event name="START_JUB">
-	<metaVariable name="juke_SHARK" op="set" val="1"/>
+	<metaVariable name="juke_orchid" op="set" val="1"/>
 	<preventQuest/>
 	<beaconType id="map_icon_start" global="false">
 		<color r="46" g="252" b="51" a="1"/>
 	</beaconType>
 	<text load="TEXT_START_JUB"/>
-	<changeBackground>BACK_SECTOR_ORCHID</changeBackground>
+	<changeBackground>BACK_SECTOR_ABANDONED</changeBackground>
 	<playSound>lightspeed</playSound>
-	<customFleet right="false" firing="true" autoDarkening="true">CUSTOM_FLEET_ORCHID</customFleet>
+	<customFleet right="false" firing="true" autoDarkening="false">CUSTOM_FLEET_TSA</customFleet>
 	<ship load="SHARK_GUARD_SHIP" hostile="false"/>
 	<choice hidden="true" req="rep_comb_ORCHID" lvl="-999" max_lvl="1" max_group="0" blue="false">
 		<text>Continue...</text>
-		<event load="GUARD_SHARK"/>
+		<event load="GUARD_TSA"/>
 	</choice>
 	<choice hidden="true" req="rep_comb_ORCHID" lvl="2" max_lvl="999" max_group="0" blue="false">
 		<text>Continue...</text>
@@ -28,7 +28,7 @@
 
 
 
-<event name="GUARD_SHARK">
+<event name="GUARD_TSA">
 	<text> The guard smiles and waves at you as you pass by.</text>
 	<choice>
 		<text>Ignore the guard.</text>
@@ -46,7 +46,7 @@
 	</choice>
 	<choice hidden="true">
 		<text>Contact the guard.</text>
-		<event load="GUARD_SHARK_INTERACT"/>
+		<event load="GUARD_TSA_INTERACT"/>
 	</choice>
 	<choice>
 		<text>Attack the guard.</text>
@@ -55,30 +55,30 @@
 			<ship hostile="true"/>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_ORCHID_FIGHT"/>	<!-- CHANGE TO BE SHARK MORALITY -->
+				<event load="MORALITY_UPDATE_TSA_FIGHT"/>	<!-- CHANGE TO BE SHARK MORALITY -->
 			</choice>
 		</event>
 	</choice>
 </event>
 
-<textList name="TEXT_GUARD_SHARK_CONTACT">
+<textList name="TEXT_GUARD_TSA_CONTACT">
 <text>The guard looks at you, it feels like they're looking deep into your past. They pause, acknowledging your presence, and wait for your next move.</text>
 <text>The guard speaks briefly to say hello and falls silent once again.</text>
 </textList>
 
-<event name="GUARD_SHARK_INTERACT">
-	<text load="TEXT_GUARD_SHARK_CONTACT"/>
+<event name="GUARD_TSA_INTERACT">
+	<text load="TEXT_GUARD_TSA_CONTACT"/>
 	<choice hidden="true">
 		<text>Request supplies.</text>
-		<event load="GUARD_SHARK_REQUEST"/>
+		<event load="GUARD_TSA_REQUEST"/>
 	</choice>
 	<choice hidden="true">
 		<text>Demand supplies.</text>
-		<event load="GUARD_SHARK_DEMAND"/>
+		<event load="GUARD_TSA_DEMAND"/>
 	</choice>
 		<choice req="weapons" lvl="5" hidden="true">
 		<text>(Upg. Weapons) Threaten the guard.</text>
-		<event load="GUARD_SHARK_THREATEN"/>
+		<event load="GUARD_TSA_THREATEN"/>
 	</choice>
 	<choice req="shark" hidden="true">
 		<text>(Shark Crew) Request assistance.</text>
@@ -104,7 +104,7 @@
 </event>
 
 
-<eventList name="GUARD_SHARK_REQUEST">
+<eventList name="GUARD_TSA_REQUEST">
 	<event>
 		<text>The guard shakes their head, signifying that they have no supplies to spare.</text>
 	</event>
@@ -114,13 +114,13 @@
 	</event>
 </eventList>
 
-<eventList name="GUARD_SHARK_DEMAND">
+<eventList name="GUARD_TSA_DEMAND">
 	<event>
 		<text>These guards do not seem inanately aggresive, but when you start making demands of them you can expect they're going to retaliate.</text>
 		<ship hostile="true"/>
 		<choice hidden="true">
 			<text>Continue...</text>
-			<event load="MORALITY_UPDATE_ORCHID_FIGHT"/>
+			<event load="MORALITY_UPDATE_TSA_FIGHT"/>
 		</choice>
 	</event>
 	<event>
@@ -128,19 +128,19 @@
 		<autoReward level="MED">stuff</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
-			<event load="MORALITY_UPDATE_ORCHID"/>
+			<event load="MORALITY_UPDATE_TSA"/>
 		</choice>
 	</event>
 </eventList>
 
 
-<eventList name="GUARD_SHARK_THREATEN">
+<eventList name="GUARD_TSA_THREATEN">
 	<event>
 		<text>These guards do not seem inanately aggresive, but when you start making demands of them you can expect they're going to retaliate.</text>
 		<ship hostile="true"/>
 		<choice hidden="true">
 			<text>Continue...</text>
-			<event load="MORALITY_UPDATE_ORCHID_FIGHT"/>
+			<event load="MORALITY_UPDATE_TSA_FIGHT"/>
 		</choice>
 	</event>
 	<event>
@@ -148,7 +148,7 @@
 		<autoReward level="LOW">stuff</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
-			<event load="MORALITY_UPDATE_ORCHID"/>
+			<event load="MORALITY_UPDATE_TSA"/>
 		</choice>
 	</event>
 	<event>
@@ -156,7 +156,7 @@
 		<autoReward level="LOW">stuff</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
-			<event load="MORALITY_UPDATE_ORCHID"/>
+			<event load="MORALITY_UPDATE_TSA"/>
 		</choice>
 	</event>
 </eventList>
@@ -164,30 +164,30 @@
 
 <ship name="SHARK_GUARD_SHIP" auto_blueprint="SHARK_GUARD_SHIP">
 	<surrender min="5" max="6" load="GUARD_SIGNAL"/>
-	<destroyed load="GUARD_SHARK_DESTROY"/>
-	<deadCrew load="GUARD_SHARK_DEADCREW"/>
+	<destroyed load="GUARD_TSA_DESTROY"/>
+	<deadCrew load="GUARD_TSA_DEADCREW"/>
 	<crew>
 		<crewMember type="shark" prop="1"/>
 	</crew>
 </ship>
 
 
-<event name="GUARD_SHARK_DESTROY">
+<event name="GUARD_TSA_DESTROY">
 	<text>You have defeated the guard. Whatever might have been in their cargo has for certain been destroyed, but you can at least salvage some supplies from the ship.</text>
 	<autoReward level="MED">standard</autoReward>
 	<choice hidden="true">
 		<text>Continue...</text>
-		<event load="GUARD_SHARK_FOLLOWUP"/>
+		<event load="GUARD_TSA_FOLLOWUP"/>
 	</choice>
 </event>
 
-<event name="GUARD_SHARK_DEADCREW">
+<event name="GUARD_TSA_DEADCREW">
 	<text>You have defeated the guard. Without crew on board to stop you, you can investigate their cargo. You find a weapon to bring back to the ship, and move on to scrap their hull.</text>
 	<autoReward level="MED">standard</autoReward>
 	<weapon name="GIFTLIST_KERNEL"/> <!-- Change List to Shark list!! -->
 	<choice hidden="true">
 		<text>Continue...</text>
-		<event load="GUARD_SHARK_FOLLOWUP"/>
+		<event load="GUARD_TSA_FOLLOWUP"/>
 	</choice>
 </event>
 
@@ -196,7 +196,7 @@
 	<deadCrew load="DEADCREW_REINFORCEMENTS"/>
 </ship>
 
-<event name="GUARD_SHARK_FOLLOWUP">
+<event name="GUARD_TSA_FOLLOWUP">
 	<noQuestText/>
 	<removeHazards/>
 	<clearCustomFleet/>
@@ -226,5 +226,21 @@
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+
+<event name="GUARD_TSA_CRIMINAL">
+	<text>Something seems off here. Usually, the Time Shark A wouldn't bat an eye at ships like yours, but now, you catch suspicious chatter on the guard ship.</text>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>It seems your track record has caught up to you. The guard's crew have heard enough of the crimes you've been committing, and they don't intend to let you into the sector!</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
 	</choice>
 </event>

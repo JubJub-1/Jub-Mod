@@ -7,7 +7,9 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Added backgorund image for Jub Earth Quest
-- Added Shark Race
+- Added Shark Race (Work-in-progress)
+- Added Morality and Notoriety for Time Shark Authority
+- Added TSA reinforcements if Jub Sector guard killed
 
 ### Changed
 

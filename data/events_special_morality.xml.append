@@ -1,0 +1,17 @@
+<event name="MORALITY_UPDATE_TSA">
+	<text>[NOTORIETY INCREASED - TSA] Your actions here, justifiable or not, will not reflect well in the eyes of the TSA or its agents. 
+	
+	Continuously perform actions like this and you might start to see negative reactions from the TSA and its allies.</text>
+	<variable name="rep_TSA" op="add" val="1"/>
+</event>
+
+<event name="MORALITY_UPDATE_TSA_FIGHT">
+	<text>[NOTORIETY INCREASED - TSA] Your actions here, justifiable or not, will not reflect well in the eyes of the TSA or its agents. 
+	
+	Continuously perform actions like this and you might start to see negative reactions from the TSA and its allies.</text>
+	<variable name="rep_TSA" op="add" val="1"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
